@@ -9,6 +9,6 @@ package jscarabeo;
  *
  * @author lazzarin_andrea
  */
-public class Client extends Thread{
+public class Client{
     
 }

@@ -9,6 +9,6 @@ package jscarabeo;
  *
  * @author lazzarin_andrea
  */
-public class elabora extends Thread {
+public class elabora {
 
 }
