@@ -25,7 +25,7 @@ public class Server extends Thread {
 
     public void Server(DatiCondivisi d) throws SocketException {
         this.d = d;
-        this.server = new DatagramSocket(12345);
+        this.server = new DatagramSocket(d.getMyPort());
         this.buffer = new byte[1500];
         this.messaggioRicevuto = "";
     }

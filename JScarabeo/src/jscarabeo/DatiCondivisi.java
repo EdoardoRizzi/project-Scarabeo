@@ -77,4 +77,10 @@ public class DatiCondivisi {
     public void setOpponentNickname(String opponentNickname) {
         this.opponentNickname = opponentNickname;
     }
+
+    public int getMyPort() {
+        return myPort;
+    }
+    
+    
 }
