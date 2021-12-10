@@ -5,6 +5,12 @@
  */
 package jscarabeo;
 
+import java.io.IOException;
+import java.net.SocketException;
+import java.net.UnknownHostException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author lazzarin_andrea
@@ -13,9 +19,18 @@ public class Login extends javax.swing.JFrame {
 
     /**
      * Creates new form Login
+     *
+     * @throws java.net.UnknownHostException
      */
-    public Login() {
+    DatiCondivisi d = new DatiCondivisi();
+    Server s = new Server();
+    //Elabora e = new Elabora(this);
+    Client c;
+
+    public Login() throws UnknownHostException, SocketException {
         initComponents();
+        c = new Client(d);
+        s.start();
     }
 
     /**
@@ -38,7 +53,7 @@ public class Login extends javax.swing.JFrame {
 
         jLabel1.setText("Nickname:");
 
-        jLabel2.setText("Indirizzo ip (porta):");
+        jLabel2.setText("Indirizzo ip:");
 
         btnRichiestaConnessione.setText("INVIA RICHIESTA DI CONNESSIONE");
         btnRichiestaConnessione.addActionListener(new java.awt.event.ActionListener() {
@@ -95,7 +110,12 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRichiestaConnessioneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRichiestaConnessioneActionPerformed
-
+        d.setOpponentIP(txtIndirizzo.getText());
+        try {
+            c.sendRichiesta();
+        } catch (IOException ex) {
+            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_btnRichiestaConnessioneActionPerformed
 
     /**
@@ -114,20 +134,18 @@ public class Login extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        DatiCondivisi d;
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new Login().setVisible(true);
+            try {
+                new Login().setVisible(true);
+
+            } catch (UnknownHostException | SocketException ex) {
+                Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+            }
         });
     }
 

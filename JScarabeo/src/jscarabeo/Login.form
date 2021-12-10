@@ -78,7 +78,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Indirizzo ip (porta):"/>
+        <Property name="text" type="java.lang.String" value="Indirizzo ip:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnRichiestaConnessione">

@@ -16,19 +16,65 @@ import java.util.List;
  */
 public class DatiCondivisi {
 
-    List<String> listPacchettiRicevuti;
-    int myScore, opponentScore;
-    String myPort, opponentPort;
-    String myIP, opponentIP;
+    private List<String> listPacchettiRicevuti;
+    private int myScore, opponentScore;
+    private int myPort, opponentPort;
+    private String myIP, opponentIP;
+    private String myNickname, opponentNickname;
+    boolean inGame;
 
     public DatiCondivisi() throws UnknownHostException {
         this.listPacchettiRicevuti = new ArrayList<>();
-        this.myPort = "666";
-        this.opponentPort = "";
+        this.myPort = 666;
+        this.opponentPort = 667;
         this.myScore = 0;
         this.opponentScore = 0;
         this.myIP = InetAddress.getLocalHost().getHostAddress();
         this.opponentIP = "";
+        this.inGame = false;
     }
 
+    public void addPacchettoRicevuto(String pacchetto) {
+        this.listPacchettiRicevuti.add(pacchetto);
+    }
+
+    public String getOpponentIP() {
+        return opponentIP;
+    }
+
+    public void setOpponentIP(String opponentIP) {
+        this.opponentIP = opponentIP;
+    }
+
+    public boolean isInGame() {
+        return inGame;
+    }
+
+    public void setInGame(boolean inGame) {
+        this.inGame = inGame;
+    }
+
+    public int getOpponentPort() {
+        return opponentPort;
+    }
+
+    public void setOpponentPort(int opponentPort) {
+        this.opponentPort = opponentPort;
+    }
+
+    public String getMyNickname() {
+        return myNickname;
+    }
+
+    public void setMyNickname(String myNickname) {
+        this.myNickname = myNickname;
+    }
+
+    public String getOpponentNickname() {
+        return opponentNickname;
+    }
+
+    public void setOpponentNickname(String opponentNickname) {
+        this.opponentNickname = opponentNickname;
+    }
 }
