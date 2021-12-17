@@ -5,9 +5,14 @@
  */
 package jscarabeo;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
+import java.net.ServerSocket;
+import java.net.Socket;
 import java.net.SocketException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -17,35 +22,29 @@ import java.util.logging.Logger;
  * @author lazzarin_andrea
  */
 public class Server extends Thread {
-    DatiCondivisi d;
-    DatagramSocket server;
-    byte[] buffer;
-    byte[] dataReceived;
-    String messaggioRicevuto;
 
-    public void Server(DatiCondivisi d) throws SocketException {
+    DatiCondivisi d;
+    ServerSocket serverSocket;
+
+    public Server(DatiCondivisi d) throws IOException {
         this.d = d;
-        this.server = new DatagramSocket(d.getMyPort());
-        this.buffer = new byte[1500];
-        this.messaggioRicevuto = "";
+        serverSocket = new ServerSocket(666);
     }
 
+    @Override
     public void run() {
-        DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
 
-        while (d.isInGame()) {
-      
-            try {
-                server.receive(packet);
-            } catch (IOException ex) {
-                Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
-            }
+        try {
+            Socket clientSocket = serverSocket.accept();
 
-            dataReceived = packet.getData(); // copia del buffer dichiarato sopra
+            BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            String inputLine = in.readLine();
+            System.out.println(inputLine);
+            in.close();
+            clientSocket.close();
 
-            messaggioRicevuto = new String(dataReceived, 0, packet.getLength());
-            d.addPacchettoRicevuto(messaggioRicevuto);
-            System.out.println(messaggioRicevuto);
+        } catch (IOException ex) {
+            Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }
