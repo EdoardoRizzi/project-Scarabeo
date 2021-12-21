@@ -23,13 +23,14 @@ public class Login extends javax.swing.JFrame {
      * @throws java.net.UnknownHostException
      */
     DatiCondivisi d = new DatiCondivisi();
-    Server s = new Server();
+    Server s;
     //Elabora e = new Elabora(this);
     Client c;
 
-    public Login() throws UnknownHostException, SocketException {
+    public Login() throws UnknownHostException, SocketException, IOException {
         initComponents();
         c = new Client(d);
+        s = new Server(d);
         s.start();
     }
 
@@ -111,11 +112,7 @@ public class Login extends javax.swing.JFrame {
 
     private void btnRichiestaConnessioneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRichiestaConnessioneActionPerformed
         d.setOpponentIP(txtIndirizzo.getText());
-        try {
-            c.sendRichiesta();
-        } catch (IOException ex) {
-            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        c.sendRichiesta();
     }//GEN-LAST:event_btnRichiestaConnessioneActionPerformed
 
     /**
@@ -144,6 +141,8 @@ public class Login extends javax.swing.JFrame {
                 new Login().setVisible(true);
 
             } catch (UnknownHostException | SocketException ex) {
+                Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (IOException ex) {
                 Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
             }
         });

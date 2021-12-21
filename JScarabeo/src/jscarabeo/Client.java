@@ -5,12 +5,20 @@
  */
 package jscarabeo;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
+import java.net.Socket;
 import java.net.SocketException;
 import java.net.UnknownHostException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -19,24 +27,44 @@ import java.net.UnknownHostException;
 public class Client {
 
     DatiCondivisi d;
-    DatagramSocket client;
+    Socket socket;
 
     public Client(DatiCondivisi d) throws SocketException {
         this.d = d;
-        client = new DatagramSocket(d.getOpponentPort());
+        socket = null;
     }
 
-    public void sendRichiesta() throws UnknownHostException, IOException {
-        String s = "C;" + d.getOpponentIP() + ";" + d.getOpponentNickname();
+    public void sendRichiesta() {
 
-        byte[] responseBuffer = s.getBytes();
+        try {
+            InetAddress addr = InetAddress.getByName("172.16.102.76");
+            socket = new Socket(addr, 666);
+            BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())), true);
 
-        DatagramPacket responsePacket = new DatagramPacket(responseBuffer, responseBuffer.length);
+            out.println("C;172.16.102.71;Ode");
+            //System.out.println(inputLine);
+            //out.println("pluto");
+            //inputLine = in.readLine();
+            //System.out.println(inputLine);
+            //out.println("exit");
+            //inputLine = in.readLine();
+            String inputLine;
+            do {
+                inputLine = in.readLine();
+                System.out.println(inputLine);
+            } while (inputLine != null); //socket.close();
 
-        responsePacket.setAddress(InetAddress.getByName(d.getOpponentIP()));
+        } catch (IOException ex) {
+            Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
 
-        responsePacket.setPort(d.getOpponentPort());
+        }
 
-        client.send(responsePacket);
+        //try {
+        //socket.close();
+        //} catch (IOException ex) {
+        // Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
+        //}
     }
 }
