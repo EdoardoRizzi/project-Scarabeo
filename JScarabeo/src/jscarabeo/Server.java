@@ -14,6 +14,8 @@ import java.net.DatagramSocket;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -34,15 +36,24 @@ public class Server extends Thread {
     @Override
     public void run() {
 
-        try {
-            Socket clientSocket = serverSocket.accept();
-
-            BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-            String inputLine = in.readLine();
-            System.out.println(inputLine);
+        try 
+        {
+            if(!d.isInGame()) 
+            {
+                Socket clientSocket = serverSocket.accept();
+                BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+                d.setInGame(true);
+                
+                while (d.isInGame()) 
+                {
+                    String inputLine = in.readLine();
+                    System.out.println(inputLine);
+                    d.addPacchettoRicevuto(inputLine);
+                }
+            
             in.close();
             clientSocket.close();
-
+            }
         } catch (IOException ex) {
             Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
         }

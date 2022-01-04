@@ -28,10 +28,11 @@ public class Login extends javax.swing.JFrame {
     Client c;
 
     public Login() throws UnknownHostException, SocketException, IOException {
-        initComponents();
         c = new Client(d);
         s = new Server(d);
         s.start();
+        initComponents();
+   
     }
 
     /**

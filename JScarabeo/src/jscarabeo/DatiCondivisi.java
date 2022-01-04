@@ -21,7 +21,8 @@ public class DatiCondivisi {
     private int myPort, opponentPort;
     private String myIP, opponentIP;
     private String myNickname, opponentNickname;
-    boolean inGame;
+    private boolean inGame;
+    private boolean turn;
 
     public DatiCondivisi() throws UnknownHostException {
         this.listPacchettiRicevuti = new ArrayList<>();

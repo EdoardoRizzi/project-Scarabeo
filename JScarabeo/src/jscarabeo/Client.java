@@ -37,12 +37,13 @@ public class Client {
     public void sendRichiesta() {
 
         try {
-            InetAddress addr = InetAddress.getByName("172.16.102.76");
+            InetAddress addr = InetAddress.getByName("192.168.1.71");
             socket = new Socket(addr, 666);
-            BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())), true);
+            BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            
 
-            out.println("C;172.16.102.71;Ode");
+            out.println("C;localhost;Ode");
             //System.out.println(inputLine);
             //out.println("pluto");
             //inputLine = in.readLine();
