@@ -42,7 +42,6 @@ public class Server extends Thread {
             {
                 Socket clientSocket = serverSocket.accept();
                 BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-                d.setInGame(true);
                 
                 while (d.isInGame()) 
                 {
