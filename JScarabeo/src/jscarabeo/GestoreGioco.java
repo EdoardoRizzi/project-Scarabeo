@@ -39,6 +39,7 @@ public class GestoreGioco extends Thread{
                 char let = v[0].charAt(0);
                 int val = Integer. parseInt(v[1]);
                 Lettera l = new Lettera(let, val);
+                d.addLettera(l);
             }
 
         } catch (FileNotFoundException ex) {
