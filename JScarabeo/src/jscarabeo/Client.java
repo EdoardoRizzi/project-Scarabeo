@@ -37,35 +37,14 @@ public class Client {
     public void sendRichiesta() {
 
         try {
-            InetAddress addr = InetAddress.getByName("192.168.1.71");
+            InetAddress addr = InetAddress.getByName(d.getOpponentIP());
             socket = new Socket(addr, 666);
             PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())), true);
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            
-
-            out.println("C;localhost;Ode");
-            //System.out.println(inputLine);
-            //out.println("pluto");
-            //inputLine = in.readLine();
-            //System.out.println(inputLine);
-            //out.println("exit");
-            //inputLine = in.readLine();
-            String inputLine;
-            do {
-                inputLine = in.readLine();
-                System.out.println(inputLine);
-            } while (inputLine != null); //socket.close();
+            out.println("C;" + d.getMyIP() + ";" + d.getMyNickname());
 
         } catch (IOException ex) {
             Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
-        } finally {
-
         }
-
-        //try {
-        //socket.close();
-        //} catch (IOException ex) {
-        // Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
-        //}
     }
 }

@@ -20,6 +20,7 @@ public class DatiCondivisi {
     private int myScore, opponentScore;
     private int myPort, opponentPort;
     private String myIP, opponentIP;
+
     private String myNickname, opponentNickname;
     private boolean inGame;
     private boolean turn;
@@ -82,6 +83,9 @@ public class DatiCondivisi {
     public int getMyPort() {
         return myPort;
     }
-    
-    
+
+    public String getMyIP() {
+        return myIP;
+    }
+
 }
