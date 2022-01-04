@@ -88,4 +88,7 @@ public class DatiCondivisi {
         return myIP;
     }
 
+    public List<String> getListPacchettiRicevuti() {
+        return listPacchettiRicevuti;
+    }
 }
