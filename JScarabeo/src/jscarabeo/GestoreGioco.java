@@ -24,6 +24,10 @@ public class GestoreGioco extends Thread{
         this.d = d;
         this.FileCSV = new File("ValoreLettera.csv");
     }
+    
+    public void run(){
+        
+    }
 
         
     public void generaLista(File f) throws IOException{
