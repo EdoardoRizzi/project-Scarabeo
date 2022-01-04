@@ -24,6 +24,11 @@ public class Lettera {
     public Lettera() {
         this.valore = 0;   
     }
+    
+    public Lettera(char l, int v){
+        lettera = l;
+        valore = v;
+    }
 
     public char getLettera() {
         return lettera;

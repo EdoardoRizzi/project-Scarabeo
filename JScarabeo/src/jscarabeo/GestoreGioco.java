@@ -36,7 +36,9 @@ public class GestoreGioco extends Thread{
 
             while ((linea = br.readLine()) != null) { //assegno un valore alla var linea e se è nulla non entro nel ciclo
                 v = linea.split(";");
-                Lettera l = new Lettera(v[0],v[1]);
+                char let = v[0].charAt(0);
+                int val = Integer. parseInt(v[1]);
+                Lettera l = new Lettera(let, val);
             }
 
         } catch (FileNotFoundException ex) {
