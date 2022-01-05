@@ -23,10 +23,20 @@ public class GestoreGioco extends Thread {
     private DatiCondivisi d;
     private File FileCSV;
     private List<Lettera> Mano; //tessere in mano durante il turno
+    private char[] ParolaInCorso;
+    private int[] PosizioniSullaX;
+    private int[] PosizioniSullaY;
+    private int numElParola, numElX, numElY;
 
     public GestoreGioco(DatiCondivisi d) {
         this.d = d;
         this.FileCSV = new File("ValoreLettera.csv");
+        ParolaInCorso = new char[17];
+        PosizioniSullaX = new int[17];
+        PosizioniSullaY = new int[17];
+        this.numElParola = 0;
+        this.numElX = 0;
+        this.numElY = 0;
     }
 
     public void run() {
@@ -56,18 +66,51 @@ public class GestoreGioco extends Thread {
 
     public void Pescaggio() {
         if (d.getListLettere() != null) {
-            
+
             Random r = new Random();
             int posLettera;
-            
-            while(Mano.size()<8)
-            {
+
+            while (Mano.size() < 8) {
                 posLettera = r.nextInt(0, 131);
                 if (d.getListLettere().get(posLettera) != null) {
                     Mano.add(d.getListLettere().get(posLettera));
-                    d.removeLettera();
+                    d.removeLettera(posLettera);
                 }
             }
         }
+    }
+
+    //ogni volta che una tessera sarà aggiunta sul tabellone verrà richiamto questo metodo
+    public void ComponiParola(char let, int posX, int posY) {
+        ParolaInCorso[numElParola] = let;
+        PosizioniSullaX[numElX] = posX;
+        PosizioniSullaY[numElY] = posY;
+
+        numElParola++;
+        numElX++;
+        numElY++;
+    }
+
+    public void CercaLettera() {
+        int posMancante;
+        
+
+        for (int i = 0; i < numElParola; i++) {
+
+        }
+    }
+
+    public boolean ParolaOrizOVert() {
+        boolean vert = false;
+
+        if (PosizioniSullaX[0] == PosizioniSullaX[1]) {
+            vert = true;
+        }
+        return vert;
+
+    }
+
+    public void controlloParola() {
+
     }
 }
