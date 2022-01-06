@@ -32,7 +32,7 @@ public class Login extends javax.swing.JFrame {
         s = new Server(d);
         s.start();
         initComponents();
-   
+
     }
 
     /**
@@ -114,6 +114,12 @@ public class Login extends javax.swing.JFrame {
     private void btnRichiestaConnessioneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRichiestaConnessioneActionPerformed
         d.setOpponentIP(txtIndirizzo.getText());
         c.sendRichiesta();
+
+        //if (d.getOpponentNickname() != null) {
+        this.setVisible(false);
+        Tabellone t = new Tabellone();
+        t.setVisible(true);
+        // }
     }//GEN-LAST:event_btnRichiestaConnessioneActionPerformed
 
     /**

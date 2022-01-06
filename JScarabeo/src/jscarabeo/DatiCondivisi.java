@@ -19,12 +19,12 @@ public class DatiCondivisi {
     private Lettera[][] matrice;
     private List<Lettera> ListLettere;
     private List<String> listPacchettiRicevuti;
+    private List<String> listPacchettiDaInviare;
     private int myScore, opponentScore;
     private int myPort, opponentPort;
     private String myIP, opponentIP;
     private String myNickname, opponentNickname;
     private boolean inGame;
-    //private boolean turn;
 
     public DatiCondivisi() throws UnknownHostException {
         this.listPacchettiRicevuti = new ArrayList<>();
@@ -41,6 +41,14 @@ public class DatiCondivisi {
 
     public void addPacchettoRicevuto(String pacchetto) {
         this.listPacchettiRicevuti.add(pacchetto);
+    }
+
+    public List<String> getListPacchettiDaInviare() {
+        return listPacchettiDaInviare;
+    }
+
+    public void addPacchettoDaInviare(String pacchetto) {
+        this.listPacchettiDaInviare.add(pacchetto);
     }
 
     public String getOpponentIP() {
@@ -94,7 +102,7 @@ public class DatiCondivisi {
     public List<String> getListPacchettiRicevuti() {
         return listPacchettiRicevuti;
     }
-    
+
     public List<Lettera> getListLettere() {
         return ListLettere;
     }

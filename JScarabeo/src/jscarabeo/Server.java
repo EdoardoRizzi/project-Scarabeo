@@ -36,22 +36,22 @@ public class Server extends Thread {
     @Override
     public void run() {
 
-        try 
-        {
-            if(!d.isInGame()) 
-            {
+        try {
+            if (!d.isInGame()) {
                 Socket clientSocket = serverSocket.accept();
+                //in caso accetti la connessione
+                Tabellone t = new Tabellone();
+                t.setVisible(true);
                 BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-                
-                while (d.isInGame()) 
-                {
+
+                while (d.isInGame()) {
                     String inputLine = in.readLine();
                     System.out.println(inputLine);
                     d.addPacchettoRicevuto(inputLine);
                 }
-            
-            in.close();
-            clientSocket.close();
+
+                in.close();
+                clientSocket.close();
             }
         } catch (IOException ex) {
             Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
