@@ -94,6 +94,10 @@ public class DatiCondivisi {
     public List<String> getListPacchettiRicevuti() {
         return listPacchettiRicevuti;
     }
+    
+    public List<Lettera> getListLettere() {
+        return ListLettere;
+    }
 
     public void addLettera(Lettera l) {
         ListLettere.add(l);

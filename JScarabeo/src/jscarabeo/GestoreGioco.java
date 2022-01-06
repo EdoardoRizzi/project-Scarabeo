@@ -71,10 +71,10 @@ public class GestoreGioco extends Thread {
             int posLettera;
 
             while (Mano.size() < 8) {
-                posLettera = r.nextInt(0, 131);
+                posLettera = r.nextInt(131);
                 if (d.getListLettere().get(posLettera) != null) {
                     Mano.add(d.getListLettere().get(posLettera));
-                    d.removeLettera(posLettera);
+                    d.removeLettera(d.getListLettere().get(posLettera).getLettera());
                 }
             }
         }
@@ -93,7 +93,6 @@ public class GestoreGioco extends Thread {
 
     public void CercaLettera() {
         int posMancante;
-        
 
         for (int i = 0; i < numElParola; i++) {
 
