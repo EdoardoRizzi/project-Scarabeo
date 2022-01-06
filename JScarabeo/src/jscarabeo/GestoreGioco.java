@@ -92,14 +92,25 @@ public class GestoreGioco extends Thread {
     }
 
     public void CercaLettera() {
-        int posMancante;
+        int posMancante = 0;
+        int[] Copia;
+        boolean Sent = true;
+        
+        if(ParolaVert()){
+            Copia = PosizioniSullaX;
+        } else {
+            Copia = PosizioniSullaY;
+        }
 
-        for (int i = 0; i < numElParola; i++) {
-
+        while(Sent || posMancante < Copia.length){
+            if(Copia[posMancante]+1 != Copia[posMancante+1]){
+                Sent = false;
+                posMancante++;
+            }
         }
     }
 
-    public boolean ParolaOrizOVert() {
+    public boolean ParolaVert() {
         boolean vert = false;
 
         if (PosizioniSullaX[0] == PosizioniSullaX[1]) {
