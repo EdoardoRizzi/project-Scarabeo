@@ -36,6 +36,7 @@ public class Client extends Thread {
             socket = new Socket(addr, 666);
             out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())), true);
             d.addPacchettoDaInviare("C;" + d.getMyIP() + ";" + d.getMyNickname());
+            d.setTurno(false);
         } catch (IOException ex) {
             Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
         }

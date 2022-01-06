@@ -4,6 +4,7 @@
  */
 package jscarabeo;
 
+import java.awt.event.ActionListener;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -28,7 +29,7 @@ public class GestoreGioco extends Thread {
     private int[] PosizioniSullaX;
     private int[] PosizioniSullaY;
     private int numElParola, numElX, numElY;
-    Timer t;
+    //timer
 
     public GestoreGioco(DatiCondivisi d) {
         this.d = d;
@@ -42,8 +43,10 @@ public class GestoreGioco extends Thread {
     }
 
     public void run() {
-        Pescaggio();
-        
+        while (d.isInGame()) {
+            Pescaggio();
+        }
+
     }
 
     public void generaLista(File f) throws IOException {
@@ -83,6 +86,26 @@ public class GestoreGioco extends Thread {
         }
     }
 
+    public void RimuoviLettereUsate() {
+        int[] posDaRimuovere = new int[8];
+        int numEl = 0;
+
+        if (ParolaInCorso.length != 8) {
+            for (int i = 0; i < Mano.size(); i++) {
+                if (Mano.get(i).getLettera() == ParolaInCorso[i]) {
+                    posDaRimuovere[numEl] = i;
+                    numEl++;
+                }
+            }
+
+            for (int i = 0; i < posDaRimuovere.length; i++) {
+                Mano.remove(i);
+            }
+        } else {
+            Mano.clear();
+        }
+    }
+
     //ogni volta che una tessera sarà aggiunta sul tabellone verrà richiamto questo metodo
     public void ComponiParola(char let, int posX, int posY) {
         ParolaInCorso[numElParola] = let;
@@ -98,15 +121,15 @@ public class GestoreGioco extends Thread {
         int posMancante = 0;
         int[] Copia;
         boolean Sent = true;
-        
-        if(ParolaVert()){
+
+        if (ParolaVert()) {
             Copia = PosizioniSullaX;
         } else {
             Copia = PosizioniSullaY;
         }
 
-        while(Sent || posMancante < Copia.length){
-            if(Copia[posMancante]+1 != Copia[posMancante+1]){
+        while (Sent || posMancante < Copia.length) {
+            if (Copia[posMancante] + 1 != Copia[posMancante + 1]) {
                 Sent = false;
                 posMancante++;
             }

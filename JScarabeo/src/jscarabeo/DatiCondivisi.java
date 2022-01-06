@@ -24,7 +24,7 @@ public class DatiCondivisi {
     private int myPort, opponentPort;
     private String myIP, opponentIP;
     private String myNickname, opponentNickname;
-    private boolean inGame;
+    private boolean inGame, Turno;
     private ThreadGrafico tg;
 
     public DatiCondivisi() throws UnknownHostException {
@@ -36,6 +36,7 @@ public class DatiCondivisi {
         this.myIP = InetAddress.getLocalHost().getHostAddress();
         this.opponentIP = "";
         this.inGame = false;
+        this.Turno = true;
         this.ListLettere = new ArrayList<>();
         this.matrice = new Lettera[17][17];
 
@@ -76,6 +77,14 @@ public class DatiCondivisi {
 
     public int getOpponentPort() {
         return opponentPort;
+    }
+
+    public boolean isTurno() {
+        return Turno;
+    }
+
+    public void setTurno(boolean Turno) {
+        this.Turno = Turno;
     }
 
     public void setOpponentPort(int opponentPort) {
