@@ -16,16 +16,16 @@ import java.util.List;
  */
 public class DatiCondivisi {
 
+    private Lettera[][] matrice;
+    private List<Lettera> ListLettere;
     private List<String> listPacchettiRicevuti;
     private int myScore, opponentScore;
     private int myPort, opponentPort;
     private String myIP, opponentIP;
-
     private String myNickname, opponentNickname;
     private boolean inGame;
-    private boolean turn;
-    private List<Lettera> ListLettere;
-    
+    //private boolean turn;
+
     public DatiCondivisi() throws UnknownHostException {
         this.listPacchettiRicevuti = new ArrayList<>();
         this.myPort = 666;
@@ -36,6 +36,7 @@ public class DatiCondivisi {
         this.opponentIP = "";
         this.inGame = false;
         this.ListLettere = new ArrayList<>();
+        this.matrice = new Lettera[17][17];
     }
 
     public void addPacchettoRicevuto(String pacchetto) {
@@ -93,8 +94,23 @@ public class DatiCondivisi {
     public List<String> getListPacchettiRicevuti() {
         return listPacchettiRicevuti;
     }
-    
-    public void addLettera(Lettera l){
-       ListLettere.add(l);
+
+    public void addLettera(Lettera l) {
+        ListLettere.add(l);
+    }
+
+    public void removeLettera(char c) {
+        int i = 0;
+        int indexTrovato = -1;
+        boolean trovato = false;
+        while (!trovato && i < ListLettere.size()) {
+            if (ListLettere.get(i).getLettera() == c) {
+                trovato = true;
+                indexTrovato = i;
+            }
+        }
+        if (indexTrovato != -1) {
+            ListLettere.remove(i);
+        }
     }
 }

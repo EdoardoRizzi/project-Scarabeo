@@ -31,6 +31,9 @@ public class Elabora extends Thread {
                         d.setInGame(true);
                         break;
                     case "P":
+                        //rimuove dal sacchetto le lettere pescate
+                        //aggiorna matrice
+                        //aggiorna grafica button con le posizioni
                         break;
                     case "D":
                         d.setInGame(false);
