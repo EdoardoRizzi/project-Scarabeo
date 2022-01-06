@@ -5,10 +5,8 @@
  */
 package jscarabeo;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.InetAddress;
@@ -33,19 +31,14 @@ public class Client extends Thread {
     }
 
     public void sendRichiesta() {
-
         try {
             InetAddress addr = InetAddress.getByName(d.getOpponentIP());
             socket = new Socket(addr, 666);
             out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())), true);
-            out.println("C;" + d.getMyIP() + ";" + d.getMyNickname());
+            d.addPacchettoDaInviare("C;" + d.getMyIP() + ";" + d.getMyNickname());
         } catch (IOException ex) {
             Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }
-
-    public void inviaNickname() {
-        out.println("C;" + d.getMyIP() + ";" + d.getMyNickname());
     }
 
     public void run() {

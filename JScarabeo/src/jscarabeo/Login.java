@@ -10,6 +10,7 @@ import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -24,7 +25,6 @@ public class Login extends javax.swing.JFrame {
      */
     DatiCondivisi d = new DatiCondivisi();
     Server s;
-    //Elabora e = new Elabora(this);
     Client c;
 
     public Login() throws UnknownHostException, SocketException, IOException {
@@ -32,7 +32,6 @@ public class Login extends javax.swing.JFrame {
         s = new Server(d);
         s.start();
         initComponents();
-
     }
 
     /**
@@ -55,7 +54,7 @@ public class Login extends javax.swing.JFrame {
 
         jLabel1.setText("Nickname:");
 
-        jLabel2.setText("Indirizzo ip:");
+        jLabel2.setText("Indirizzo ip avversario:");
 
         btnRichiestaConnessione.setText("INVIA RICHIESTA DI CONNESSIONE");
         btnRichiestaConnessione.addActionListener(new java.awt.event.ActionListener() {
@@ -74,21 +73,22 @@ public class Login extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(88, 88, 88)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnRichiestaConnessione)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtNickname)
-                            .addComponent(txtIndirizzo))))
-                .addContainerGap(103, Short.MAX_VALUE))
+                .addComponent(btnRichiestaConnessione)
+                .addGap(103, 103, 103))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(162, 162, 162))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(68, 68, 68)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtNickname, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
+                    .addComponent(txtIndirizzo))
+                .addGap(90, 90, 90))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -114,12 +114,14 @@ public class Login extends javax.swing.JFrame {
     private void btnRichiestaConnessioneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRichiestaConnessioneActionPerformed
         d.setOpponentIP(txtIndirizzo.getText());
         c.sendRichiesta();
-
-        //if (d.getOpponentNickname() != null) {
+        c.start();
+        
+        //aspetto di ricevere il nickname avversario e poi avvio la partita
+        while (d.getOpponentNickname() == "") {
+        }
         this.setVisible(false);
-        Tabellone t = new Tabellone();
+        Tabellone t = new Tabellone(d);
         t.setVisible(true);
-        // }
     }//GEN-LAST:event_btnRichiestaConnessioneActionPerformed
 
     /**
@@ -153,6 +155,7 @@ public class Login extends javax.swing.JFrame {
                 Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
             }
         });
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

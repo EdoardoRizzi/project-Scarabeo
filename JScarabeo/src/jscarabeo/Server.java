@@ -8,16 +8,11 @@ package jscarabeo;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.PrintWriter;
-import java.net.DatagramPacket;
-import java.net.DatagramSocket;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.net.SocketException;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -40,8 +35,8 @@ public class Server extends Thread {
             if (!d.isInGame()) {
                 Socket clientSocket = serverSocket.accept();
                 //in caso accetti la connessione
-                Tabellone t = new Tabellone();
-                t.setVisible(true);
+                d.setMyNickname(JOptionPane.showInputDialog("Nickname"));
+                d.addPacchettoDaInviare("C;" + d.getMyIP() + ";" + d.getMyNickname());
                 BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
                 while (d.isInGame()) {

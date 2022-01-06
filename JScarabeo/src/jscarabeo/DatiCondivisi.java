@@ -25,6 +25,7 @@ public class DatiCondivisi {
     private String myIP, opponentIP;
     private String myNickname, opponentNickname;
     private boolean inGame;
+    private ThreadGrafico tg;
 
     public DatiCondivisi() throws UnknownHostException {
         this.listPacchettiRicevuti = new ArrayList<>();
@@ -37,6 +38,12 @@ public class DatiCondivisi {
         this.inGame = false;
         this.ListLettere = new ArrayList<>();
         this.matrice = new Lettera[17][17];
+
+        this.tg = new ThreadGrafico();
+    }
+
+    public ThreadGrafico getTg() {
+        return tg;
     }
 
     public void addPacchettoRicevuto(String pacchetto) {
