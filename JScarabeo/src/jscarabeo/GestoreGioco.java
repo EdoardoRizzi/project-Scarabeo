@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.Timer;
 
 /**
  *
@@ -27,6 +28,7 @@ public class GestoreGioco extends Thread {
     private int[] PosizioniSullaX;
     private int[] PosizioniSullaY;
     private int numElParola, numElX, numElY;
+    Timer t;
 
     public GestoreGioco(DatiCondivisi d) {
         this.d = d;
@@ -41,6 +43,7 @@ public class GestoreGioco extends Thread {
 
     public void run() {
         Pescaggio();
+        
     }
 
     public void generaLista(File f) throws IOException {

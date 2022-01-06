@@ -335,7 +335,7 @@ public class Tabellone extends javax.swing.JFrame {
         jButton304 = new javax.swing.JButton();
         jButton305 = new javax.swing.JButton();
         jButton306 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        btnInvia = new javax.swing.JButton();
         jButton307 = new javax.swing.JButton();
         jButton308 = new javax.swing.JButton();
         jButton309 = new javax.swing.JButton();
@@ -1532,7 +1532,12 @@ public class Tabellone extends javax.swing.JFrame {
         jButton306.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton306.setPreferredSize(new java.awt.Dimension(40, 40));
 
-        jButton1.setText("INVIA");
+        btnInvia.setText("INVIA");
+        btnInvia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnInviaActionPerformed(evt);
+            }
+        });
 
         jButton307.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jscarabeo/images/tassello.png"))); // NOI18N
         jButton307.setMaximumSize(new java.awt.Dimension(40, 40));
@@ -1646,7 +1651,7 @@ public class Tabellone extends javax.swing.JFrame {
                             .addComponent(jButton320, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton317, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton323, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1))
+                            .addComponent(btnInvia))
                         .addGap(32, 32, 32)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2523,7 +2528,7 @@ public class Tabellone extends javax.swing.JFrame {
                     .addComponent(jButton191, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton192, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton190, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
+                    .addComponent(btnInvia))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton211, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2646,12 +2651,17 @@ public class Tabellone extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnInviaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInviaActionPerformed
+        //parola da inviare
+        //sequenza di messaggi aggiunti alla listPacchettiDaInviare
+    }//GEN-LAST:event_btnInviaActionPerformed
+
     /**
      * @param args the command line arguments
      */
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnInvia;
     private javax.swing.JButton jButton100;
     private javax.swing.JButton jButton101;
     private javax.swing.JButton jButton102;
