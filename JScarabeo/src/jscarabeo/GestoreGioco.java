@@ -84,7 +84,7 @@ public class GestoreGioco extends Thread {
     }
 
     public void caricaListaParole() throws FileNotFoundException, IOException {
-        File f = new File("Parole.txt");
+        File f = new File("Parole.txt"); //file contente tutte le parole utilizzate
         FileReader fr = new FileReader(f);
         BufferedReader br = new BufferedReader(fr);
         String linea;
@@ -109,7 +109,7 @@ public class GestoreGioco extends Thread {
             }
         }
     }
-
+    
     public void RimuoviLettereUsate() {
         int[] posDaRimuovere = new int[8];
         int numEl = 0;
@@ -158,6 +158,22 @@ public class GestoreGioco extends Thread {
                 posMancante++;
             }
         }
+        
+        CreaSpazio(posMancante);
+        
+    }
+    
+    public void CreaSpazio(int pos){
+        int appoggio, appoggio1;
+        if (ParolaVert()) {
+            for(int i = pos-1; i < PosizioniSullaX.length; i++){
+                appoggio = PosizioniSullaY[i];
+                appoggio1 = appoggio;
+                PosizioniSullaY[i] = pos;
+            }
+        } else {
+           
+        }
     }
 
     public boolean ParolaVert() {
@@ -170,6 +186,7 @@ public class GestoreGioco extends Thread {
 
     }
 
+    //verifica che la parola inserita dal giocatore esista realmente
     public boolean ControlloParola() {
         String Parola = new String(ParolaInCorso);
         int index = ListaParole.indexOf(Parola);
@@ -182,10 +199,12 @@ public class GestoreGioco extends Thread {
     }
     
     public void PassoDelTurno(){
-        
+        //genero ed aggiungo il messaggio da inviare
         String m = ComponiMessaggio();
         d.addPacchettoDaInviare(m);
-        Mano.clear();
+        
+        // preparo le variabili per il turno successivo
+        //Mano.clear(); capire se bisogna svuotare anche la mano o le lettere non usate restano
         ParolaInCorso = new char[17];
         PosizioniSullaX = new int[17];
         PosizioniSullaY = new int[17];
@@ -197,6 +216,7 @@ public class GestoreGioco extends Thread {
         numElBonus = 0;
     }
     
+    //scrive il messsaggio che sarà inviato all'avversario
     public String ComponiMessaggio(){
         String s = "P;";
         
