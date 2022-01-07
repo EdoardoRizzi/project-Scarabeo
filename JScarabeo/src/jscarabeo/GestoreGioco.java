@@ -25,13 +25,15 @@ public class GestoreGioco extends Thread {
     private DatiCondivisi d;
     private File FileCSV;
     private List<Lettera> Mano; //tessere in mano durante il turno
+    private List<String> ListaParole;
+    
     private char[] ParolaInCorso;
     private int[] PosizioniSullaX;
     private int[] PosizioniSullaY;
     private int numElParola, numElX, numElY;
     //timer
 
-    public GestoreGioco(DatiCondivisi d) {
+    public GestoreGioco(DatiCondivisi d) throws IOException {
         this.d = d;
         this.FileCSV = new File("ValoreLettera.csv");
         ParolaInCorso = new char[17];
@@ -40,6 +42,7 @@ public class GestoreGioco extends Thread {
         this.numElParola = 0;
         this.numElX = 0;
         this.numElY = 0;
+        caricaListaParole();
     }
 
     public void run() {
@@ -67,6 +70,17 @@ public class GestoreGioco extends Thread {
 
         } catch (FileNotFoundException ex) {
             Logger.getLogger(Lettera.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public void caricaListaParole() throws FileNotFoundException, IOException {
+        File f = new File("Parole.txt");
+        FileReader fr = new FileReader(f);
+        BufferedReader br = new BufferedReader(fr);
+        String linea;
+
+        while ((linea = br.readLine()) != null) { //assegno un valore alla var linea e se è nulla non entro nel ciclo
+            ListaParole.add(linea);
         }
     }
 
@@ -146,7 +160,15 @@ public class GestoreGioco extends Thread {
 
     }
 
-    public void controlloParola() {
-
+    public boolean controlloParola() {
+        String Parola = new String(ParolaInCorso);
+        int index = -1;
+        index = ListaParole.indexOf(Parola);
+        
+        if(index != -1){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
