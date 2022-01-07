@@ -5,6 +5,8 @@
  */
 package jscarabeo;
 
+import java.io.IOException;
+
 /**
  *
  * @author lazzarin_andrea
@@ -17,7 +19,7 @@ public class Tabellone extends javax.swing.JFrame {
     DatiCondivisi d;
     GestoreGioco gg;
 
-    public Tabellone(DatiCondivisi d) {
+    public Tabellone(DatiCondivisi d) throws IOException {
         initComponents();
         this.d = d;
         d.getTg().start();

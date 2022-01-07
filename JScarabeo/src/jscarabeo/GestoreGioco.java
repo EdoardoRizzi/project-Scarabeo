@@ -42,10 +42,16 @@ public class GestoreGioco extends Thread {
         this.numElParola = 0;
         this.numElX = 0;
         this.numElY = 0;
-        caricaListaParole();
+        
     }
 
     public void run() {
+        try {
+            caricaListaParole();
+            
+        } catch (IOException ex) {
+            Logger.getLogger(GestoreGioco.class.getName()).log(Level.SEVERE, null, ex);
+        }
         while (d.isInGame()) {
             Pescaggio();
         }
@@ -162,8 +168,7 @@ public class GestoreGioco extends Thread {
 
     public boolean controlloParola() {
         String Parola = new String(ParolaInCorso);
-        int index = -1;
-        index = ListaParole.indexOf(Parola);
+        int index = ListaParole.indexOf(Parola);
         
         if(index != -1){
             return true;
