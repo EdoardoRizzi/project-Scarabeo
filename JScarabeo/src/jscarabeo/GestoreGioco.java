@@ -30,19 +30,23 @@ public class GestoreGioco extends Thread {
     private char[] ParolaInCorso;
     private int[] PosizioniSullaX;
     private int[] PosizioniSullaY;
-    private int numElParola, numElX, numElY;
+    private int[] Bonus;
+    private int numElParola, numElX, numElY, numElBonus;
     //timer
 
     public GestoreGioco(DatiCondivisi d) throws IOException {
         this.d = d;
         this.FileCSV = new File("ValoreLettera.csv");
+        
         ParolaInCorso = new char[17];
         PosizioniSullaX = new int[17];
         PosizioniSullaY = new int[17];
+        Bonus = new int[17];
+        
         this.numElParola = 0;
         this.numElX = 0;
         this.numElY = 0;
-        
+        this.numElBonus = 0;
     }
 
     public void run() {
@@ -166,7 +170,7 @@ public class GestoreGioco extends Thread {
 
     }
 
-    public boolean controlloParola() {
+    public boolean ControlloParola() {
         String Parola = new String(ParolaInCorso);
         int index = ListaParole.indexOf(Parola);
         
@@ -175,5 +179,31 @@ public class GestoreGioco extends Thread {
         }else{
             return false;
         }
+    }
+    
+    public void PassoDelTurno(){
+        
+        String m = ComponiMessaggio();
+        d.addPacchettoDaInviare(m);
+        Mano.clear();
+        ParolaInCorso = new char[17];
+        PosizioniSullaX = new int[17];
+        PosizioniSullaY = new int[17];
+        Bonus = new int[17];
+        
+        numElParola = 0;
+        numElX = 0;
+        numElY = 0;
+        numElBonus = 0;
+    }
+    
+    public String ComponiMessaggio(){
+        String s = "P;";
+        
+        for(int i=0; i<ParolaInCorso.length;i++){
+            s += ParolaInCorso[i]+"-"+PosizioniSullaX[i]+"-"+PosizioniSullaY+";";
+        }
+        
+        return s;
     }
 }

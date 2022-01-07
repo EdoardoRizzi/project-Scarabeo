@@ -112,16 +112,20 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRichiestaConnessioneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRichiestaConnessioneActionPerformed
-        d.setOpponentIP(txtIndirizzo.getText());
-        c.sendRichiesta();
-        c.start();
-        
-        //aspetto di ricevere il nickname avversario e poi avvio la partita
-        while (d.getOpponentNickname() == "") {
+        try {
+            d.setOpponentIP(txtIndirizzo.getText());
+            c.sendRichiesta();
+            c.start();
+            
+            //aspetto di ricevere il nickname avversario e poi avvio la partita
+            while (d.getOpponentNickname() == "") {
+            }
+            this.setVisible(false);
+            Tabellone t = new Tabellone(d);
+            t.setVisible(true);
+        } catch (IOException ex) {
+            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
         }
-        this.setVisible(false);
-        Tabellone t = new Tabellone(d);
-        t.setVisible(true);
     }//GEN-LAST:event_btnRichiestaConnessioneActionPerformed
 
     /**
