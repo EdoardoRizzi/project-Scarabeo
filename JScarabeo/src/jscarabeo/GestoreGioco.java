@@ -62,6 +62,7 @@ public class GestoreGioco extends Thread {
 
     }
 
+    //Genera il "sacchetto" dal quale si pescano le tessere
     public void generaLista(File f) throws IOException {
         FileReader fr;
         try {
@@ -74,8 +75,13 @@ public class GestoreGioco extends Thread {
                 v = linea.split(";");
                 char let = v[0].charAt(0);
                 int val = Integer.parseInt(v[1]);
+                
                 Lettera l = new Lettera(let, val);
                 d.addLettera(l);
+                //aggiungo le lettere nel sacchato da cui si pesca
+                for (int i = 0; i < Integer.parseInt(v[2]); i++) {
+                    d.addSaccheto(l);
+                }
             }
 
         } catch (FileNotFoundException ex) {
@@ -95,16 +101,16 @@ public class GestoreGioco extends Thread {
     }
 
     public void Pescaggio() {
-        if (d.getListLettere() != null) {
+        if (d.getlistSacchetto() != null) {
 
             Random r = new Random();
             int posLettera;
 
             while (Mano.size() < 8) {
                 posLettera = r.nextInt(131);
-                if (d.getListLettere().get(posLettera) != null) {
-                    Mano.add(d.getListLettere().get(posLettera));
-                    d.removeLettera(d.getListLettere().get(posLettera).getLettera());
+                if (d.getlistSacchetto().get(posLettera) != null) {
+                    Mano.add(d.getlistSacchetto().get(posLettera));
+                    d.removeLettera(d.getlistSacchetto().get(posLettera).getLettera());
                 }
             }
         }
@@ -131,10 +137,11 @@ public class GestoreGioco extends Thread {
     }
 
     //ogni volta che una tessera sarà aggiunta sul tabellone verrà richiamto questo metodo
-    public void ComponiParola(char let, int posX, int posY) {
+    public void ComponiParola(char let, int posX, int posY, int bonus) {
         ParolaInCorso[numElParola] = let;
         PosizioniSullaX[numElX] = posX;
         PosizioniSullaY[numElY] = posY;
+        Bonus[numElBonus] = bonus;
 
         numElParola++;
         numElX++;

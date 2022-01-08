@@ -20,6 +20,7 @@ public class DatiCondivisi {
     private List<Lettera> ListLettere;
     private List<String> listPacchettiRicevuti;
     private List<String> listPacchettiDaInviare;
+    private List<Lettera> listSacchetto;
 
     private int myScore, opponentScore;
     private int myPort, opponentPort;
@@ -34,6 +35,7 @@ public class DatiCondivisi {
         this.matrice = new Lettera[17][17];
         this.listPacchettiRicevuti = new ArrayList<>();
         this.ListLettere = new ArrayList<>();
+        this.listSacchetto = new ArrayList<>();
 
         this.myPort = 666;
         this.opponentPort = 667;
@@ -47,11 +49,15 @@ public class DatiCondivisi {
 
         this.tg = new ThreadGrafico();
     }
-    
-        public void addLettera(Lettera l) {
+
+    public void addLettera(Lettera l) {
         ListLettere.add(l);
     }
-    
+
+    public void addSaccheto(Lettera l) {
+        listSacchetto.add(l);
+    }
+
     public void addPacchettoRicevuto(String pacchetto) {
         this.listPacchettiRicevuti.add(pacchetto);
     }
@@ -64,8 +70,8 @@ public class DatiCondivisi {
         int i = 0;
         int indexTrovato = -1;
         boolean trovato = false;
-        while (!trovato && i < ListLettere.size()) {
-            if (ListLettere.get(i).getLettera() == c) {
+        while (!trovato && i < listSacchetto.size()) {
+            if (listSacchetto.get(i).getLettera() == c) {
                 trovato = true;
                 indexTrovato = i;
             }
@@ -105,6 +111,14 @@ public class DatiCondivisi {
 
     public void setListPacchettiDaInviare(List<String> listPacchettiDaInviare) {
         this.listPacchettiDaInviare = listPacchettiDaInviare;
+    }
+
+    public List<Lettera> getlistSacchetto() {
+        return listSacchetto;
+    }
+
+    public void setlistSacchetto(List<Lettera> listSacchetto) {
+        this.listSacchetto = listSacchetto;
     }
 
     public int getMyScore() {

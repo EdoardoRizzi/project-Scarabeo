@@ -9,14 +9,15 @@ package jscarabeo;
  * @author 39334
  */
 public class Lettera {
+
     private char lettera;
     private int valore;
 
     public Lettera() {
-        this.valore = 0;   
+        this.valore = 0;
     }
-    
-    public Lettera(char l, int v){
+
+    public Lettera(char l, int v) {
         lettera = l;
         valore = v;
     }
