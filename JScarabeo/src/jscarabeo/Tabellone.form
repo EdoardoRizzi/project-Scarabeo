@@ -64,14 +64,14 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jButton318" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton319" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton321" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton315" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton322" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton320" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton317" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton323" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn4" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn5" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn6" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn7" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn0" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btnInvia" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
@@ -968,21 +968,21 @@
                       <Component id="jButton310" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <Component id="jButton323" min="-2" max="-2" attributes="0"/>
+                      <Component id="btn0" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton318" min="-2" max="-2" attributes="0"/>
+                      <Component id="btn1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton321" min="-2" max="-2" attributes="0"/>
+                      <Component id="btn2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton319" min="-2" max="-2" attributes="0"/>
+                      <Component id="btn3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton315" min="-2" max="-2" attributes="0"/>
+                      <Component id="btn4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton322" min="-2" max="-2" attributes="0"/>
+                      <Component id="btn5" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton320" min="-2" max="-2" attributes="0"/>
+                      <Component id="btn6" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton317" min="-2" max="-2" attributes="0"/>
+                      <Component id="btn7" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -5057,7 +5057,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton315">
+    <Component class="javax.swing.JButton" name="btn4">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -5086,7 +5086,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton317">
+    <Component class="javax.swing.JButton" name="btn7">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -5099,7 +5099,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton318">
+    <Component class="javax.swing.JButton" name="btn1">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -5112,7 +5112,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton319">
+    <Component class="javax.swing.JButton" name="btn3">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -5125,7 +5125,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton320">
+    <Component class="javax.swing.JButton" name="btn6">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -5138,7 +5138,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton321">
+    <Component class="javax.swing.JButton" name="btn2">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -5151,7 +5151,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton322">
+    <Component class="javax.swing.JButton" name="btn5">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -5164,7 +5164,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton323">
+    <Component class="javax.swing.JButton" name="btn0">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>

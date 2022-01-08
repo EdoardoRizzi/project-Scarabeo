@@ -24,9 +24,9 @@ public class GestoreGioco extends Thread {
 
     private DatiCondivisi d;
     private File FileCSV;
-    private List<Lettera> Mano; //tessere in mano durante il turno
+    private Lettera[] Mano; //tessere in mano durante il turno
     private List<String> ListaParole;
-    
+
     private char[] ParolaInCorso;
     private int[] PosizioniSullaX;
     private int[] PosizioniSullaY;
@@ -37,12 +37,15 @@ public class GestoreGioco extends Thread {
     public GestoreGioco(DatiCondivisi d) throws IOException {
         this.d = d;
         this.FileCSV = new File("ValoreLettera.csv");
-        
+        this.Mano = new Lettera[8];
+        for (int i = 0; i < Mano.length; i++) {
+            this.Mano[i] = null;
+        }
         ParolaInCorso = new char[17];
         PosizioniSullaX = new int[17];
         PosizioniSullaY = new int[17];
         Bonus = new int[17];
-        
+
         this.numElParola = 0;
         this.numElX = 0;
         this.numElY = 0;
@@ -52,12 +55,16 @@ public class GestoreGioco extends Thread {
     public void run() {
         try {
             caricaListaParole();
-            
+            generaLista(FileCSV);
         } catch (IOException ex) {
             Logger.getLogger(GestoreGioco.class.getName()).log(Level.SEVERE, null, ex);
         }
         while (d.isInGame()) {
-            Pescaggio();
+            if (d.isTurno()) {
+                Pescaggio();
+            }
+            while (d.isTurno()) {
+            }
         }
 
     }
@@ -75,7 +82,7 @@ public class GestoreGioco extends Thread {
                 v = linea.split(";");
                 char let = v[0].charAt(0);
                 int val = Integer.parseInt(v[1]);
-                
+
                 Lettera l = new Lettera(let, val);
                 d.addLettera(l);
                 //aggiungo le lettere nel sacchato da cui si pesca
@@ -106,37 +113,26 @@ public class GestoreGioco extends Thread {
             Random r = new Random();
             int posLettera;
 
-            while (Mano.size() < 8) {
-                posLettera = r.nextInt(131);
-                if (d.getlistSacchetto().get(posLettera) != null) {
-                    Mano.add(d.getlistSacchetto().get(posLettera));
+            for (int i = 0; i < Mano.length; i++) {
+                if (Mano[i] == null) {
+                    posLettera = r.nextInt(d.getlistSacchetto().size());
+                    Mano[i] = d.getlistSacchetto().get(posLettera);
                     d.removeLettera(d.getlistSacchetto().get(posLettera).getLettera());
+                    d.getTabellone().setMano(i, d.getlistSacchetto().get(posLettera));
                 }
             }
         }
     }
-    
+
     public void RimuoviLettereUsate() {
-        int[] posDaRimuovere = new int[8];
-        int numEl = 0;
-
-        if (ParolaInCorso.length != 8) {
-            for (int i = 0; i < Mano.size(); i++) {
-                if (Mano.get(i).getLettera() == ParolaInCorso[i]) {
-                    posDaRimuovere[numEl] = i;
-                    numEl++;
-                }
+        for (int i = 0; i < Mano.length; i++) {
+            if (Mano[i].getLettera() == ParolaInCorso[i]) {
+                Mano[i] = null;
             }
-
-            for (int i = 0; i < posDaRimuovere.length; i++) {
-                Mano.remove(i);
-            }
-        } else {
-            Mano.clear();
         }
     }
-
     //ogni volta che una tessera sarà aggiunta sul tabellone verrà richiamto questo metodo
+
     public void ComponiParola(char let, int posX, int posY, int bonus) {
         ParolaInCorso[numElParola] = let;
         PosizioniSullaX[numElX] = posX;
@@ -165,21 +161,21 @@ public class GestoreGioco extends Thread {
                 posMancante++;
             }
         }
-        
+
         CreaSpazio(posMancante);
-        
+
     }
-    
-    public void CreaSpazio(int pos){
+
+    public void CreaSpazio(int pos) {
         int appoggio, appoggio1;
         if (ParolaVert()) {
-            for(int i = pos-1; i < PosizioniSullaX.length; i++){
+            for (int i = pos - 1; i < PosizioniSullaX.length; i++) {
                 appoggio = PosizioniSullaY[i];
                 appoggio1 = appoggio;
                 PosizioniSullaY[i] = pos;
             }
         } else {
-           
+
         }
     }
 
@@ -197,40 +193,40 @@ public class GestoreGioco extends Thread {
     public boolean ControlloParola() {
         String Parola = new String(ParolaInCorso);
         int index = ListaParole.indexOf(Parola);
-        
-        if(index != -1){
+
+        if (index != -1) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
-    
-    public void PassoDelTurno(){
+
+    public void PassoDelTurno() {
         //genero ed aggiungo il messaggio da inviare
         String m = ComponiMessaggio();
         d.addPacchettoDaInviare(m);
-        
+
         // preparo le variabili per il turno successivo
         //Mano.clear(); capire se bisogna svuotare anche la mano o le lettere non usate restano
         ParolaInCorso = new char[17];
         PosizioniSullaX = new int[17];
         PosizioniSullaY = new int[17];
         Bonus = new int[17];
-        
+
         numElParola = 0;
         numElX = 0;
         numElY = 0;
         numElBonus = 0;
     }
-    
+
     //scrive il messsaggio che sarà inviato all'avversario
-    public String ComponiMessaggio(){
+    public String ComponiMessaggio() {
         String s = "P;";
-        
-        for(int i=0; i<ParolaInCorso.length;i++){
-            s += ParolaInCorso[i]+"-"+PosizioniSullaX[i]+"-"+PosizioniSullaY+";";
+
+        for (int i = 0; i < ParolaInCorso.length; i++) {
+            s += ParolaInCorso[i] + "-" + PosizioniSullaX[i] + "-" + PosizioniSullaY + ";";
         }
-        
+
         return s;
     }
 }

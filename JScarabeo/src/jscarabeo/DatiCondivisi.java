@@ -28,8 +28,7 @@ public class DatiCondivisi {
     private String myNickname, opponentNickname;
 
     private boolean inGame, Turno;
-
-    private ThreadGrafico tg;
+    private Tabellone t;
 
     public DatiCondivisi() throws UnknownHostException {
         this.matrice = new Lettera[17][17];
@@ -47,7 +46,8 @@ public class DatiCondivisi {
         this.inGame = false;
         this.Turno = true;
 
-        this.tg = new ThreadGrafico();
+        this.t = null;
+
     }
 
     public void addLettera(Lettera l) {
@@ -201,11 +201,11 @@ public class DatiCondivisi {
         this.Turno = Turno;
     }
 
-    public ThreadGrafico getTg() {
-        return tg;
+    public void setTabellone(Tabellone t) {
+        this.t = t;
     }
 
-    public void setTg(ThreadGrafico tg) {
-        this.tg = tg;
+    public Tabellone getTabellone() {
+        return t;
     }
 }

@@ -4,6 +4,8 @@
  */
 package jscarabeo;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author 39334
@@ -12,6 +14,7 @@ public class Lettera {
 
     private char lettera;
     private int valore;
+    private ImageIcon img;
 
     public Lettera() {
         this.valore = 0;
@@ -20,6 +23,7 @@ public class Lettera {
     public Lettera(char l, int v) {
         lettera = l;
         valore = v;
+        img = new ImageIcon(lettera + ".png");
     }
 
     public char getLettera() {
@@ -36,5 +40,13 @@ public class Lettera {
 
     public void setValore(int valore) {
         this.valore = valore;
+    }
+
+    public ImageIcon getImg() {
+        return img;
+    }
+
+    public void setImg(ImageIcon img) {
+        this.img = img;
     }
 }
