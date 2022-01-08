@@ -181,12 +181,16 @@ public class GestoreGioco extends Thread {
                 appoggio1 = appoggio;
                 PosizioniSullaY[i] = pos;
             }
+            numElX++;
+            PosizioniSullaX[numElX] = PosizioniSullaX[numElX-1];
         } else {
             for (int i = pos - 1; i < PosizioniSullaY.length; i++) {
                 appoggio = PosizioniSullaX[i];
                 appoggio1 = appoggio;
                 PosizioniSullaX[i] = pos;
             }
+            numElY++;
+            PosizioniSullaX[numElY] = PosizioniSullaX[numElY-1];
         }
     }
 
