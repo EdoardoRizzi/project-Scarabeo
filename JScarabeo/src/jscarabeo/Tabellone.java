@@ -10,6 +10,7 @@ import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
@@ -24,19 +25,25 @@ public class Tabellone extends javax.swing.JFrame {
      */
     DatiCondivisi d;
     GestoreGioco gg;
-
+    String bufferName;
+    ImageIcon bufferImg;
+    
     public Tabellone(DatiCondivisi d) throws IOException {
         initComponents();
+        
+        bufferName = "";
+        bufferImg = null;
+        
         this.d = d;
         d.setTabellone(this);
+        
         nick1.setText(d.getMyNickname());
         nick1.setText(d.getOpponentNickname());
-
+        
         gg = new GestoreGioco(d);
         gg.start();
-
     }
-
+    
     public void setMano(int i, Lettera lettera) {
         switch (i) {
             case 0 -> {
@@ -424,886 +431,1991 @@ public class Tabellone extends javax.swing.JFrame {
         jButton15.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton15.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton15.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton19.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton19.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton19.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton20.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton20.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton20.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton21.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton21.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton21.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton22.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton22.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton22.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton23.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton23.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton23.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton24.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton24.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton24.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton25.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton25.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton25.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton26.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton26.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton26.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton27.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton27.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton27.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton28.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton28.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton28.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton29.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton29.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton29.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton30.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton30.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton30.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton31.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton31.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton31.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton32.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton32.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton32.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton33.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton33.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton33.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton34.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton34.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton34.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton35.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton35.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton35.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton36.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton36.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton36.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton37.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton37.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton37.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton38.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton38.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton38.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton39.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton39.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton39.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton40.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton40.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton40.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton41.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton41.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton41.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton42.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton42.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton42.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton43.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton43.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton43.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton44.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton44.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton44.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton45.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton45.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton45.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton46.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton46.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton46.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton46.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton47.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton47.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton47.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton47.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton48.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton48.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton48.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton49.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton49.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton49.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton50.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton50.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton50.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton51.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton51.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton51.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton52.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton52.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton52.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton53.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton53.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton53.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton53.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton54.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton54.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton54.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton55.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton55.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton55.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton56.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton56.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton56.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton57.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton57.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton57.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton57.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton58.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton58.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton58.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton58.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton59.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton59.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton59.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton59.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton60.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton60.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton60.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton60.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton61.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton61.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton61.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton61.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton62.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton62.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton62.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton62.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton63.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton63.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton63.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton63.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton64.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton64.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton64.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton64.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton65.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton65.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton65.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton65.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton66.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton66.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton66.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton66.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton67.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton67.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton67.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton67.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton68.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton68.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton68.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton68.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton69.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton69.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton69.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton69.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton70.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton70.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton70.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton70.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton71.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton71.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton71.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton71.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton72.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton72.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton72.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton72.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton73.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton73.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton73.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton73.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton74.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton74.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton74.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton74.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton75.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton75.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton75.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton75.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton76.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton76.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton76.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton76.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton77.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton77.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton77.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton77.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton78.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton78.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton78.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton78.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton79.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton79.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton79.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton79.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton80.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton80.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton80.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton80.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton81.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton81.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton81.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton81.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton82.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton82.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton82.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton82.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton83.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton83.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton83.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton83.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton84.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton84.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton84.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton84.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton85.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton85.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton85.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton85.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton86.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton86.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton86.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton86.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton87.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton87.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton87.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton87.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton88.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton88.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton88.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton88.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton89.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton89.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton89.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton89.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton90.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton90.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton90.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton90.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton91.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton91.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton91.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton91.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton92.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton92.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton92.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton92.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton93.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton93.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton93.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton93.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton94.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton94.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton94.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton94.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton95.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton95.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton95.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton95.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton96.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton96.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton96.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton96.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton97.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton97.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton97.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton97.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton98.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton98.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton98.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton98.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton99.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton99.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton99.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton99.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton100.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton100.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton100.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton100.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton101.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton101.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton101.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton101.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton102.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton102.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton102.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton102.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton103.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton103.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton103.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton103.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton104.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton104.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton104.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton104.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton105.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton105.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton105.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton105.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton106.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton106.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton106.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton106.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton107.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton107.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton107.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton107.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton108.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton108.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton108.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton108.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton109.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton109.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton109.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton109.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton110.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton110.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton110.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton110.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton111.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton111.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton111.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton111.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton112.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton112.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton112.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton112.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton113.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton113.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton113.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton113.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton114.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton114.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton114.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton114.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton115.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton115.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton115.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton115.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton116.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton116.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton116.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton116.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton117.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton117.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton117.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton117.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton118.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton118.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton118.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton118.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton119.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton119.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton119.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton119.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton120.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton120.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton120.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton120.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton121.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton121.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton121.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton121.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton122.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton122.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton122.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton122.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton123.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton123.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton123.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton123.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton124.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton124.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton124.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton124.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton125.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton125.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton125.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton125.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton126.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton126.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton126.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton126.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton127.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton127.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton127.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton127.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton128.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton128.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton128.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton128.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton129.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton129.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton129.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton129.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton130.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton130.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton130.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton130.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton131.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton131.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton131.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton131.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton132.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton132.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton132.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton132.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton133.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton133.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton133.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton133.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton134.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton134.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton134.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton134.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton135.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton135.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton135.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton135.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton136.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton136.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton136.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton136.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton137.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton137.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton137.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton137.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton138.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton138.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton138.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton138.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton139.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton139.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton139.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton139.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton140.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton140.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton140.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton140.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton141.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton141.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton141.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton141.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton142.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton142.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton142.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton142.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton143.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton143.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton143.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton143.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton144.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton144.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton144.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton144.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton145.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton145.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton145.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton145.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton146.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton146.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton146.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton146.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton147.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton147.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton147.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton147.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton148.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton148.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton148.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton148.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton149.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton149.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton149.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton149.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton150.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton150.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton150.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton150.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton151.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton151.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton151.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton151.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton152.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton152.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton152.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton152.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton153.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton153.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton153.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton153.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton154.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton154.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton154.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton154.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton155.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton155.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton155.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton155.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton156.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton156.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton156.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton156.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton157.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton157.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton157.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton157.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton158.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton158.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton158.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton158.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton159.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton159.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton159.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton159.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton160.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton160.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton160.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton160.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton161.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton161.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton161.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton161.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton162.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton162.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton162.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton162.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton163.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton163.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton163.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton163.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton164.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton164.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton164.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton164.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton165.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton165.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton165.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton165.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton166.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton166.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton166.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton166.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton167.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton167.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton167.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton167.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton168.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton168.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton168.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton168.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton169.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton169.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton169.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton169.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton170.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton170.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton170.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton170.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton171.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton171.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton171.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton171.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton172.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton172.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton172.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton172.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton173.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton173.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton173.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton173.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton174.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton174.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton174.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton174.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton175.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton175.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton175.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton175.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton176.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton176.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton176.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton176.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton177.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton177.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton177.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton177.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton178.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton178.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton178.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton178.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton179.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton179.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton179.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton179.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton180.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton180.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton180.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton180.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton181.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton181.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton181.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton181.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton182.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton182.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton182.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton182.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton183.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton183.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton183.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton183.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton184.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton184.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton184.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton184.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton185.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton185.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton185.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton185.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton186.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton186.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton186.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton186.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton187.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton187.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton187.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton187.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton188.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton188.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton188.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton188.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton189.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton189.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton189.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton189.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton190.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton190.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton190.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton190.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton191.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton191.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton191.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton191.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton192.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton192.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton192.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton192.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton193.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton193.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton193.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton193.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton194.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton194.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton194.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton194.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton195.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton195.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton195.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton195.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton196.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton196.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton196.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton196.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton197.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton197.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton197.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton197.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton198.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton198.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton198.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton198.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton199.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton199.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton199.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton199.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton200.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton200.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton200.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton200.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton201.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton201.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton201.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton201.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton202.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton202.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton202.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton202.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton203.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton203.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton203.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton203.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton204.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton204.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton204.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton204.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton205.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton205.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton205.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton205.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton206.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton206.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton206.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton206.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton207.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton207.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton207.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton207.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton208.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton208.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton208.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton208.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton209.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton209.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton209.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton209.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton210.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton210.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton210.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton210.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton211.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton211.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton211.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton211.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton212.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton212.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton212.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton212.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton213.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton213.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton213.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton213.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton214.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton214.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton214.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton214.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton215.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton215.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton215.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton215.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton216.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton216.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton216.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton216.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton217.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton217.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton217.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton217.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton218.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton218.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton218.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton218.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton219.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton219.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton219.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton219.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton220.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton220.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton220.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton220.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton221.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton221.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton221.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton221.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton222.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton222.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton222.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton222.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton223.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton223.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton223.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton223.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton224.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton224.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton224.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton224.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton225.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton225.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton225.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton225.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton226.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton226.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton226.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton226.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton227.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton227.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton227.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton227.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton228.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton228.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton228.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton228.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton229.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton229.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton229.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton229.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton230.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton230.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton230.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton230.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton231.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton231.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton231.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton231.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton232.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton232.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton232.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton232.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton233.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton233.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton233.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton233.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton234.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton234.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton234.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton234.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton235.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton235.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton235.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton235.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton236.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton236.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton236.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton236.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton237.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton237.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton237.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton237.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton238.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton238.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton238.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton238.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jLabel5.setFont(new java.awt.Font("MV Boli", 0, 36)); // NOI18N
         jLabel5.setText("SCARABEO");
@@ -1311,274 +2423,614 @@ public class Tabellone extends javax.swing.JFrame {
         jButton239.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton239.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton239.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton239.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton240.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton240.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton240.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton240.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton241.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton241.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton241.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton241.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton242.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton242.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton242.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton242.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton243.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton243.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton243.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton243.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton244.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton244.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton244.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton244.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton245.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton245.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton245.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton245.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton246.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton246.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton246.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton246.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton247.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton247.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton247.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton247.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton248.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton248.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton248.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton248.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton249.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton249.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton249.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton249.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton250.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton250.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton250.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton250.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton251.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton251.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton251.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton251.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton252.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton252.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton252.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton252.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton253.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton253.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton253.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton253.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton254.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton254.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton254.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton254.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton255.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton255.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton255.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton255.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton256.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton256.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton256.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton256.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton257.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton257.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton257.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton257.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton258.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton258.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton258.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton258.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton259.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton259.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton259.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton259.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton260.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton260.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton260.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton260.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton261.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton261.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton261.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton261.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton262.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton262.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton262.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton262.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton263.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton263.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton263.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton263.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton264.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton264.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton264.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton264.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton265.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton265.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton265.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton265.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton266.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton266.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton266.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton266.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton267.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton267.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton267.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton267.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton268.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton268.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton268.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton268.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton269.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton269.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton269.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton269.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton270.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton270.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton270.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton270.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton271.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton271.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton271.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton271.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton272.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton272.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton272.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton272.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton273.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton273.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton273.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton273.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton274.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton274.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton274.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton274.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton275.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton275.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton275.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton275.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton276.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton276.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton276.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton276.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton277.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton277.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton277.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton277.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton278.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton278.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton278.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton278.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton279.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton279.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton279.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton279.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton280.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton280.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton280.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton280.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton281.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton281.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton281.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton281.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton282.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton282.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton282.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton282.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton283.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton283.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton283.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton283.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton284.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton284.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton284.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton284.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton285.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton285.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton285.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton285.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton286.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton286.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton286.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton286.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton287.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton287.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton287.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton287.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton288.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton288.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton288.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton288.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton289.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton289.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton289.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton289.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton290.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton290.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton290.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton290.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton291.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton291.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton291.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton291.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton292.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton292.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton292.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton292.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton293.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton293.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton293.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton293.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton294.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton294.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton294.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton294.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton295.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton295.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton295.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton295.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton296.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton296.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton296.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton296.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton297.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton297.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton297.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton297.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton298.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton298.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton298.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton298.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton299.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton299.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton299.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton299.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton300.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton300.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton300.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton300.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton301.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton301.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton301.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton301.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton302.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton302.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton302.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton302.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton303.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton303.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton303.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton303.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton304.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton304.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton304.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton304.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton305.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton305.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton305.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton305.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton306.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton306.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton306.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton306.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         btnInvia.setText("INVIA");
         btnInvia.addActionListener(new java.awt.event.ActionListener() {
@@ -1593,6 +3045,7 @@ public class Tabellone extends javax.swing.JFrame {
         jButton307.setPreferredSize(new java.awt.Dimension(40, 40));
 
         jButton308.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jscarabeo/images/tassello.png"))); // NOI18N
+        jButton308.setToolTipText("");
         jButton308.setMaximumSize(new java.awt.Dimension(40, 40));
         jButton308.setMinimumSize(new java.awt.Dimension(40, 40));
         jButton308.setPreferredSize(new java.awt.Dimension(40, 40));
@@ -2742,6 +4195,23 @@ public class Tabellone extends javax.swing.JFrame {
         gg.resa();
     }//GEN-LAST:event_btnResaActionPerformed
 
+    private void jButtonsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonsActionPerformed
+        JButton b = (JButton) evt.getSource();
+        //salvo in un buffer immagine e nome
+        if (bufferName == "" && bufferImg == null) {
+            bufferName = b.getToolTipText();
+            bufferImg = (ImageIcon) b.getIcon();
+            b.setToolTipText("");
+            b.setIcon(new ImageIcon("tassello.png"));
+        } else {
+            //sposto e svuoto buffer
+            b.setToolTipText(bufferName);
+            b.setIcon(bufferImg);
+            bufferName = "";
+            bufferImg = null;
+        }
+    }//GEN-LAST:event_jButtonsActionPerformed
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -2763,14 +4233,14 @@ public class Tabellone extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(() -> {
             try {
                 new Tabellone(new DatiCondivisi()).setVisible(true);
-
+                
             } catch (UnknownHostException | SocketException ex) {
                 Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
             } catch (IOException ex) {
                 Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
             }
         });
-
+        
     }
     /**
      * @param args the command line arguments
