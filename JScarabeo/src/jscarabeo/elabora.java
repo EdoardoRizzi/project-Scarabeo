@@ -31,6 +31,7 @@ public class Elabora extends Thread {
                         d.setInGame(true);
                     }
                     case "P" -> {
+                        d.setTurno(true);
                     }
                     case "D" -> d.setInGame(false);
                 }

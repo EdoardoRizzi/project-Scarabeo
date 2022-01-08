@@ -31,7 +31,6 @@ public class Login extends javax.swing.JFrame {
         c = new Client(d);
         s = new Server(d);
         s.start();
-        initComponents();
     }
 
     /**

@@ -11,6 +11,7 @@ import java.net.UnknownHostException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -398,6 +399,7 @@ public class Tabellone extends javax.swing.JFrame {
         btn5 = new javax.swing.JButton();
         btn0 = new javax.swing.JButton();
         btnRipesca = new javax.swing.JButton();
+        btnResa = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1070, 900));
@@ -1665,6 +1667,13 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
+        btnResa.setText("RESA");
+        btnResa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnResaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -2315,7 +2324,10 @@ public class Tabellone extends javax.swing.JFrame {
                                         .addComponent(jButton309, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jButton310, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(jButton316, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addContainerGap())))
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnResa)
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton100, jButton101, jButton102, jButton103, jButton104, jButton105, jButton106, jButton107, jButton108, jButton109, jButton110, jButton111, jButton112, jButton113, jButton114, jButton115, jButton116, jButton117, jButton118, jButton119, jButton120, jButton121, jButton122, jButton123, jButton124, jButton125, jButton126, jButton127, jButton128, jButton129, jButton130, jButton131, jButton132, jButton133, jButton134, jButton135, jButton136, jButton137, jButton138, jButton139, jButton140, jButton141, jButton142, jButton143, jButton144, jButton145, jButton146, jButton147, jButton148, jButton149, jButton15, jButton150, jButton151, jButton152, jButton153, jButton154, jButton155, jButton156, jButton157, jButton158, jButton159, jButton160, jButton161, jButton162, jButton163, jButton164, jButton165, jButton166, jButton167, jButton168, jButton169, jButton170, jButton171, jButton172, jButton173, jButton174, jButton175, jButton176, jButton177, jButton178, jButton179, jButton180, jButton181, jButton182, jButton183, jButton184, jButton185, jButton186, jButton187, jButton188, jButton189, jButton19, jButton190, jButton191, jButton192, jButton193, jButton194, jButton195, jButton196, jButton197, jButton198, jButton199, jButton20, jButton200, jButton201, jButton202, jButton203, jButton204, jButton205, jButton206, jButton207, jButton208, jButton209, jButton21, jButton210, jButton211, jButton212, jButton213, jButton214, jButton215, jButton216, jButton217, jButton218, jButton219, jButton22, jButton220, jButton221, jButton222, jButton223, jButton224, jButton225, jButton226, jButton227, jButton228, jButton229, jButton23, jButton230, jButton231, jButton232, jButton233, jButton234, jButton235, jButton236, jButton237, jButton238, jButton239, jButton24, jButton240, jButton241, jButton242, jButton243, jButton244, jButton245, jButton246, jButton247, jButton248, jButton249, jButton25, jButton250, jButton251, jButton252, jButton253, jButton254, jButton255, jButton256, jButton257, jButton258, jButton259, jButton26, jButton260, jButton261, jButton262, jButton263, jButton264, jButton265, jButton266, jButton267, jButton268, jButton269, jButton27, jButton270, jButton271, jButton272, jButton273, jButton274, jButton275, jButton276, jButton277, jButton278, jButton279, jButton28, jButton280, jButton281, jButton282, jButton283, jButton284, jButton285, jButton286, jButton287, jButton288, jButton289, jButton29, jButton290, jButton291, jButton292, jButton293, jButton294, jButton295, jButton296, jButton297, jButton298, jButton299, jButton30, jButton300, jButton301, jButton302, jButton303, jButton304, jButton305, jButton306, jButton31, jButton32, jButton33, jButton34, jButton35, jButton36, jButton37, jButton38, jButton39, jButton40, jButton41, jButton42, jButton43, jButton44, jButton45, jButton46, jButton47, jButton48, jButton49, jButton50, jButton51, jButton52, jButton53, jButton54, jButton55, jButton56, jButton57, jButton58, jButton59, jButton60, jButton61, jButton62, jButton63, jButton64, jButton65, jButton66, jButton67, jButton68, jButton69, jButton70, jButton71, jButton72, jButton73, jButton74, jButton75, jButton76, jButton77, jButton78, jButton79, jButton80, jButton81, jButton82, jButton83, jButton84, jButton85, jButton86, jButton87, jButton88, jButton89, jButton90, jButton91, jButton92, jButton93, jButton94, jButton95, jButton96, jButton97, jButton98, jButton99});
@@ -2703,7 +2715,9 @@ public class Tabellone extends javax.swing.JFrame {
                         .addComponent(btnInvia)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnRipesca)))
-                .addContainerGap(62, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addComponent(btnResa)
+                .addContainerGap())
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton100, jButton101, jButton102, jButton103, jButton104, jButton105, jButton106, jButton107, jButton108, jButton109, jButton110, jButton111, jButton112, jButton113, jButton114, jButton115, jButton116, jButton117, jButton118, jButton119, jButton120, jButton121, jButton122, jButton123, jButton124, jButton125, jButton126, jButton127, jButton128, jButton129, jButton130, jButton131, jButton132, jButton133, jButton134, jButton135, jButton136, jButton137, jButton138, jButton139, jButton140, jButton141, jButton142, jButton143, jButton144, jButton145, jButton146, jButton147, jButton148, jButton149, jButton15, jButton150, jButton151, jButton152, jButton153, jButton154, jButton155, jButton156, jButton157, jButton158, jButton159, jButton160, jButton161, jButton162, jButton163, jButton164, jButton165, jButton166, jButton167, jButton168, jButton169, jButton170, jButton171, jButton172, jButton173, jButton174, jButton175, jButton176, jButton177, jButton178, jButton179, jButton180, jButton181, jButton182, jButton183, jButton184, jButton185, jButton186, jButton187, jButton188, jButton189, jButton19, jButton190, jButton191, jButton192, jButton193, jButton194, jButton195, jButton196, jButton197, jButton198, jButton199, jButton20, jButton200, jButton201, jButton202, jButton203, jButton204, jButton205, jButton206, jButton207, jButton208, jButton209, jButton21, jButton210, jButton211, jButton212, jButton213, jButton214, jButton215, jButton216, jButton217, jButton218, jButton219, jButton22, jButton220, jButton221, jButton222, jButton223, jButton224, jButton225, jButton226, jButton227, jButton228, jButton229, jButton23, jButton230, jButton231, jButton232, jButton233, jButton234, jButton235, jButton236, jButton237, jButton238, jButton239, jButton24, jButton240, jButton241, jButton242, jButton243, jButton244, jButton245, jButton246, jButton247, jButton248, jButton249, jButton25, jButton250, jButton251, jButton252, jButton253, jButton254, jButton255, jButton256, jButton257, jButton258, jButton259, jButton26, jButton260, jButton261, jButton262, jButton263, jButton264, jButton265, jButton266, jButton267, jButton268, jButton269, jButton27, jButton270, jButton271, jButton272, jButton273, jButton274, jButton275, jButton276, jButton277, jButton278, jButton279, jButton28, jButton280, jButton281, jButton282, jButton283, jButton284, jButton285, jButton286, jButton287, jButton288, jButton289, jButton29, jButton290, jButton291, jButton292, jButton293, jButton294, jButton295, jButton296, jButton297, jButton298, jButton299, jButton30, jButton300, jButton301, jButton302, jButton303, jButton304, jButton305, jButton306, jButton31, jButton32, jButton33, jButton34, jButton35, jButton36, jButton37, jButton38, jButton39, jButton40, jButton41, jButton42, jButton43, jButton44, jButton45, jButton46, jButton47, jButton48, jButton49, jButton50, jButton51, jButton52, jButton53, jButton54, jButton55, jButton56, jButton57, jButton58, jButton59, jButton60, jButton61, jButton62, jButton63, jButton64, jButton65, jButton66, jButton67, jButton68, jButton69, jButton70, jButton71, jButton72, jButton73, jButton74, jButton75, jButton76, jButton77, jButton78, jButton79, jButton80, jButton81, jButton82, jButton83, jButton84, jButton85, jButton86, jButton87, jButton88, jButton89, jButton90, jButton91, jButton92, jButton93, jButton94, jButton95, jButton96, jButton97, jButton98, jButton99});
@@ -2722,6 +2736,11 @@ public class Tabellone extends javax.swing.JFrame {
     private void btnRipescaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRipescaActionPerformed
         gg.ManoDaRifare();
     }//GEN-LAST:event_btnRipescaActionPerformed
+
+    private void btnResaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResaActionPerformed
+        JOptionPane.showMessageDialog(rootPane, "TI SEI RITIRATO, SCONFITTA!");
+        gg.resa();
+    }//GEN-LAST:event_btnResaActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -2767,6 +2786,7 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btn6;
     private javax.swing.JButton btn7;
     private javax.swing.JButton btnInvia;
+    private javax.swing.JButton btnResa;
     private javax.swing.JButton btnRipesca;
     private javax.swing.JButton jButton100;
     private javax.swing.JButton jButton101;

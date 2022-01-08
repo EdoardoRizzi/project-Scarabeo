@@ -48,6 +48,7 @@ public class Client extends Thread {
             if (d.getListPacchettiRicevuti().size() > conta) {
                 out.println(d.getListPacchettiDaInviare().get(conta));
                 conta++;
+                d.setTurno(false);
             }
         }
     }
