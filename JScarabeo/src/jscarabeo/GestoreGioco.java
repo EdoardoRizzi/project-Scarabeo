@@ -65,8 +65,15 @@ public class GestoreGioco extends Thread {
             }
             while (d.isTurno()) {
             }
+            if (numElParola > 0) {
+                CercaLettera(); //trova la lettera mancante
+                if (ControlloParola()) { //Controlla che esista
+                    //calcolaPunteggio();    //Calcola punteggio
+                    RimuoviLettereUsate();
+                }
+            }
+            PassoDelTurno();
         }
-
     }
 
     //Genera il "sacchetto" dal quale si pescano le tessere
@@ -175,7 +182,11 @@ public class GestoreGioco extends Thread {
                 PosizioniSullaY[i] = pos;
             }
         } else {
-
+            for (int i = pos - 1; i < PosizioniSullaY.length; i++) {
+                appoggio = PosizioniSullaX[i];
+                appoggio1 = appoggio;
+                PosizioniSullaX[i] = pos;
+            }
         }
     }
 
@@ -229,9 +240,9 @@ public class GestoreGioco extends Thread {
 
         return s;
     }
-    
+
     //in caso che con le lettere in mano non riesca a comporre nessuna parola
-    public void ManoDaRifare(){
+    public void ManoDaRifare() {
         for (int i = 0; i < Mano.length; i++) {
             d.addSaccheto(Mano[i]);
             Mano[i] = null;

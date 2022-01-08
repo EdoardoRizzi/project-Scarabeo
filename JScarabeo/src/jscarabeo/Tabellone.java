@@ -2720,7 +2720,7 @@ public class Tabellone extends javax.swing.JFrame {
     }//GEN-LAST:event_btnInviaActionPerformed
 
     private void btnRipescaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRipescaActionPerformed
-        // TODO add your handling code here:
+        gg.ManoDaRifare();
     }//GEN-LAST:event_btnRipescaActionPerformed
 
     public static void main(String args[]) {
