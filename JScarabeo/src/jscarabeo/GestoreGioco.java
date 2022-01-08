@@ -229,4 +229,14 @@ public class GestoreGioco extends Thread {
 
         return s;
     }
+    
+    //in caso che con le lettere in mano non riesca a comporre nessuna parola
+    public void ManoDaRifare(){
+        for (int i = 0; i < Mano.length; i++) {
+            d.addSaccheto(Mano[i]);
+            Mano[i] = null;
+        }
+        Pescaggio();
+    }
+
 }
