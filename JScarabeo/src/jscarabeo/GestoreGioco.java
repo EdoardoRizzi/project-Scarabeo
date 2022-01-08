@@ -42,14 +42,11 @@ public class GestoreGioco extends Thread {
         }
         this.ListaParole = new ArrayList<>();
         ParolaInCorso = new char[17];
-        PosizioniSullaX = new int[17];
+        PosizioniSullaX = new int[17];      
         PosizioniSullaY = new int[17];
         Bonus = new int[17];
 
-        this.numElParola = 0;
-        this.numElX = 0;
-        this.numElY = 0;
-        this.numElBonus = 0;
+        PulisciVettori();
     }
 
     public void run() {
@@ -174,24 +171,57 @@ public class GestoreGioco extends Thread {
 
     }
 
-    public void CreaSpazio(int pos) {
-        int appoggio, appoggio1;
+      public void CreaSpazio(int pos) {
+        //inserisco la lettera mancante nel vettore ParolaInCorso
+        Lettera[][] CopiaMatrice = d.getMatrice();
+        char sposta = 'y', sposta1 = 'y';
+
+        for (int i = pos; i < numElParola + 1; i++) {
+            if (i == pos) {
+                sposta = ParolaInCorso[i];
+                if (ParolaVert()) {
+                    ParolaInCorso[i] = CopiaMatrice[pos][PosizioniSullaX[0]].getLettera();
+                } else {
+                    ParolaInCorso[i] = CopiaMatrice[pos][PosizioniSullaY[0]].getLettera();
+                }
+            }
+            if (ParolaInCorso[i + 1] == 'y') {
+                sposta1 = ParolaInCorso[i + 1];
+            }
+            ParolaInCorso[i + 1] = sposta;
+            sposta = sposta1;
+        }
+
+        int appoggio = 18, appoggio1 = 18;
         if (ParolaVert()) {
-            for (int i = pos - 1; i < PosizioniSullaX.length; i++) {
-                appoggio = PosizioniSullaY[i];
-                appoggio1 = appoggio;
-                PosizioniSullaY[i] = pos;
+            for (int i = pos; i < numElX + 1; i++) {
+                if (i == pos) {
+                    appoggio = PosizioniSullaY[i];
+                    PosizioniSullaY[i] = pos;
+                }
+                if (PosizioniSullaY[i + 1] == 18) {
+                    appoggio1 = PosizioniSullaY[i + 1];
+                }
+                PosizioniSullaY[i + 1] = appoggio;
+                appoggio = appoggio1;
+
             }
             numElX++;
             PosizioniSullaX[numElX] = PosizioniSullaX[numElX - 1];
         } else {
-            for (int i = pos - 1; i < PosizioniSullaY.length; i++) {
-                appoggio = PosizioniSullaX[i];
-                appoggio1 = appoggio;
-                PosizioniSullaX[i] = pos;
+            for (int i = pos; i < numElY + 1; i++) {
+                if (i == pos) {
+                    appoggio = PosizioniSullaX[i];
+                    PosizioniSullaX[i] = pos;
+                }
+                if (PosizioniSullaX[i + 1] == 18) {
+                    appoggio1 = PosizioniSullaX[i + 1];
+                }
+                PosizioniSullaX[i + 1] = appoggio;
+                appoggio = appoggio1;
             }
+            PosizioniSullaY[numElY] = PosizioniSullaY[numElY - 1];
             numElY++;
-            PosizioniSullaX[numElY] = PosizioniSullaX[numElY - 1];
         }
     }
 
@@ -224,10 +254,25 @@ public class GestoreGioco extends Thread {
 
         // preparo le variabili per il turno successivo
         //Mano.clear(); capire se bisogna svuotare anche la mano o le lettere non usate restano
-        ParolaInCorso = new char[17];
-        PosizioniSullaX = new int[17];
-        PosizioniSullaY = new int[17];
-        Bonus = new int[17];
+        PulisciVettori();
+    }
+    
+    public void PulisciVettori(){
+        for (int i = 0; i < Mano.length; i++) {
+            Mano[i] = null;
+        }
+        for (int i = 0; i < ParolaInCorso.length; i++) {
+            ParolaInCorso[i] = 'y'; //'y' = null perché è un valore che non verrà mai usato
+        }
+        for (int i = 0; i < PosizioniSullaX.length; i++) {
+            PosizioniSullaX[i] = 18; //18 = null perché è un valore che non verrà mai usato
+        }
+        for (int i = 0; i < PosizioniSullaY.length; i++) {
+            PosizioniSullaY[i] = 18; //18 = null perché è un valore che non verrà mai usato
+        }
+        for (int i = 0; i < Bonus.length; i++) {
+            Bonus[i] = 18; //18 = null perché è un valore che non verrà mai usato
+        }
 
         numElParola = 0;
         numElX = 0;
