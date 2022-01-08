@@ -2738,7 +2738,7 @@ public class Tabellone extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRipescaActionPerformed
 
     private void btnResaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResaActionPerformed
-        JOptionPane.showMessageDialog(rootPane, "TI SEI RITIRATO, SCONFITTA!");
+        JOptionPane.showMessageDialog(rootPane, "TI SEI RITIRATO!");
         gg.resa();
     }//GEN-LAST:event_btnResaActionPerformed
 

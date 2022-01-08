@@ -4,17 +4,16 @@
  */
 package jscarabeo;
 
-import java.awt.event.ActionListener;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.Timer;
 
 /**
  *
@@ -41,6 +40,7 @@ public class GestoreGioco extends Thread {
         for (int i = 0; i < Mano.length; i++) {
             this.Mano[i] = null;
         }
+        this.ListaParole = new ArrayList<>();
         ParolaInCorso = new char[17];
         PosizioniSullaX = new int[17];
         PosizioniSullaY = new int[17];
@@ -74,6 +74,7 @@ public class GestoreGioco extends Thread {
             }
             PassoDelTurno();
         }
+        //vittoria/sconfitta
     }
 
     //Genera il "sacchetto" dal quale si pescano le tessere
@@ -182,7 +183,7 @@ public class GestoreGioco extends Thread {
                 PosizioniSullaY[i] = pos;
             }
             numElX++;
-            PosizioniSullaX[numElX] = PosizioniSullaX[numElX-1];
+            PosizioniSullaX[numElX] = PosizioniSullaX[numElX - 1];
         } else {
             for (int i = pos - 1; i < PosizioniSullaY.length; i++) {
                 appoggio = PosizioniSullaX[i];
@@ -190,7 +191,7 @@ public class GestoreGioco extends Thread {
                 PosizioniSullaX[i] = pos;
             }
             numElY++;
-            PosizioniSullaX[numElY] = PosizioniSullaX[numElY-1];
+            PosizioniSullaX[numElY] = PosizioniSullaX[numElY - 1];
         }
     }
 
@@ -252,6 +253,12 @@ public class GestoreGioco extends Thread {
             Mano[i] = null;
         }
         Pescaggio();
+
+        //messaggi lin lout
+    }
+
+    public void resa() {
+        d.setInGame(false);
     }
 
 }
