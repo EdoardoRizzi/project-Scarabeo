@@ -35,7 +35,7 @@ public class GestoreGioco extends Thread {
 
     public GestoreGioco(DatiCondivisi d) throws IOException {
         this.d = d;
-        this.FileCSV = new File("ValoreLettera.csv");
+        this.FileCSV = new File("LettereValore.csv");
         this.Mano = new Lettera[8];
         for (int i = 0; i < Mano.length; i++) {
             this.Mano[i] = null;
@@ -51,8 +51,8 @@ public class GestoreGioco extends Thread {
 
     public void run() {
         try {
-            //caricaListaParole();
             generaLista(FileCSV);
+            //caricaListaParole();
         } catch (IOException ex) {
             Logger.getLogger(GestoreGioco.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -63,12 +63,13 @@ public class GestoreGioco extends Thread {
             while (d.isTurno()) {
             }
             if (numElParola > 0) {
-                CercaLettera(); //trova la lettera mancante
-                if (ControlloParola()) { //Controlla che esista
+                if (CercaLettera()) {//trova la lettera mancante
+                       if (ControlloParola()) { //Controlla che esista
                     //calcolaPunteggio();    //Calcola punteggio
                     RimuoviLettereUsate();
                 } else {
                     //togli lettere messe nel tabellone e rimettile nella mano
+                }
                 }
             }
             PassoDelTurno();
@@ -151,10 +152,11 @@ public class GestoreGioco extends Thread {
         numElY++;
     }
 
-    public void CercaLettera() {
+    public boolean CercaLettera() {
         int posMancante = 0;
         int[] Copia;
         boolean Sent = true;
+        boolean incrocia = false;
 
         if (ParolaVert()) {
             Copia = PosizioniSullaX;
@@ -165,12 +167,48 @@ public class GestoreGioco extends Thread {
         while (Sent || posMancante < Copia.length) {
             if (Copia[posMancante] + 1 != Copia[posMancante + 1]) {
                 Sent = false;
+                incrocia = true;
                 posMancante++;
             }
         }
 
-        CreaSpazio(posMancante);
+        //controllo che la lettera che interseca sia l'ultima o la prima lettera che compone la parola
+        Lettera[][] CopiaMatrice = d.getMatrice();
+        boolean ultimaLettera = false;
+        //controllo se è l'ulitma
+        if (posMancante == numElParola - 1) {
+            if (ParolaVert()) {
+                if (CopiaMatrice[PosizioniSullaX[0]][posMancante] != null) {//se è presente una lettera in quella posizione allora esiste
+                    ultimaLettera = true;
+                    incrocia = true;
+                }
+            } else {
+                if (CopiaMatrice[posMancante][PosizioniSullaY[0]] != null) {
+                    ultimaLettera = true;
+                    incrocia = true;
+                }
+            }
+        }
+        //se non è ancora stata trovata la lettera vuol dire che è la prima
+        if (!ultimaLettera) {
+            if (ParolaVert()) {
+                if (CopiaMatrice[PosizioniSullaX[0]][PosizioniSullaY[0] - 1] != null) {//se è presente una lettera in quella posizione allora esiste
+                    posMancante = PosizioniSullaY[0] - 1;
+                    incrocia = true;
+                }
+            } else {
+                if (CopiaMatrice[PosizioniSullaX[0] - 1][PosizioniSullaY[0]] != null) {
+                    posMancante = PosizioniSullaX[0] - 1;
+                    incrocia = true;
+                }
 
+            }
+        }
+
+        if (incrocia) {
+            CreaSpazio(posMancante);
+        }
+        return incrocia;
     }
 
     public void CreaSpazio(int pos) {
@@ -243,9 +281,16 @@ public class GestoreGioco extends Thread {
         int index = ListaParole.indexOf(Parola);
 
         if (index != -1) {
+            AggiungiParolaAllaMatrice();
             return true;
         } else {
             return false;
+        }
+    }
+
+    public void AggiungiParolaAllaMatrice() {
+        for (int i = 0; i < numElParola; i++) {
+            d.addLetteraMatrice(ParolaInCorso[i], PosizioniSullaX[i], PosizioniSullaY[i]);
         }
     }
 

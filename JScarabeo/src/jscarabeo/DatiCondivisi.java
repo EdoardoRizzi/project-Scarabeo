@@ -86,6 +86,23 @@ public class DatiCondivisi {
             ListLettere.remove(i);
         }
     }
+    
+    public Lettera cercaLettera(char c){
+        int i = 0;
+        int indexTrovato = -1;
+        boolean trovato = false;
+        Lettera l = new Lettera();
+        while (!trovato && i < listSacchetto.size()) {
+            if (listSacchetto.get(i).getLettera() == c) {
+                trovato = true;
+                indexTrovato = i;
+            }
+        }
+        if (indexTrovato != -1) {
+            l = ListLettere.get(i);
+        }
+        return l;
+    }
 
     public Lettera[][] getMatrice() {
         return matrice;
@@ -93,6 +110,15 @@ public class DatiCondivisi {
 
     public void setMatrice(Lettera[][] matrice) {
         this.matrice = matrice;
+    }
+    
+      public void addLetteraMatrice(char c, int x, int y){
+        Lettera l;
+        l = cercaLettera(c);
+        
+        if(l.getValore() == 0){//se il valore è zero la lettera non esiste
+             matrice[x][y] = l;
+        }   
     }
 
     public List<Lettera> getListLettere() {
