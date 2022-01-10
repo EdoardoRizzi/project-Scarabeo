@@ -10,7 +10,6 @@ import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -23,13 +22,19 @@ public class Login extends javax.swing.JFrame {
      *
      * @throws java.net.UnknownHostException
      */
-    DatiCondivisi d = new DatiCondivisi();
+    DatiCondivisi d;
     Server s;
     Client c;
+    Elabora e;
 
     public Login() throws UnknownHostException, SocketException, IOException {
+        initComponents();
+        d = new DatiCondivisi();
         c = new Client(d);
         s = new Server(d);
+        e = new Elabora(d);
+
+        e.start();
         s.start();
     }
 
@@ -112,17 +117,19 @@ public class Login extends javax.swing.JFrame {
 
     private void btnRichiestaConnessioneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRichiestaConnessioneActionPerformed
         try {
+            d.setMyNickname(txtNickname.getText());
             d.setOpponentIP(txtIndirizzo.getText());
+            
             c.sendRichiesta();
             c.start();
+
             
-            //aspetto di ricevere il nickname avversario e poi avvio la partita
-            while (d.getOpponentNickname() == "") {
-            }
             this.setVisible(false);
             Tabellone t = new Tabellone(d);
             t.setVisible(true);
         } catch (IOException ex) {
+            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InterruptedException ex) {
             Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_btnRichiestaConnessioneActionPerformed
@@ -151,14 +158,12 @@ public class Login extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(() -> {
             try {
                 new Login().setVisible(true);
-
             } catch (UnknownHostException | SocketException ex) {
                 Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
             } catch (IOException ex) {
                 Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
             }
         });
-
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

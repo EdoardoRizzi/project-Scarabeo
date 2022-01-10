@@ -42,7 +42,7 @@ public class GestoreGioco extends Thread {
         }
         this.ListaParole = new ArrayList<>();
         ParolaInCorso = new char[17];
-        PosizioniSullaX = new int[17];      
+        PosizioniSullaX = new int[17];
         PosizioniSullaY = new int[17];
         Bonus = new int[17];
 
@@ -51,7 +51,7 @@ public class GestoreGioco extends Thread {
 
     public void run() {
         try {
-            caricaListaParole();
+            //caricaListaParole();
             generaLista(FileCSV);
         } catch (IOException ex) {
             Logger.getLogger(GestoreGioco.class.getName()).log(Level.SEVERE, null, ex);
@@ -67,6 +67,8 @@ public class GestoreGioco extends Thread {
                 if (ControlloParola()) { //Controlla che esista
                     //calcolaPunteggio();    //Calcola punteggio
                     RimuoviLettereUsate();
+                } else {
+                    //togli lettere messe nel tabellone e rimettile nella mano
                 }
             }
             PassoDelTurno();
@@ -92,7 +94,7 @@ public class GestoreGioco extends Thread {
                 d.addLettera(l);
                 //aggiungo le lettere nel sacchato da cui si pesca
                 for (int i = 0; i < Integer.parseInt(v[2]); i++) {
-                    d.addSaccheto(l);
+                    d.addSacchetto(l);
                 }
             }
 
@@ -171,7 +173,7 @@ public class GestoreGioco extends Thread {
 
     }
 
-      public void CreaSpazio(int pos) {
+    public void CreaSpazio(int pos) {
         //inserisco la lettera mancante nel vettore ParolaInCorso
         Lettera[][] CopiaMatrice = d.getMatrice();
         char sposta = 'y', sposta1 = 'y';
@@ -256,8 +258,8 @@ public class GestoreGioco extends Thread {
         //Mano.clear(); capire se bisogna svuotare anche la mano o le lettere non usate restano
         PulisciVettori();
     }
-    
-    public void PulisciVettori(){
+
+    public void PulisciVettori() {
         for (int i = 0; i < Mano.length; i++) {
             Mano[i] = null;
         }
@@ -294,7 +296,7 @@ public class GestoreGioco extends Thread {
     //in caso che con le lettere in mano non riesca a comporre nessuna parola
     public void ManoDaRifare() {
         for (int i = 0; i < Mano.length; i++) {
-            d.addSaccheto(Mano[i]);
+            d.addSacchetto(Mano[i]);
             Mano[i] = null;
         }
         Pescaggio();

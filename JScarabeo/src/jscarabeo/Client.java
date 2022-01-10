@@ -33,10 +33,10 @@ public class Client extends Thread {
     public void sendRichiesta() {
         try {
             InetAddress addr = InetAddress.getByName(d.getOpponentIP());
-            socket = new Socket(addr, 666);
+            socket = new Socket(addr, 667);
             out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())), true);
             d.addPacchettoDaInviare("C;" + d.getMyIP() + ";" + d.getMyNickname());
-            d.setTurno(false);
+            System.out.println("C;" + d.getMyIP() + ";" + d.getMyNickname());
         } catch (IOException ex) {
             Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -44,8 +44,8 @@ public class Client extends Thread {
 
     public void run() {
         int conta = 0;
-        while (d.isInGame()) {
-            if (d.getListPacchettiRicevuti().size() > conta) {
+        while (d.isProgramStarted()) {
+            if (d.getListPacchettiDaInviare().size() > conta) {
                 out.println(d.getListPacchettiDaInviare().get(conta));
                 conta++;
                 d.setTurno(false);

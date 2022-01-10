@@ -20,25 +20,29 @@ public class Elabora extends Thread {
     @Override
     public void run() {
         int conta = 0;
-        while (d.isInGame()) {
-            if (d.getListPacchettiRicevuti().size() > conta) {
-                String temp = d.getListPacchettiRicevuti().get(conta);
-                String[] campi = temp.split(";");
-                switch (campi[0]) {
-                    case "C" -> {
-                        d.setOpponentIP(campi[1]);
-                        d.setOpponentNickname(campi[2]);
-                        d.setInGame(true);
+        while (d.isProgramStarted()) {
+            if (d.isInGame()) {
+                if (d.getListPacchettiRicevuti().size() > conta) {
+                    String temp = d.getListPacchettiRicevuti().get(conta);
+                    String[] campi = temp.split(";");
+                    switch (campi[0]) {
+                        case "C" -> {
+                            d.setOpponentIP(campi[1]);
+                            d.setOpponentNickname(campi[2]);
+                            //d.setInGame(true);        messo nel server
+                        }
+                        case "P" -> {
+                            d.setTurno(true);
+                        }
+                        case "D" ->
+                            d.setInGame(false);
                     }
-                    case "P" -> {
-                        d.setTurno(true);
-                    }
-                    case "D" -> d.setInGame(false);
+                    conta++;
+                    //rimuove dal sacchetto le lettere pescate
+                    //aggiorna matrice
+                    //aggiorna grafica button con le posizioni
                 }
-                //rimuove dal sacchetto le lettere pescate
-                //aggiorna matrice
-                //aggiorna grafica button con le posizioni
-                            }
+            }
         }
     }
 }

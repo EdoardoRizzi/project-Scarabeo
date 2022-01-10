@@ -27,24 +27,24 @@ public class Tabellone extends javax.swing.JFrame {
     GestoreGioco gg;
     String bufferName;
     ImageIcon bufferImg;
-    
-    public Tabellone(DatiCondivisi d) throws IOException {
+
+    public Tabellone(DatiCondivisi d) throws IOException, InterruptedException {
         initComponents();
-        
+
         bufferName = "";
         bufferImg = null;
-        
+
         this.d = d;
         d.setTabellone(this);
-        
+
         nick1.setText(d.getMyNickname());
-        nick1.setText(d.getOpponentNickname());
-        
+
         gg = new GestoreGioco(d);
         gg.start();
     }
-    
+
     public void setMano(int i, Lettera lettera) {
+        nick2.setText(d.getOpponentNickname());
         switch (i) {
             case 0 -> {
                 this.btn0.setIcon(lettera.getImg());
@@ -4211,7 +4211,7 @@ public class Tabellone extends javax.swing.JFrame {
             bufferImg = null;
         }
     }//GEN-LAST:event_jButtonsActionPerformed
-    
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -4233,14 +4233,15 @@ public class Tabellone extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(() -> {
             try {
                 new Tabellone(new DatiCondivisi()).setVisible(true);
-                
             } catch (UnknownHostException | SocketException ex) {
                 Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
             } catch (IOException ex) {
                 Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Tabellone.class.getName()).log(Level.SEVERE, null, ex);
             }
         });
-        
+
     }
     /**
      * @param args the command line arguments

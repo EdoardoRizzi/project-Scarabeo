@@ -27,12 +27,13 @@ public class DatiCondivisi {
     private String myIP, opponentIP;
     private String myNickname, opponentNickname;
 
-    private boolean inGame, Turno;
+    private boolean inGame, Turno, programStarted;
     private Tabellone t;
 
     public DatiCondivisi() throws UnknownHostException {
         this.matrice = new Lettera[17][17];
         this.listPacchettiRicevuti = new ArrayList<>();
+        this.listPacchettiDaInviare = new ArrayList<>();
         this.ListLettere = new ArrayList<>();
         this.listSacchetto = new ArrayList<>();
 
@@ -40,21 +41,32 @@ public class DatiCondivisi {
         this.opponentPort = 667;
         this.myScore = 0;
         this.opponentScore = 0;
-        this.myIP = InetAddress.getLocalHost().getHostAddress();
+        //this.myIP = InetAddress.getLocalHost().getHostAddress();
+        this.myIP = "localhost";
         this.opponentIP = "";
+        this.opponentNickname = "";
 
         this.inGame = false;
         this.Turno = true;
+        programStarted = true;
 
         this.t = null;
 
+    }
+
+    public boolean isProgramStarted() {
+        return programStarted;
+    }
+
+    public void setProgramStarted(boolean programStarted) {
+        this.programStarted = programStarted;
     }
 
     public void addLettera(Lettera l) {
         ListLettere.add(l);
     }
 
-    public void addSaccheto(Lettera l) {
+    public void addSacchetto(Lettera l) {
         listSacchetto.add(l);
     }
 

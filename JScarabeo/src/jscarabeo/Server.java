@@ -30,27 +30,30 @@ public class Server extends Thread {
 
     @Override
     public void run() {
+        while (d.isProgramStarted()) {
+            try {
+                if (!d.isInGame()) {
+                    Socket clientSocket = serverSocket.accept();
+                    System.out.println("passato");
+                    //in caso accetti la connessione
+                    d.setInGame(true);
 
-        try {
-            if (!d.isInGame()) {
-                Socket clientSocket = serverSocket.accept();
-                //in caso accetti la connessione
-                d.setMyNickname(JOptionPane.showInputDialog("Nickname"));
-                d.addPacchettoDaInviare("C;" + d.getMyIP() + ";" + d.getMyNickname());
-                BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+                    BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+                    String inputLine;
+                    while (d.isInGame()) {
+                        while ((inputLine = in.readLine()) != null) {
+                            System.out.println(inputLine);
+                            d.addPacchettoRicevuto(inputLine);
+                        }
+                    }
 
-                while (d.isInGame()) {
-                    String inputLine = in.readLine();
-                    System.out.println(inputLine);
-                    d.addPacchettoRicevuto(inputLine);
+                    in.close();
+                    clientSocket.close();
                 }
-
-                in.close();
-                clientSocket.close();
+            } catch (IOException ex) {
+                Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
             }
-        } catch (IOException ex) {
-            Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
-        }
 
+        }
     }
 }
