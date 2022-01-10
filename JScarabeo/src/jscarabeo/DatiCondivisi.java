@@ -5,7 +5,6 @@
  */
 package jscarabeo;
 
-import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
@@ -41,26 +40,21 @@ public class DatiCondivisi {
         this.opponentPort = 667;
         this.myScore = 0;
         this.opponentScore = 0;
-        //this.myIP = InetAddress.getLocalHost().getHostAddress();
+
         this.myIP = "localhost";
+        this.myNickname = "";
         this.opponentIP = "";
         this.opponentNickname = "";
 
         this.inGame = false;
-        this.Turno = true;
-        programStarted = true;
+        this.Turno = false;
+        this.programStarted = true;
 
         this.t = null;
 
     }
 
-    public boolean isProgramStarted() {
-        return programStarted;
-    }
-
-    public void setProgramStarted(boolean programStarted) {
-        this.programStarted = programStarted;
-    }
+    
 
     public void addLettera(Lettera l) {
         ListLettere.add(l);
@@ -219,5 +213,13 @@ public class DatiCondivisi {
 
     public Tabellone getTabellone() {
         return t;
+    }
+    
+    public boolean isProgramStarted() {
+        return programStarted;
+    }
+
+    public void setProgramStarted(boolean programStarted) {
+        this.programStarted = programStarted;
     }
 }

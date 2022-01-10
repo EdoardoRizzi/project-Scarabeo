@@ -4199,13 +4199,13 @@ public class Tabellone extends javax.swing.JFrame {
         JButton b = (JButton) evt.getSource();
         //salvo in un buffer immagine e nome
         if (bufferName == "" && bufferImg == null) {
-            bufferName = b.getToolTipText();
+            bufferName = b.getName();
             bufferImg = (ImageIcon) b.getIcon();
-            b.setToolTipText("");
+            b.setName("");
             b.setIcon(new ImageIcon("tassello.png"));
         } else {
             //sposto e svuoto buffer
-            b.setToolTipText(bufferName);
+            b.setName(bufferName);
             b.setIcon(bufferImg);
             bufferName = "";
             bufferImg = null;

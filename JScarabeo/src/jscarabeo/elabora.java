@@ -36,6 +36,9 @@ public class Elabora extends Thread {
                         }
                         case "D" ->
                             d.setInGame(false);
+                        case "T" ->
+                            //imposto turno a true per far entrare nell'else e invertirla nel thread Server
+                            d.setTurno(true);
                     }
                     conta++;
                     //rimuove dal sacchetto le lettere pescate

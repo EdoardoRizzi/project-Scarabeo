@@ -12,7 +12,6 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -25,7 +24,7 @@ public class Server extends Thread {
 
     public Server(DatiCondivisi d) throws IOException {
         this.d = d;
-        serverSocket = new ServerSocket(666);
+        serverSocket = new ServerSocket(d.getMyPort());
     }
 
     @Override
@@ -34,14 +33,20 @@ public class Server extends Thread {
             try {
                 if (!d.isInGame()) {
                     Socket clientSocket = serverSocket.accept();
-                    System.out.println("passato");
-                    //in caso accetti la connessione
                     d.setInGame(true);
+
+                    //inizia chi manda la richiesta per primo 
+                    if (!d.isTurno()) {
+                        d.setTurno(true);
+                        d.addPacchettoDaInviare("T");
+                    } else {
+                        d.setTurno(false);
+                    }
 
                     BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
                     String inputLine;
                     while (d.isInGame()) {
-                        while ((inputLine = in.readLine()) != null) {
+                        if ((inputLine = in.readLine()) != null) {
                             System.out.println(inputLine);
                             d.addPacchettoRicevuto(inputLine);
                         }
