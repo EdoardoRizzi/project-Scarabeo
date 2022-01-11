@@ -162,7 +162,11 @@ public class DatiCondivisi {
     public void setMyScore(int myScore) {
         this.myScore = myScore;
     }
-
+    
+    public void updateMyScore(int score){
+        this.myScore += score;
+    }
+    
     public int getOpponentScore() {
         return opponentScore;
     }
