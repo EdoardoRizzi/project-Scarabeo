@@ -57,7 +57,7 @@ public class GestoreGioco extends Thread {
             Logger.getLogger(GestoreGioco.class.getName()).log(Level.SEVERE, null, ex);
         }
         while (d.isInGame()) {
-            if (d.isTurno()) {
+            if (d.isTurno() && ManoPossibile()) { //la partita finisce quando non si può più pescare???
                 Pescaggio();
             }
             while (d.isTurno()) {
@@ -76,7 +76,21 @@ public class GestoreGioco extends Thread {
         }
         //vittoria/sconfitta
     }
-
+    
+    public boolean ManoPossibile(){
+        int TessereDaPescare = 0;
+        for (int i = 0; i < Mano.length; i++) {
+            if (Mano[i] == null) {
+                TessereDaPescare++;
+            }
+        }
+        if (d.getlistSacchetto().size() > TessereDaPescare) {
+           return true; 
+        } else {
+           return false;
+        }
+    }
+    
     //Genera il "sacchetto" dal quale si pescano le tessere
     public void generaLista(File f) throws IOException {
         FileReader fr;
