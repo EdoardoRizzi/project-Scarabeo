@@ -57,6 +57,10 @@ public class DatiCondivisi {
     public void addLettera(Lettera l) {
         ListLettere.add(l);
     }
+    
+    public void addLetteraSacchetto(Lettera l) {
+        listSacchetto.add(l);
+    }
 
     public void addSacchetto(Lettera l) {
         listSacchetto.add(l);

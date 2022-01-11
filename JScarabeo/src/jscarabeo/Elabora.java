@@ -42,6 +42,17 @@ public class Elabora extends Thread {
                         case "T" ->
                             //imposto turno a true per far entrare nell'else e invertirla nel thread Server
                             d.setTurno(true);
+                        case "LIN" ->{
+                            for (int i = 1; i < campi.length; i++) {
+                                Lettera l = d.cercaLettera(campi[i].charAt(0));
+                                d.addLetteraSacchetto(l);
+                            }
+                        }
+                        case "LOUT" ->{
+                            for (int i = 1; i < campi.length; i++) {
+                                d.removeLettera(campi[i].charAt(0));
+                            }
+                        }
                     }
                     conta++;
                     //rimuove dal sacchetto le lettere pescate
