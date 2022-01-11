@@ -29,9 +29,12 @@ public class Elabora extends Thread {
                         case "C" -> {
                             d.setOpponentIP(campi[1]);
                             d.setOpponentNickname(campi[2]);
-                            //d.setInGame(true);        messo nel server
                         }
                         case "P" -> {
+                            for (int i = 1; i < campi.length - 3; i++) {
+                                d.addLetteraMatrice(campi[i].charAt(0), Integer.parseInt(campi[i++]), Integer.parseInt(campi[i++]));
+                            }
+                            d.addOpponentScore(Integer.parseInt(campi[campi.length - 1]));
                             d.setTurno(true);
                         }
                         case "D" ->

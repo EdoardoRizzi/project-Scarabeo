@@ -64,16 +64,18 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btn1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn3" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn4" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn5" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn6" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn7" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn0" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn3" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn2" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn4" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn5" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn6" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn7" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btnInvia" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btnRipesca" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="btn0" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                              <Component id="btn1" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -696,23 +698,23 @@
                                       </Group>
                                   </Group>
                               </Group>
-                              <EmptySpace pref="52" max="32767" attributes="0"/>
+                              <EmptySpace pref="47" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                                       <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="1" attributes="0">
-                                              <Component id="jButton311" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jButton311" linkSize="1" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
                                           </Group>
-                                          <Component id="jButton308" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jButton308" linkSize="1" alignment="1" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="jButton313" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jButton314" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jButton307" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jButton309" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jButton310" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jButton313" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jButton314" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jButton307" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jButton309" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jButton310" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jButton316" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton316" linkSize="1" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -793,7 +795,7 @@
                   <Component id="jButton37" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jButton58" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -956,38 +958,38 @@
                       </Group>
                   </Group>
                   <Group type="102" attributes="0">
-                      <Component id="jButton308" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton308" linkSize="2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton311" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton311" linkSize="2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton316" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton316" linkSize="2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton313" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton313" linkSize="2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton314" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton314" linkSize="2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton307" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton307" linkSize="2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton309" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton309" linkSize="2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton310" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton310" linkSize="2" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <Component id="btn0" min="-2" max="-2" attributes="0"/>
+                      <Component id="btn0" linkSize="2" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btn1" min="-2" max="-2" attributes="0"/>
+                      <Component id="btn1" linkSize="2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btn2" min="-2" max="-2" attributes="0"/>
+                      <Component id="btn2" linkSize="2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="btn3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btn3" linkSize="2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btn4" min="-2" max="-2" attributes="0"/>
+                      <Component id="btn4" linkSize="2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btn5" min="-2" max="-2" attributes="0"/>
+                      <Component id="btn5" linkSize="2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btn6" min="-2" max="-2" attributes="0"/>
+                      <Component id="btn6" linkSize="2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btn7" min="-2" max="-2" attributes="0"/>
+                      <Component id="btn7" linkSize="2" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -5952,6 +5954,9 @@
           <Dimension value="[40, 40]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton316">
       <Properties>
@@ -5981,6 +5986,9 @@
           <Dimension value="[40, 40]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn1">
       <Properties>
@@ -5994,6 +6002,9 @@
           <Dimension value="[40, 40]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn3">
       <Properties>
@@ -6007,6 +6018,9 @@
           <Dimension value="[40, 40]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn6">
       <Properties>
@@ -6020,6 +6034,9 @@
           <Dimension value="[40, 40]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn2">
       <Properties>
@@ -6033,6 +6050,9 @@
           <Dimension value="[40, 40]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn5">
       <Properties>
@@ -6046,9 +6066,18 @@
           <Dimension value="[40, 40]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn0">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="5" style="0"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/jscarabeo/images/A.png"/>
+        </Property>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
         </Property>
@@ -6059,6 +6088,9 @@
           <Dimension value="[40, 40]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnRipesca">
       <Properties>

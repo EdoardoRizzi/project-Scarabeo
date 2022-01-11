@@ -54,8 +54,6 @@ public class DatiCondivisi {
 
     }
 
-    
-
     public void addLettera(Lettera l) {
         ListLettere.add(l);
     }
@@ -86,8 +84,8 @@ public class DatiCondivisi {
             ListLettere.remove(i);
         }
     }
-    
-    public Lettera cercaLettera(char c){
+
+    public Lettera cercaLettera(char c) {
         int i = 0;
         int indexTrovato = -1;
         boolean trovato = false;
@@ -111,14 +109,14 @@ public class DatiCondivisi {
     public void setMatrice(Lettera[][] matrice) {
         this.matrice = matrice;
     }
-    
-      public void addLetteraMatrice(char c, int x, int y){
+
+    public void addLetteraMatrice(char c, int x, int y) {
         Lettera l;
         l = cercaLettera(c);
-        
-        if(l.getValore() == 0){//se il valore è zero la lettera non esiste
-             matrice[x][y] = l;
-        }   
+
+        if (l.getValore() == 0) {//se il valore è zero la lettera non esiste
+            matrice[x][y] = l;
+        }
     }
 
     public List<Lettera> getListLettere() {
@@ -165,8 +163,8 @@ public class DatiCondivisi {
         return opponentScore;
     }
 
-    public void setOpponentScore(int opponentScore) {
-        this.opponentScore = opponentScore;
+    public void addOpponentScore(int score) {
+        this.opponentScore += score;
     }
 
     public int getMyPort() {
@@ -240,7 +238,7 @@ public class DatiCondivisi {
     public Tabellone getTabellone() {
         return t;
     }
-    
+
     public boolean isProgramStarted() {
         return programStarted;
     }

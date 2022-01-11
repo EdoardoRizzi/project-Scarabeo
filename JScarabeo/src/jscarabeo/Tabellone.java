@@ -5,6 +5,8 @@
  */
 package jscarabeo;
 
+import java.awt.Button;
+import java.awt.Component;
 import java.io.IOException;
 import java.net.SocketException;
 import java.net.UnknownHostException;
@@ -27,6 +29,7 @@ public class Tabellone extends javax.swing.JFrame {
     GestoreGioco gg;
     String bufferName;
     ImageIcon bufferImg;
+    JButton temp1;
 
     public Tabellone(DatiCondivisi d) throws IOException, InterruptedException {
         initComponents();
@@ -3078,6 +3081,11 @@ public class Tabellone extends javax.swing.JFrame {
         btn4.setMaximumSize(new java.awt.Dimension(40, 40));
         btn4.setMinimumSize(new java.awt.Dimension(40, 40));
         btn4.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         jButton316.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jscarabeo/images/tassello.png"))); // NOI18N
         jButton316.setMaximumSize(new java.awt.Dimension(40, 40));
@@ -3087,30 +3095,67 @@ public class Tabellone extends javax.swing.JFrame {
         btn7.setMaximumSize(new java.awt.Dimension(40, 40));
         btn7.setMinimumSize(new java.awt.Dimension(40, 40));
         btn7.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         btn1.setMaximumSize(new java.awt.Dimension(40, 40));
         btn1.setMinimumSize(new java.awt.Dimension(40, 40));
         btn1.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         btn3.setMaximumSize(new java.awt.Dimension(40, 40));
         btn3.setMinimumSize(new java.awt.Dimension(40, 40));
         btn3.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         btn6.setMaximumSize(new java.awt.Dimension(40, 40));
         btn6.setMinimumSize(new java.awt.Dimension(40, 40));
         btn6.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         btn2.setMaximumSize(new java.awt.Dimension(40, 40));
         btn2.setMinimumSize(new java.awt.Dimension(40, 40));
         btn2.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         btn5.setMaximumSize(new java.awt.Dimension(40, 40));
         btn5.setMinimumSize(new java.awt.Dimension(40, 40));
         btn5.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
+        btn0.setFont(new java.awt.Font("Arial", 0, 5)); // NOI18N
+        btn0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jscarabeo/images/A.png"))); // NOI18N
         btn0.setMaximumSize(new java.awt.Dimension(40, 40));
         btn0.setMinimumSize(new java.awt.Dimension(40, 40));
         btn0.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsActionPerformed(evt);
+            }
+        });
 
         btnRipesca.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         btnRipesca.setText("RIPESCA");
@@ -3159,16 +3204,17 @@ public class Tabellone extends javax.swing.JFrame {
                         .addGap(16, 16, 16))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn0, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnInvia)
-                            .addComponent(btnRipesca))
+                            .addComponent(btnRipesca)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(btn0, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btn1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGap(32, 32, 32)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3763,7 +3809,7 @@ public class Tabellone extends javax.swing.JFrame {
                                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                     .addComponent(jButton224, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                             .addGap(1, 1, 1))))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3783,7 +3829,7 @@ public class Tabellone extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton100, jButton101, jButton102, jButton103, jButton104, jButton105, jButton106, jButton107, jButton108, jButton109, jButton110, jButton111, jButton112, jButton113, jButton114, jButton115, jButton116, jButton117, jButton118, jButton119, jButton120, jButton121, jButton122, jButton123, jButton124, jButton125, jButton126, jButton127, jButton128, jButton129, jButton130, jButton131, jButton132, jButton133, jButton134, jButton135, jButton136, jButton137, jButton138, jButton139, jButton140, jButton141, jButton142, jButton143, jButton144, jButton145, jButton146, jButton147, jButton148, jButton149, jButton15, jButton150, jButton151, jButton152, jButton153, jButton154, jButton155, jButton156, jButton157, jButton158, jButton159, jButton160, jButton161, jButton162, jButton163, jButton164, jButton165, jButton166, jButton167, jButton168, jButton169, jButton170, jButton171, jButton172, jButton173, jButton174, jButton175, jButton176, jButton177, jButton178, jButton179, jButton180, jButton181, jButton182, jButton183, jButton184, jButton185, jButton186, jButton187, jButton188, jButton189, jButton19, jButton190, jButton191, jButton192, jButton193, jButton194, jButton195, jButton196, jButton197, jButton198, jButton199, jButton20, jButton200, jButton201, jButton202, jButton203, jButton204, jButton205, jButton206, jButton207, jButton208, jButton209, jButton21, jButton210, jButton211, jButton212, jButton213, jButton214, jButton215, jButton216, jButton217, jButton218, jButton219, jButton22, jButton220, jButton221, jButton222, jButton223, jButton224, jButton225, jButton226, jButton227, jButton228, jButton229, jButton23, jButton230, jButton231, jButton232, jButton233, jButton234, jButton235, jButton236, jButton237, jButton238, jButton239, jButton24, jButton240, jButton241, jButton242, jButton243, jButton244, jButton245, jButton246, jButton247, jButton248, jButton249, jButton25, jButton250, jButton251, jButton252, jButton253, jButton254, jButton255, jButton256, jButton257, jButton258, jButton259, jButton26, jButton260, jButton261, jButton262, jButton263, jButton264, jButton265, jButton266, jButton267, jButton268, jButton269, jButton27, jButton270, jButton271, jButton272, jButton273, jButton274, jButton275, jButton276, jButton277, jButton278, jButton279, jButton28, jButton280, jButton281, jButton282, jButton283, jButton284, jButton285, jButton286, jButton287, jButton288, jButton289, jButton29, jButton290, jButton291, jButton292, jButton293, jButton294, jButton295, jButton296, jButton297, jButton298, jButton299, jButton30, jButton300, jButton301, jButton302, jButton303, jButton304, jButton305, jButton306, jButton31, jButton32, jButton33, jButton34, jButton35, jButton36, jButton37, jButton38, jButton39, jButton40, jButton41, jButton42, jButton43, jButton44, jButton45, jButton46, jButton47, jButton48, jButton49, jButton50, jButton51, jButton52, jButton53, jButton54, jButton55, jButton56, jButton57, jButton58, jButton59, jButton60, jButton61, jButton62, jButton63, jButton64, jButton65, jButton66, jButton67, jButton68, jButton69, jButton70, jButton71, jButton72, jButton73, jButton74, jButton75, jButton76, jButton77, jButton78, jButton79, jButton80, jButton81, jButton82, jButton83, jButton84, jButton85, jButton86, jButton87, jButton88, jButton89, jButton90, jButton91, jButton92, jButton93, jButton94, jButton95, jButton96, jButton97, jButton98, jButton99});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, jButton100, jButton101, jButton102, jButton103, jButton104, jButton105, jButton106, jButton107, jButton108, jButton109, jButton110, jButton111, jButton112, jButton113, jButton114, jButton115, jButton116, jButton117, jButton118, jButton119, jButton120, jButton121, jButton122, jButton123, jButton124, jButton125, jButton126, jButton127, jButton128, jButton129, jButton130, jButton131, jButton132, jButton133, jButton134, jButton135, jButton136, jButton137, jButton138, jButton139, jButton140, jButton141, jButton142, jButton143, jButton144, jButton145, jButton146, jButton147, jButton148, jButton149, jButton15, jButton150, jButton151, jButton152, jButton153, jButton154, jButton155, jButton156, jButton157, jButton158, jButton159, jButton160, jButton161, jButton162, jButton163, jButton164, jButton165, jButton166, jButton167, jButton168, jButton169, jButton170, jButton171, jButton172, jButton173, jButton174, jButton175, jButton176, jButton177, jButton178, jButton179, jButton180, jButton181, jButton182, jButton183, jButton184, jButton185, jButton186, jButton187, jButton188, jButton189, jButton19, jButton190, jButton191, jButton192, jButton193, jButton194, jButton195, jButton196, jButton197, jButton198, jButton199, jButton20, jButton200, jButton201, jButton202, jButton203, jButton204, jButton205, jButton206, jButton207, jButton208, jButton209, jButton21, jButton210, jButton211, jButton212, jButton213, jButton214, jButton215, jButton216, jButton217, jButton218, jButton219, jButton22, jButton220, jButton221, jButton222, jButton223, jButton224, jButton225, jButton226, jButton227, jButton228, jButton229, jButton23, jButton230, jButton231, jButton232, jButton233, jButton234, jButton235, jButton236, jButton237, jButton238, jButton239, jButton24, jButton240, jButton241, jButton242, jButton243, jButton244, jButton245, jButton246, jButton247, jButton248, jButton249, jButton25, jButton250, jButton251, jButton252, jButton253, jButton254, jButton255, jButton256, jButton257, jButton258, jButton259, jButton26, jButton260, jButton261, jButton262, jButton263, jButton264, jButton265, jButton266, jButton267, jButton268, jButton269, jButton27, jButton270, jButton271, jButton272, jButton273, jButton274, jButton275, jButton276, jButton277, jButton278, jButton279, jButton28, jButton280, jButton281, jButton282, jButton283, jButton284, jButton285, jButton286, jButton287, jButton288, jButton289, jButton29, jButton290, jButton291, jButton292, jButton293, jButton294, jButton295, jButton296, jButton297, jButton298, jButton299, jButton30, jButton300, jButton301, jButton302, jButton303, jButton304, jButton305, jButton306, jButton307, jButton308, jButton309, jButton31, jButton310, jButton311, jButton313, jButton314, jButton316, jButton32, jButton33, jButton34, jButton35, jButton36, jButton37, jButton38, jButton39, jButton40, jButton41, jButton42, jButton43, jButton44, jButton45, jButton46, jButton47, jButton48, jButton49, jButton50, jButton51, jButton52, jButton53, jButton54, jButton55, jButton56, jButton57, jButton58, jButton59, jButton60, jButton61, jButton62, jButton63, jButton64, jButton65, jButton66, jButton67, jButton68, jButton69, jButton70, jButton71, jButton72, jButton73, jButton74, jButton75, jButton76, jButton77, jButton78, jButton79, jButton80, jButton81, jButton82, jButton83, jButton84, jButton85, jButton86, jButton87, jButton88, jButton89, jButton90, jButton91, jButton92, jButton93, jButton94, jButton95, jButton96, jButton97, jButton98, jButton99});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3844,7 +3890,7 @@ public class Tabellone extends javax.swing.JFrame {
                     .addComponent(jButton39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -4014,7 +4060,7 @@ public class Tabellone extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton310, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btn0, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn0, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -4173,7 +4219,7 @@ public class Tabellone extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton100, jButton101, jButton102, jButton103, jButton104, jButton105, jButton106, jButton107, jButton108, jButton109, jButton110, jButton111, jButton112, jButton113, jButton114, jButton115, jButton116, jButton117, jButton118, jButton119, jButton120, jButton121, jButton122, jButton123, jButton124, jButton125, jButton126, jButton127, jButton128, jButton129, jButton130, jButton131, jButton132, jButton133, jButton134, jButton135, jButton136, jButton137, jButton138, jButton139, jButton140, jButton141, jButton142, jButton143, jButton144, jButton145, jButton146, jButton147, jButton148, jButton149, jButton15, jButton150, jButton151, jButton152, jButton153, jButton154, jButton155, jButton156, jButton157, jButton158, jButton159, jButton160, jButton161, jButton162, jButton163, jButton164, jButton165, jButton166, jButton167, jButton168, jButton169, jButton170, jButton171, jButton172, jButton173, jButton174, jButton175, jButton176, jButton177, jButton178, jButton179, jButton180, jButton181, jButton182, jButton183, jButton184, jButton185, jButton186, jButton187, jButton188, jButton189, jButton19, jButton190, jButton191, jButton192, jButton193, jButton194, jButton195, jButton196, jButton197, jButton198, jButton199, jButton20, jButton200, jButton201, jButton202, jButton203, jButton204, jButton205, jButton206, jButton207, jButton208, jButton209, jButton21, jButton210, jButton211, jButton212, jButton213, jButton214, jButton215, jButton216, jButton217, jButton218, jButton219, jButton22, jButton220, jButton221, jButton222, jButton223, jButton224, jButton225, jButton226, jButton227, jButton228, jButton229, jButton23, jButton230, jButton231, jButton232, jButton233, jButton234, jButton235, jButton236, jButton237, jButton238, jButton239, jButton24, jButton240, jButton241, jButton242, jButton243, jButton244, jButton245, jButton246, jButton247, jButton248, jButton249, jButton25, jButton250, jButton251, jButton252, jButton253, jButton254, jButton255, jButton256, jButton257, jButton258, jButton259, jButton26, jButton260, jButton261, jButton262, jButton263, jButton264, jButton265, jButton266, jButton267, jButton268, jButton269, jButton27, jButton270, jButton271, jButton272, jButton273, jButton274, jButton275, jButton276, jButton277, jButton278, jButton279, jButton28, jButton280, jButton281, jButton282, jButton283, jButton284, jButton285, jButton286, jButton287, jButton288, jButton289, jButton29, jButton290, jButton291, jButton292, jButton293, jButton294, jButton295, jButton296, jButton297, jButton298, jButton299, jButton30, jButton300, jButton301, jButton302, jButton303, jButton304, jButton305, jButton306, jButton31, jButton32, jButton33, jButton34, jButton35, jButton36, jButton37, jButton38, jButton39, jButton40, jButton41, jButton42, jButton43, jButton44, jButton45, jButton46, jButton47, jButton48, jButton49, jButton50, jButton51, jButton52, jButton53, jButton54, jButton55, jButton56, jButton57, jButton58, jButton59, jButton60, jButton61, jButton62, jButton63, jButton64, jButton65, jButton66, jButton67, jButton68, jButton69, jButton70, jButton71, jButton72, jButton73, jButton74, jButton75, jButton76, jButton77, jButton78, jButton79, jButton80, jButton81, jButton82, jButton83, jButton84, jButton85, jButton86, jButton87, jButton88, jButton89, jButton90, jButton91, jButton92, jButton93, jButton94, jButton95, jButton96, jButton97, jButton98, jButton99});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, jButton100, jButton101, jButton102, jButton103, jButton104, jButton105, jButton106, jButton107, jButton108, jButton109, jButton110, jButton111, jButton112, jButton113, jButton114, jButton115, jButton116, jButton117, jButton118, jButton119, jButton120, jButton121, jButton122, jButton123, jButton124, jButton125, jButton126, jButton127, jButton128, jButton129, jButton130, jButton131, jButton132, jButton133, jButton134, jButton135, jButton136, jButton137, jButton138, jButton139, jButton140, jButton141, jButton142, jButton143, jButton144, jButton145, jButton146, jButton147, jButton148, jButton149, jButton15, jButton150, jButton151, jButton152, jButton153, jButton154, jButton155, jButton156, jButton157, jButton158, jButton159, jButton160, jButton161, jButton162, jButton163, jButton164, jButton165, jButton166, jButton167, jButton168, jButton169, jButton170, jButton171, jButton172, jButton173, jButton174, jButton175, jButton176, jButton177, jButton178, jButton179, jButton180, jButton181, jButton182, jButton183, jButton184, jButton185, jButton186, jButton187, jButton188, jButton189, jButton19, jButton190, jButton191, jButton192, jButton193, jButton194, jButton195, jButton196, jButton197, jButton198, jButton199, jButton20, jButton200, jButton201, jButton202, jButton203, jButton204, jButton205, jButton206, jButton207, jButton208, jButton209, jButton21, jButton210, jButton211, jButton212, jButton213, jButton214, jButton215, jButton216, jButton217, jButton218, jButton219, jButton22, jButton220, jButton221, jButton222, jButton223, jButton224, jButton225, jButton226, jButton227, jButton228, jButton229, jButton23, jButton230, jButton231, jButton232, jButton233, jButton234, jButton235, jButton236, jButton237, jButton238, jButton239, jButton24, jButton240, jButton241, jButton242, jButton243, jButton244, jButton245, jButton246, jButton247, jButton248, jButton249, jButton25, jButton250, jButton251, jButton252, jButton253, jButton254, jButton255, jButton256, jButton257, jButton258, jButton259, jButton26, jButton260, jButton261, jButton262, jButton263, jButton264, jButton265, jButton266, jButton267, jButton268, jButton269, jButton27, jButton270, jButton271, jButton272, jButton273, jButton274, jButton275, jButton276, jButton277, jButton278, jButton279, jButton28, jButton280, jButton281, jButton282, jButton283, jButton284, jButton285, jButton286, jButton287, jButton288, jButton289, jButton29, jButton290, jButton291, jButton292, jButton293, jButton294, jButton295, jButton296, jButton297, jButton298, jButton299, jButton30, jButton300, jButton301, jButton302, jButton303, jButton304, jButton305, jButton306, jButton307, jButton308, jButton309, jButton31, jButton310, jButton311, jButton313, jButton314, jButton316, jButton32, jButton33, jButton34, jButton35, jButton36, jButton37, jButton38, jButton39, jButton40, jButton41, jButton42, jButton43, jButton44, jButton45, jButton46, jButton47, jButton48, jButton49, jButton50, jButton51, jButton52, jButton53, jButton54, jButton55, jButton56, jButton57, jButton58, jButton59, jButton60, jButton61, jButton62, jButton63, jButton64, jButton65, jButton66, jButton67, jButton68, jButton69, jButton70, jButton71, jButton72, jButton73, jButton74, jButton75, jButton76, jButton77, jButton78, jButton79, jButton80, jButton81, jButton82, jButton83, jButton84, jButton85, jButton86, jButton87, jButton88, jButton89, jButton90, jButton91, jButton92, jButton93, jButton94, jButton95, jButton96, jButton97, jButton98, jButton99});
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -4196,14 +4242,19 @@ public class Tabellone extends javax.swing.JFrame {
     }//GEN-LAST:event_btnResaActionPerformed
 
     private void jButtonsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonsActionPerformed
+
         JButton b = (JButton) evt.getSource();
         //salvo in un buffer immagine e nome
         if (bufferName == "" && bufferImg == null) {
-            bufferName = b.getName();
-            bufferImg = (ImageIcon) b.getIcon();
-            b.setName("");
-            b.setIcon(new ImageIcon("tassello.png"));
+            if (b.getIcon() != null || b.getIcon() != new ImageIcon("tassello.png")) {
+                //salvo button precedente
+                temp1 = b;
+                bufferName = b.getName();
+                bufferImg = (ImageIcon) b.getIcon();
+            }
         } else {
+            temp1.setName("");
+            temp1.setIcon(new ImageIcon("tassello.png"));
             //sposto e svuoto buffer
             b.setName(bufferName);
             b.setIcon(bufferImg);
