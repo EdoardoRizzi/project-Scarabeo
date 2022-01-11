@@ -127,6 +127,7 @@ public class GestoreGioco extends Thread {
                     Mano[i] = d.getlistSacchetto().get(posLettera);
                     d.removeLettera(d.getlistSacchetto().get(posLettera).getLettera());
                     d.getTabellone().setMano(i, d.getlistSacchetto().get(posLettera));
+                     messaggioLettere(i);
                 }
             }
         }
@@ -139,8 +140,13 @@ public class GestoreGioco extends Thread {
             }
         }
     }
+    //compongo il messaggio da inviare per rimuovere le lettere pescate dal sacchetto
+    public void messaggioLettere(int pos){
+        String m = "LOUT;" + Mano[pos];
+        d.addPacchettoDaInviare(m);
+    }
+    
     //ogni volta che una tessera sarà aggiunta sul tabellone verrà richiamto questo metodo
-
     public void ComponiParola(char let, int posX, int posY, int bonus) {
         ParolaInCorso[numElParola] = let;
         PosizioniSullaX[numElX] = posX;
@@ -340,6 +346,7 @@ public class GestoreGioco extends Thread {
 
     //in caso che con le lettere in mano non riesca a comporre nessuna parola
     public void ManoDaRifare() {
+        ReinserisciLettera();
         for (int i = 0; i < Mano.length; i++) {
             d.addSacchetto(Mano[i]);
             Mano[i] = null;
@@ -347,6 +354,15 @@ public class GestoreGioco extends Thread {
         Pescaggio();
 
         //messaggi lin lout
+    }
+    
+    //invio il messaggio per reinserire tutte le lettere nel sacchetto
+    public void ReinserisciLettera(){
+        String m = "LIN";
+        for (int i = 0; i < Mano.length; i++) {
+            m += ";" + Mano[i];
+        }
+        d.addPacchettoDaInviare(m);
     }
 
     public void resa() {
