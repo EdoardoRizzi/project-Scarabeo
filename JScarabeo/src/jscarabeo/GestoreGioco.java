@@ -367,6 +367,10 @@ public class GestoreGioco extends Thread {
 
     public void resa() {
         d.setInGame(false);
+        d.setMyScore(0);
+        
+        String m = "D;";
+        d.addPacchettoDaInviare(m);
     }
 
 }
