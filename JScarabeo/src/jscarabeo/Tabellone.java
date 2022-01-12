@@ -4246,8 +4246,7 @@ public class Tabellone extends javax.swing.JFrame {
     private void btnInviaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInviaActionPerformed
         //parola da inviare
         //sequenza di messaggi aggiunti alla listPacchettiDaInviare
-        JButton b = (JButton) evt.getSource();
-        System.out.println(b.getName());
+        gg.setConfermato(true);
     }//GEN-LAST:event_btnInviaActionPerformed
 
     private void btnRipescaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRipescaActionPerformed

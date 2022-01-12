@@ -31,6 +31,8 @@ public class GestoreGioco extends Thread {
     private int[] PosizioniSullaY;
     private String[] Bonus;
     private int numElParola, numElX, numElY, numElBonus;
+    
+    private boolean confermato;
     //timer
 
     public GestoreGioco(DatiCondivisi d) throws IOException {
@@ -45,7 +47,8 @@ public class GestoreGioco extends Thread {
         PosizioniSullaX = new int[17];
         PosizioniSullaY = new int[17];
         Bonus = new String[17];
-
+        confermato = false;
+        
         PulisciVettori();
     }
 
@@ -60,7 +63,7 @@ public class GestoreGioco extends Thread {
             if (d.isTurno() && ManoPossibile()) { //la partita finisce quando non si può più pescare???
                 Pescaggio();
             }
-            while (d.isTurno()) {
+            while (!confermato) {
             }
             if (numElParola > 0) {
                 if (CercaLettera()) {//trova la lettera mancante
@@ -173,7 +176,7 @@ public class GestoreGioco extends Thread {
         numElX++;
         numElY++;
     }
-
+    
     public boolean CercaLettera() {
         int posMancante = 0;
         int[] Copia;
@@ -323,6 +326,7 @@ public class GestoreGioco extends Thread {
 
         // preparo le variabili per il turno successivo
         //Mano.clear(); capire se bisogna svuotare anche la mano o le lettere non usate restano
+        confermato = false;
         PulisciVettori();
     }
 
@@ -442,6 +446,10 @@ public class GestoreGioco extends Thread {
 
         String m = "D;";
         d.addPacchettoDaInviare(m);
+    }
+    
+     public void setConfermato(boolean confermato) {
+        this.confermato = confermato;
     }
 
 }
