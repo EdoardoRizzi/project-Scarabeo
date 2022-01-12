@@ -390,7 +390,7 @@ public class Tabellone extends javax.swing.JFrame {
         btny15x9 = new javax.swing.JButton();
         btny16x6 = new javax.swing.JButton();
         btny16x13 = new javax.swing.JButton();
-        btn16_16£3P = new javax.swing.JButton();
+        btny16x16£3P = new javax.swing.JButton();
         btny16x14 = new javax.swing.JButton();
         btny16x15 = new javax.swing.JButton();
         btny16x12£2L = new javax.swing.JButton();
@@ -2930,10 +2930,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn16_16£3P.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn16_16£3P.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn16_16£3P.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn16_16£3P.addActionListener(new java.awt.event.ActionListener() {
+        btny16x16£3P.setMaximumSize(new java.awt.Dimension(40, 40));
+        btny16x16£3P.setMinimumSize(new java.awt.Dimension(40, 40));
+        btny16x16£3P.setPreferredSize(new java.awt.Dimension(40, 40));
+        btny16x16£3P.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -3336,7 +3336,7 @@ public class Tabellone extends javax.swing.JFrame {
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(btny16x15, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(btn16_16£3P, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(btny16x16£3P, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGap(1, 1, 1)))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(btny3x0, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -3843,7 +3843,7 @@ public class Tabellone extends javax.swing.JFrame {
                                 .addGap(113, 113, 113))))))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btn0, btn1, btn16_16£3P, btn2, btn3, btn4, btn5, btn6, btn7, btn99$, btnx16y3, btny0x0£3P, btny0x1, btny0x10, btny0x11, btny0x12£2L, btny0x13, btny0x14, btny0x15, btny0x16£3P, btny0x2, btny0x3, btny0x4£2L, btny0x5, btny0x6, btny0x7, btny0x8£3P, btny0x9, btny10x0, btny10x10£3L, btny10x11, btny10x12, btny10x13, btny10x14, btny10x15£3L, btny10x16, btny10x1£3L, btny10x2, btny10x3, btny10x4, btny10x5, btny10x6£3L, btny10x7, btny10x8, btny10x9, btny11x0, btny11x1, btny11x10, btny11x11£2P, btny11x12, btny11x13, btny11x14, btny11x15, btny11x16, btny11x2, btny11x3, btny11x4, btny11x5£2P, btny11x6, btny11x7, btny11x8, btny11x9, btny12x0£2L, btny12x1, btny12x10, btny12x11, btny12x12£2P, btny12x13, btny12x14, btny12x15, btny12x16£2L, btny12x2, btny12x3, btny12x4£2P, btny12x5, btny12x6, btny12x7, btny12x8, btny12x9, btny13x0, btny13x1, btny13x10, btny13x11, btny13x12, btny13x13£2P, btny13x14, btny13x15, btny13x16, btny13x2, btny13x3£2P, btny13x4, btny13x5, btny13x6, btny13x7, btny13x8£2L, btny13x9, btny14x0, btny14x1, btny14x10, btny14x11, btny14x12, btny14x13, btny14x14£2P, btny14x15, btny14x16, btny14x2£2P, btny14x3, btny14x4, btny14x5, btny14x6, btny14x7£2L, btny14x8, btny14x9£2L, btny15x0, btny15x10£3L, btny15x11, btny15x12, btny15x13, btny15x14, btny15x15£2P, btny15x16, btny15x1£2P, btny15x2, btny15x3, btny15x4, btny15x5, btny15x6£3L, btny15x7, btny15x8, btny15x9, btny16x0£3P, btny16x1, btny16x10, btny16x11, btny16x12£2L, btny16x13, btny16x14, btny16x15, btny16x2, btny16x4£2L, btny16x5, btny16x6, btny16x7, btny16x8£3P, btny16x9, btny1x0, btny1x10£3L, btny1x11, btny1x12, btny1x13, btny1x14, btny1x15£2P, btny1x16, btny1x1£2P, btny1x2, btny1x3, btny1x4, btny1x5, btny1x6£3L, btny1x7, btny1x8, btny1x9, btny2x0, btny2x1, btny2x10, btny2x11, btny2x12, btny2x13, btny2x14£2P, btny2x15, btny2x16, btny2x2£2P, btny2x3, btny2x4, btny2x5, btny2x6, btny2x7£2L, btny2x8, btny2x9£2L, btny3x0, btny3x1, btny3x10, btny3x11, btny3x12, btny3x13£2P, btny3x14, btny3x15, btny3x16, btny3x2, btny3x3£2P, btny3x4, btny3x5, btny3x6, btny3x7, btny3x8£2L, btny3x9, btny4x0£2L, btny4x1, btny4x10, btny4x11, btny4x12£2P, btny4x13, btny4x14, btny4x15, btny4x16£2L, btny4x2, btny4x3, btny4x4£2P, btny4x5, btny4x6, btny4x7, btny4x8, btny4x9, btny5x0, btny5x1, btny5x10, btny5x11£2P, btny5x12, btny5x13, btny5x14, btny5x15, btny5x16, btny5x2, btny5x3, btny5x4, btny5x5£2P, btny5x6, btny5x7, btny5x8, btny5x9, btny6x0, btny6x10£3l, btny6x11, btny6x12, btny6x13, btny6x14, btny6x15£3L, btny6x16, btny6x1£3L, btny6x2, btny6x3, btny6x4, btny6x5, btny6x6£3L, btny6x7, btny6x8, btny6x9, btny7x0, btny7x1, btny7x10, btny7x11, btny7x12, btny7x13, btny7x14£2L, btny7x15, btny7x16, btny7x2£2L, btny7x3, btny7x4, btny7x5, btny7x6, btny7x7£2L, btny7x8, btny7x9£2L, btny8x0£3P, btny8x1, btny8x10, btny8x11, btny8x12, btny8x13£2L, btny8x14, btny8x15, btny8x16£3P, btny8x2, btny8x3£2L, btny8x4, btny8x5, btny8x6, btny8x7, btny8x8, btny8x9, btny9x0, btny9x1, btny9x10, btny9x11, btny9x12, btny9x13, btny9x14£2L, btny9x15, btny9x16, btny9x2£2L, btny9x3, btny9x4, btny9x5, btny9x6, btny9x7£2L, btny9x8, btny9x9£2L, jButton307, jButton308, jButton309, jButton310, jButton311, jButton313, jButton314});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn99$, btnx16y3, btny0x0£3P, btny0x1, btny0x10, btny0x11, btny0x12£2L, btny0x13, btny0x14, btny0x15, btny0x16£3P, btny0x2, btny0x3, btny0x4£2L, btny0x5, btny0x6, btny0x7, btny0x8£3P, btny0x9, btny10x0, btny10x10£3L, btny10x11, btny10x12, btny10x13, btny10x14, btny10x15£3L, btny10x16, btny10x1£3L, btny10x2, btny10x3, btny10x4, btny10x5, btny10x6£3L, btny10x7, btny10x8, btny10x9, btny11x0, btny11x1, btny11x10, btny11x11£2P, btny11x12, btny11x13, btny11x14, btny11x15, btny11x16, btny11x2, btny11x3, btny11x4, btny11x5£2P, btny11x6, btny11x7, btny11x8, btny11x9, btny12x0£2L, btny12x1, btny12x10, btny12x11, btny12x12£2P, btny12x13, btny12x14, btny12x15, btny12x16£2L, btny12x2, btny12x3, btny12x4£2P, btny12x5, btny12x6, btny12x7, btny12x8, btny12x9, btny13x0, btny13x1, btny13x10, btny13x11, btny13x12, btny13x13£2P, btny13x14, btny13x15, btny13x16, btny13x2, btny13x3£2P, btny13x4, btny13x5, btny13x6, btny13x7, btny13x8£2L, btny13x9, btny14x0, btny14x1, btny14x10, btny14x11, btny14x12, btny14x13, btny14x14£2P, btny14x15, btny14x16, btny14x2£2P, btny14x3, btny14x4, btny14x5, btny14x6, btny14x7£2L, btny14x8, btny14x9£2L, btny15x0, btny15x10£3L, btny15x11, btny15x12, btny15x13, btny15x14, btny15x15£2P, btny15x16, btny15x1£2P, btny15x2, btny15x3, btny15x4, btny15x5, btny15x6£3L, btny15x7, btny15x8, btny15x9, btny16x0£3P, btny16x1, btny16x10, btny16x11, btny16x12£2L, btny16x13, btny16x14, btny16x15, btny16x16£3P, btny16x2, btny16x4£2L, btny16x5, btny16x6, btny16x7, btny16x8£3P, btny16x9, btny1x0, btny1x10£3L, btny1x11, btny1x12, btny1x13, btny1x14, btny1x15£2P, btny1x16, btny1x1£2P, btny1x2, btny1x3, btny1x4, btny1x5, btny1x6£3L, btny1x7, btny1x8, btny1x9, btny2x0, btny2x1, btny2x10, btny2x11, btny2x12, btny2x13, btny2x14£2P, btny2x15, btny2x16, btny2x2£2P, btny2x3, btny2x4, btny2x5, btny2x6, btny2x7£2L, btny2x8, btny2x9£2L, btny3x0, btny3x1, btny3x10, btny3x11, btny3x12, btny3x13£2P, btny3x14, btny3x15, btny3x16, btny3x2, btny3x3£2P, btny3x4, btny3x5, btny3x6, btny3x7, btny3x8£2L, btny3x9, btny4x0£2L, btny4x1, btny4x10, btny4x11, btny4x12£2P, btny4x13, btny4x14, btny4x15, btny4x16£2L, btny4x2, btny4x3, btny4x4£2P, btny4x5, btny4x6, btny4x7, btny4x8, btny4x9, btny5x0, btny5x1, btny5x10, btny5x11£2P, btny5x12, btny5x13, btny5x14, btny5x15, btny5x16, btny5x2, btny5x3, btny5x4, btny5x5£2P, btny5x6, btny5x7, btny5x8, btny5x9, btny6x0, btny6x10£3l, btny6x11, btny6x12, btny6x13, btny6x14, btny6x15£3L, btny6x16, btny6x1£3L, btny6x2, btny6x3, btny6x4, btny6x5, btny6x6£3L, btny6x7, btny6x8, btny6x9, btny7x0, btny7x1, btny7x10, btny7x11, btny7x12, btny7x13, btny7x14£2L, btny7x15, btny7x16, btny7x2£2L, btny7x3, btny7x4, btny7x5, btny7x6, btny7x7£2L, btny7x8, btny7x9£2L, btny8x0£3P, btny8x1, btny8x10, btny8x11, btny8x12, btny8x13£2L, btny8x14, btny8x15, btny8x16£3P, btny8x2, btny8x3£2L, btny8x4, btny8x5, btny8x6, btny8x7, btny8x8, btny8x9, btny9x0, btny9x1, btny9x10, btny9x11, btny9x12, btny9x13, btny9x14£2L, btny9x15, btny9x16, btny9x2£2L, btny9x3, btny9x4, btny9x5, btny9x6, btny9x7£2L, btny9x8, btny9x9£2L, jButton307, jButton308, jButton309, jButton310, jButton311, jButton313, jButton314});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4233,12 +4233,12 @@ public class Tabellone extends javax.swing.JFrame {
                             .addComponent(btny16x13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btny16x14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btny16x15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn16_16£3P, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btny16x16£3P, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btn0, btn1, btn16_16£3P, btn2, btn3, btn4, btn5, btn6, btn7, btn99$, btnx16y3, btny0x0£3P, btny0x1, btny0x10, btny0x11, btny0x12£2L, btny0x13, btny0x14, btny0x15, btny0x16£3P, btny0x2, btny0x3, btny0x4£2L, btny0x5, btny0x6, btny0x7, btny0x8£3P, btny0x9, btny10x0, btny10x10£3L, btny10x11, btny10x12, btny10x13, btny10x14, btny10x15£3L, btny10x16, btny10x1£3L, btny10x2, btny10x3, btny10x4, btny10x5, btny10x6£3L, btny10x7, btny10x8, btny10x9, btny11x0, btny11x1, btny11x10, btny11x11£2P, btny11x12, btny11x13, btny11x14, btny11x15, btny11x16, btny11x2, btny11x3, btny11x4, btny11x5£2P, btny11x6, btny11x7, btny11x8, btny11x9, btny12x0£2L, btny12x1, btny12x10, btny12x11, btny12x12£2P, btny12x13, btny12x14, btny12x15, btny12x16£2L, btny12x2, btny12x3, btny12x4£2P, btny12x5, btny12x6, btny12x7, btny12x8, btny12x9, btny13x0, btny13x1, btny13x10, btny13x11, btny13x12, btny13x13£2P, btny13x14, btny13x15, btny13x16, btny13x2, btny13x3£2P, btny13x4, btny13x5, btny13x6, btny13x7, btny13x8£2L, btny13x9, btny14x0, btny14x1, btny14x10, btny14x11, btny14x12, btny14x13, btny14x14£2P, btny14x15, btny14x16, btny14x2£2P, btny14x3, btny14x4, btny14x5, btny14x6, btny14x7£2L, btny14x8, btny14x9£2L, btny15x0, btny15x10£3L, btny15x11, btny15x12, btny15x13, btny15x14, btny15x15£2P, btny15x16, btny15x1£2P, btny15x2, btny15x3, btny15x4, btny15x5, btny15x6£3L, btny15x7, btny15x8, btny15x9, btny16x0£3P, btny16x1, btny16x10, btny16x11, btny16x12£2L, btny16x13, btny16x14, btny16x15, btny16x2, btny16x4£2L, btny16x5, btny16x6, btny16x7, btny16x8£3P, btny16x9, btny1x0, btny1x10£3L, btny1x11, btny1x12, btny1x13, btny1x14, btny1x15£2P, btny1x16, btny1x1£2P, btny1x2, btny1x3, btny1x4, btny1x5, btny1x6£3L, btny1x7, btny1x8, btny1x9, btny2x0, btny2x1, btny2x10, btny2x11, btny2x12, btny2x13, btny2x14£2P, btny2x15, btny2x16, btny2x2£2P, btny2x3, btny2x4, btny2x5, btny2x6, btny2x7£2L, btny2x8, btny2x9£2L, btny3x0, btny3x1, btny3x10, btny3x11, btny3x12, btny3x13£2P, btny3x14, btny3x15, btny3x16, btny3x2, btny3x3£2P, btny3x4, btny3x5, btny3x6, btny3x7, btny3x8£2L, btny3x9, btny4x0£2L, btny4x1, btny4x10, btny4x11, btny4x12£2P, btny4x13, btny4x14, btny4x15, btny4x16£2L, btny4x2, btny4x3, btny4x4£2P, btny4x5, btny4x6, btny4x7, btny4x8, btny4x9, btny5x0, btny5x1, btny5x10, btny5x11£2P, btny5x12, btny5x13, btny5x14, btny5x15, btny5x16, btny5x2, btny5x3, btny5x4, btny5x5£2P, btny5x6, btny5x7, btny5x8, btny5x9, btny6x0, btny6x10£3l, btny6x11, btny6x12, btny6x13, btny6x14, btny6x15£3L, btny6x16, btny6x1£3L, btny6x2, btny6x3, btny6x4, btny6x5, btny6x6£3L, btny6x7, btny6x8, btny6x9, btny7x0, btny7x1, btny7x10, btny7x11, btny7x12, btny7x13, btny7x14£2L, btny7x15, btny7x16, btny7x2£2L, btny7x3, btny7x4, btny7x5, btny7x6, btny7x7£2L, btny7x8, btny7x9£2L, btny8x0£3P, btny8x1, btny8x10, btny8x11, btny8x12, btny8x13£2L, btny8x14, btny8x15, btny8x16£3P, btny8x2, btny8x3£2L, btny8x4, btny8x5, btny8x6, btny8x7, btny8x8, btny8x9, btny9x0, btny9x1, btny9x10, btny9x11, btny9x12, btny9x13, btny9x14£2L, btny9x15, btny9x16, btny9x2£2L, btny9x3, btny9x4, btny9x5, btny9x6, btny9x7£2L, btny9x8, btny9x9£2L, jButton307, jButton308, jButton309, jButton310, jButton311, jButton313, jButton314});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn99$, btnx16y3, btny0x0£3P, btny0x1, btny0x10, btny0x11, btny0x12£2L, btny0x13, btny0x14, btny0x15, btny0x16£3P, btny0x2, btny0x3, btny0x4£2L, btny0x5, btny0x6, btny0x7, btny0x8£3P, btny0x9, btny10x0, btny10x10£3L, btny10x11, btny10x12, btny10x13, btny10x14, btny10x15£3L, btny10x16, btny10x1£3L, btny10x2, btny10x3, btny10x4, btny10x5, btny10x6£3L, btny10x7, btny10x8, btny10x9, btny11x0, btny11x1, btny11x10, btny11x11£2P, btny11x12, btny11x13, btny11x14, btny11x15, btny11x16, btny11x2, btny11x3, btny11x4, btny11x5£2P, btny11x6, btny11x7, btny11x8, btny11x9, btny12x0£2L, btny12x1, btny12x10, btny12x11, btny12x12£2P, btny12x13, btny12x14, btny12x15, btny12x16£2L, btny12x2, btny12x3, btny12x4£2P, btny12x5, btny12x6, btny12x7, btny12x8, btny12x9, btny13x0, btny13x1, btny13x10, btny13x11, btny13x12, btny13x13£2P, btny13x14, btny13x15, btny13x16, btny13x2, btny13x3£2P, btny13x4, btny13x5, btny13x6, btny13x7, btny13x8£2L, btny13x9, btny14x0, btny14x1, btny14x10, btny14x11, btny14x12, btny14x13, btny14x14£2P, btny14x15, btny14x16, btny14x2£2P, btny14x3, btny14x4, btny14x5, btny14x6, btny14x7£2L, btny14x8, btny14x9£2L, btny15x0, btny15x10£3L, btny15x11, btny15x12, btny15x13, btny15x14, btny15x15£2P, btny15x16, btny15x1£2P, btny15x2, btny15x3, btny15x4, btny15x5, btny15x6£3L, btny15x7, btny15x8, btny15x9, btny16x0£3P, btny16x1, btny16x10, btny16x11, btny16x12£2L, btny16x13, btny16x14, btny16x15, btny16x16£3P, btny16x2, btny16x4£2L, btny16x5, btny16x6, btny16x7, btny16x8£3P, btny16x9, btny1x0, btny1x10£3L, btny1x11, btny1x12, btny1x13, btny1x14, btny1x15£2P, btny1x16, btny1x1£2P, btny1x2, btny1x3, btny1x4, btny1x5, btny1x6£3L, btny1x7, btny1x8, btny1x9, btny2x0, btny2x1, btny2x10, btny2x11, btny2x12, btny2x13, btny2x14£2P, btny2x15, btny2x16, btny2x2£2P, btny2x3, btny2x4, btny2x5, btny2x6, btny2x7£2L, btny2x8, btny2x9£2L, btny3x0, btny3x1, btny3x10, btny3x11, btny3x12, btny3x13£2P, btny3x14, btny3x15, btny3x16, btny3x2, btny3x3£2P, btny3x4, btny3x5, btny3x6, btny3x7, btny3x8£2L, btny3x9, btny4x0£2L, btny4x1, btny4x10, btny4x11, btny4x12£2P, btny4x13, btny4x14, btny4x15, btny4x16£2L, btny4x2, btny4x3, btny4x4£2P, btny4x5, btny4x6, btny4x7, btny4x8, btny4x9, btny5x0, btny5x1, btny5x10, btny5x11£2P, btny5x12, btny5x13, btny5x14, btny5x15, btny5x16, btny5x2, btny5x3, btny5x4, btny5x5£2P, btny5x6, btny5x7, btny5x8, btny5x9, btny6x0, btny6x10£3l, btny6x11, btny6x12, btny6x13, btny6x14, btny6x15£3L, btny6x16, btny6x1£3L, btny6x2, btny6x3, btny6x4, btny6x5, btny6x6£3L, btny6x7, btny6x8, btny6x9, btny7x0, btny7x1, btny7x10, btny7x11, btny7x12, btny7x13, btny7x14£2L, btny7x15, btny7x16, btny7x2£2L, btny7x3, btny7x4, btny7x5, btny7x6, btny7x7£2L, btny7x8, btny7x9£2L, btny8x0£3P, btny8x1, btny8x10, btny8x11, btny8x12, btny8x13£2L, btny8x14, btny8x15, btny8x16£3P, btny8x2, btny8x3£2L, btny8x4, btny8x5, btny8x6, btny8x7, btny8x8, btny8x9, btny9x0, btny9x1, btny9x10, btny9x11, btny9x12, btny9x13, btny9x14£2L, btny9x15, btny9x16, btny9x2£2L, btny9x3, btny9x4, btny9x5, btny9x6, btny9x7£2L, btny9x8, btny9x9£2L, jButton307, jButton308, jButton309, jButton310, jButton311, jButton313, jButton314});
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -4285,8 +4285,20 @@ public class Tabellone extends javax.swing.JFrame {
                 int pos = bufferName.indexOf("$") + 1;
                 carattere = bufferName.charAt(pos);
             }
+            if(bufferName.contains("x")){
+                int pos = bufferName.indexOf("x") + 1;
+                carattere = bufferName.charAt(pos);
+            }
+            if(bufferName.contains("y")){
+                int pos = bufferName.indexOf("y") + 1;
+                carattere = bufferName.charAt(pos);
+            }
+            if(bufferName.contains("£")){
+                int pos = bufferName.indexOf("£") + 1;
+                carattere = bufferName.charAt(pos);
+            }
             
-            
+            gg.ComponiParola(carattere, posX, posY, bonus);
             
             bufferName = "";
             bufferImg = null;
@@ -4331,7 +4343,6 @@ public class Tabellone extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn0;
     private javax.swing.JButton btn1;
-    private javax.swing.JButton btn16_16£3P;
     private javax.swing.JButton btn2;
     private javax.swing.JButton btn3;
     private javax.swing.JButton btn4;
@@ -4470,6 +4481,7 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btny16x13;
     private javax.swing.JButton btny16x14;
     private javax.swing.JButton btny16x15;
+    private javax.swing.JButton btny16x16£3P;
     private javax.swing.JButton btny16x2;
     private javax.swing.JButton btny16x4£2L;
     private javax.swing.JButton btny16x5;

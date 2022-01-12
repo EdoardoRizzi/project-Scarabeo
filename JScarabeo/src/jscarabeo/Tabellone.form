@@ -189,7 +189,7 @@
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="btny16x15" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="btn16_16£3P" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btny16x16£3P" linkSize="1" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -1147,7 +1147,7 @@
                           <Component id="btny16x13" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btny16x14" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btny16x15" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn16_16£3P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btny16x16£3P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
@@ -5622,7 +5622,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn16_16&#xa3;3P">
+    <Component class="javax.swing.JButton" name="btny16x16&#xa3;3P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
