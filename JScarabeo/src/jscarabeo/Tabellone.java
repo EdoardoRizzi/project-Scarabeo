@@ -4271,6 +4271,18 @@ public class Tabellone extends javax.swing.JFrame {
             //sposto e svuoto buffer
             b.setName(bufferName);
             b.setIcon(bufferImg);
+            
+            char carattere = 'y';
+            int posX = 18;
+            int posY = 18;
+            String bonus = "";
+            if(bufferName.contains("$")){
+                int pos = bufferName.indexOf("$") + 1;
+                carattere = bufferName.charAt(pos);
+            }
+            
+            
+            
             bufferName = "";
             bufferImg = null;
         }
