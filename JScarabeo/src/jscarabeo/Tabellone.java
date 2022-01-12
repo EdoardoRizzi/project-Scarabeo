@@ -117,17 +117,17 @@ public class Tabellone extends javax.swing.JFrame {
         btn16£3P = new javax.swing.JButton();
         btn14 = new javax.swing.JButton();
         btn15 = new javax.swing.JButton();
-        btn12 = new javax.swing.JButton();
+        btn12£2L = new javax.swing.JButton();
         btn00£3P = new javax.swing.JButton();
         btn01 = new javax.swing.JButton();
-        btn04 = new javax.swing.JButton();
+        btn04£2L = new javax.swing.JButton();
         btn05 = new javax.swing.JButton();
         btn02 = new javax.swing.JButton();
         btn03 = new javax.swing.JButton();
         btn07 = new javax.swing.JButton();
         btn10 = new javax.swing.JButton();
         btn11 = new javax.swing.JButton();
-        btn08 = new javax.swing.JButton();
+        btn08£3P = new javax.swing.JButton();
         btn09 = new javax.swing.JButton();
         btn06 = new javax.swing.JButton();
         btn26 = new javax.swing.JButton();
@@ -142,11 +142,11 @@ public class Tabellone extends javax.swing.JFrame {
         btn25 = new javax.swing.JButton();
         btn22£2P = new javax.swing.JButton();
         btn23 = new javax.swing.JButton();
-        btn27 = new javax.swing.JButton();
+        btn27£2L = new javax.swing.JButton();
         btn210 = new javax.swing.JButton();
         btn211 = new javax.swing.JButton();
         btn28 = new javax.swing.JButton();
-        btn29 = new javax.swing.JButton();
+        btn29£2L = new javax.swing.JButton();
         btn36 = new javax.swing.JButton();
         btn313£2P = new javax.swing.JButton();
         btn316 = new javax.swing.JButton();
@@ -162,11 +162,11 @@ public class Tabellone extends javax.swing.JFrame {
         btn37 = new javax.swing.JButton();
         btn310 = new javax.swing.JButton();
         btn311 = new javax.swing.JButton();
-        btn38 = new javax.swing.JButton();
+        btn38£2L = new javax.swing.JButton();
         btn39 = new javax.swing.JButton();
         btn46 = new javax.swing.JButton();
         btn413 = new javax.swing.JButton();
-        btn416 = new javax.swing.JButton();
+        btn416£2L = new javax.swing.JButton();
         btn414 = new javax.swing.JButton();
         btn415 = new javax.swing.JButton();
         btn412£2P = new javax.swing.JButton();
@@ -202,7 +202,7 @@ public class Tabellone extends javax.swing.JFrame {
         btn613 = new javax.swing.JButton();
         btn616 = new javax.swing.JButton();
         btn614 = new javax.swing.JButton();
-        btn615 = new javax.swing.JButton();
+        btn615£3L = new javax.swing.JButton();
         btn612 = new javax.swing.JButton();
         btn60 = new javax.swing.JButton();
         btn61£3L = new javax.swing.JButton();
@@ -218,7 +218,7 @@ public class Tabellone extends javax.swing.JFrame {
         btn76 = new javax.swing.JButton();
         btn713 = new javax.swing.JButton();
         btn716 = new javax.swing.JButton();
-        btn714 = new javax.swing.JButton();
+        btn714£2L = new javax.swing.JButton();
         btn715 = new javax.swing.JButton();
         btn712 = new javax.swing.JButton();
         btn70 = new javax.swing.JButton();
@@ -233,8 +233,8 @@ public class Tabellone extends javax.swing.JFrame {
         btn78 = new javax.swing.JButton();
         btn79£2L = new javax.swing.JButton();
         btn86 = new javax.swing.JButton();
-        btn813 = new javax.swing.JButton();
-        btn816 = new javax.swing.JButton();
+        btn813£2L = new javax.swing.JButton();
+        btn816£3P = new javax.swing.JButton();
         btn814 = new javax.swing.JButton();
         btn815 = new javax.swing.JButton();
         btn812 = new javax.swing.JButton();
@@ -252,7 +252,7 @@ public class Tabellone extends javax.swing.JFrame {
         btn96 = new javax.swing.JButton();
         btn913 = new javax.swing.JButton();
         btn916 = new javax.swing.JButton();
-        btn914 = new javax.swing.JButton();
+        btn914£2L = new javax.swing.JButton();
         btn915 = new javax.swing.JButton();
         btn912 = new javax.swing.JButton();
         btn90 = new javax.swing.JButton();
@@ -270,7 +270,7 @@ public class Tabellone extends javax.swing.JFrame {
         btn10_13 = new javax.swing.JButton();
         btn10_16 = new javax.swing.JButton();
         btn10_14 = new javax.swing.JButton();
-        btn10_15 = new javax.swing.JButton();
+        btn10_15£3L = new javax.swing.JButton();
         btn10_12 = new javax.swing.JButton();
         btn10_0 = new javax.swing.JButton();
         btn10_1£3L = new javax.swing.JButton();
@@ -302,7 +302,7 @@ public class Tabellone extends javax.swing.JFrame {
         btn11_9 = new javax.swing.JButton();
         btn12_6 = new javax.swing.JButton();
         btn12_13 = new javax.swing.JButton();
-        btn12_16 = new javax.swing.JButton();
+        btn12_16£2L = new javax.swing.JButton();
         btn12_14 = new javax.swing.JButton();
         btn12_15 = new javax.swing.JButton();
         btn12_12£2P = new javax.swing.JButton();
@@ -332,12 +332,12 @@ public class Tabellone extends javax.swing.JFrame {
         btn13_7 = new javax.swing.JButton();
         btn13_10 = new javax.swing.JButton();
         btn13_11 = new javax.swing.JButton();
-        btn13_8 = new javax.swing.JButton();
+        btn13_8£2L = new javax.swing.JButton();
         btn13_9 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
-        btn16_8 = new javax.swing.JButton();
+        btn16_8£3P = new javax.swing.JButton();
         btn16_9 = new javax.swing.JButton();
-        btn1_6 = new javax.swing.JButton();
+        btn1_6£3L = new javax.swing.JButton();
         btn1_13 = new javax.swing.JButton();
         btn1_16 = new javax.swing.JButton();
         btn1_14 = new javax.swing.JButton();
@@ -350,7 +350,7 @@ public class Tabellone extends javax.swing.JFrame {
         btn1_2 = new javax.swing.JButton();
         btn1_3 = new javax.swing.JButton();
         btn1_7 = new javax.swing.JButton();
-        btn1_10 = new javax.swing.JButton();
+        btn1_10£3L = new javax.swing.JButton();
         btn1_11 = new javax.swing.JButton();
         btn1_8 = new javax.swing.JButton();
         btn1_9 = new javax.swing.JButton();
@@ -366,12 +366,12 @@ public class Tabellone extends javax.swing.JFrame {
         btn14_5 = new javax.swing.JButton();
         btn14_2£2P = new javax.swing.JButton();
         btn14_3 = new javax.swing.JButton();
-        btn14_7 = new javax.swing.JButton();
+        btn14_7£2L = new javax.swing.JButton();
         btn14_10 = new javax.swing.JButton();
         btn14_11 = new javax.swing.JButton();
         btn14_8 = new javax.swing.JButton();
-        btn14_9 = new javax.swing.JButton();
-        btn15_6 = new javax.swing.JButton();
+        btn14_9£2L = new javax.swing.JButton();
+        btn15_6£3L = new javax.swing.JButton();
         btn15_13 = new javax.swing.JButton();
         btn15_16 = new javax.swing.JButton();
         btn15_14 = new javax.swing.JButton();
@@ -384,7 +384,7 @@ public class Tabellone extends javax.swing.JFrame {
         btn15_2 = new javax.swing.JButton();
         btn15_3 = new javax.swing.JButton();
         btn15_7 = new javax.swing.JButton();
-        btn15_10 = new javax.swing.JButton();
+        btn15_10£3L = new javax.swing.JButton();
         btn15_11 = new javax.swing.JButton();
         btn15_8 = new javax.swing.JButton();
         btn15_9 = new javax.swing.JButton();
@@ -393,10 +393,10 @@ public class Tabellone extends javax.swing.JFrame {
         btn16_16£3P = new javax.swing.JButton();
         btn16_14 = new javax.swing.JButton();
         btn16_15 = new javax.swing.JButton();
-        btn16_12 = new javax.swing.JButton();
+        btn16_12£2L = new javax.swing.JButton();
         btn16_0£3P = new javax.swing.JButton();
         btn16_1 = new javax.swing.JButton();
-        btn16_4 = new javax.swing.JButton();
+        btn16_4£2L = new javax.swing.JButton();
         btn16_5 = new javax.swing.JButton();
         btn16_2 = new javax.swing.JButton();
         btn16_3 = new javax.swing.JButton();
@@ -479,10 +479,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn12.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn12.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn12.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn12.addActionListener(new java.awt.event.ActionListener() {
+        btn12£2L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn12£2L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn12£2L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn12£2L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -506,10 +506,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn04.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn04.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn04.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn04.addActionListener(new java.awt.event.ActionListener() {
+        btn04£2L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn04£2L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn04£2L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn04£2L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -569,10 +569,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn08.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn08.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn08.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn08.addActionListener(new java.awt.event.ActionListener() {
+        btn08£3P.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn08£3P.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn08£3P.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn08£3P.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -704,10 +704,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn27.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn27.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn27.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn27.addActionListener(new java.awt.event.ActionListener() {
+        btn27£2L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn27£2L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn27£2L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn27£2L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -740,10 +740,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn29.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn29.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn29.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn29.addActionListener(new java.awt.event.ActionListener() {
+        btn29£2L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn29£2L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn29£2L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn29£2L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -884,10 +884,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn38.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn38.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn38.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn38.addActionListener(new java.awt.event.ActionListener() {
+        btn38£2L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn38£2L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn38£2L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn38£2L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -920,10 +920,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn416.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn416.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn416.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn416.addActionListener(new java.awt.event.ActionListener() {
+        btn416£2L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn416£2L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn416£2L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn416£2L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -1244,10 +1244,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn615.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn615.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn615.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn615.addActionListener(new java.awt.event.ActionListener() {
+        btn615£3L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn615£3L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn615£3L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn615£3L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -1388,10 +1388,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn714.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn714.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn714.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn714.addActionListener(new java.awt.event.ActionListener() {
+        btn714£2L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn714£2L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn714£2L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn714£2L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -1523,19 +1523,19 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn813.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn813.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn813.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn813.addActionListener(new java.awt.event.ActionListener() {
+        btn813£2L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn813£2L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn813£2L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn813£2L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
         });
 
-        btn816.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn816.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn816.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn816.addActionListener(new java.awt.event.ActionListener() {
+        btn816£3P.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn816£3P.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn816£3P.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn816£3P.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -1694,10 +1694,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn914.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn914.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn914.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn914.addActionListener(new java.awt.event.ActionListener() {
+        btn914£2L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn914£2L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn914£2L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn914£2L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -1856,10 +1856,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn10_15.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn10_15.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn10_15.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn10_15.addActionListener(new java.awt.event.ActionListener() {
+        btn10_15£3L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn10_15£3L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn10_15£3L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn10_15£3L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -2144,10 +2144,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn12_16.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn12_16.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn12_16.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn12_16.addActionListener(new java.awt.event.ActionListener() {
+        btn12_16£2L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn12_16£2L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn12_16£2L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn12_16£2L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -2414,10 +2414,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn13_8.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn13_8.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn13_8.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn13_8.addActionListener(new java.awt.event.ActionListener() {
+        btn13_8£2L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn13_8£2L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn13_8£2L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn13_8£2L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -2435,10 +2435,10 @@ public class Tabellone extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("MV Boli", 0, 36)); // NOI18N
         jLabel5.setText("SCARABEO");
 
-        btn16_8.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn16_8.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn16_8.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn16_8.addActionListener(new java.awt.event.ActionListener() {
+        btn16_8£3P.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn16_8£3P.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn16_8£3P.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn16_8£3P.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -2453,10 +2453,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn1_6.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn1_6.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn1_6.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn1_6.addActionListener(new java.awt.event.ActionListener() {
+        btn1_6£3L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn1_6£3L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn1_6£3L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn1_6£3L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -2570,10 +2570,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn1_10.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn1_10.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn1_10.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn1_10.addActionListener(new java.awt.event.ActionListener() {
+        btn1_10£3L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn1_10£3L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn1_10£3L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn1_10£3L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -2714,10 +2714,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn14_7.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn14_7.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn14_7.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn14_7.addActionListener(new java.awt.event.ActionListener() {
+        btn14_7£2L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn14_7£2L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn14_7£2L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn14_7£2L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -2750,19 +2750,19 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn14_9.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn14_9.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn14_9.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn14_9.addActionListener(new java.awt.event.ActionListener() {
+        btn14_9£2L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn14_9£2L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn14_9£2L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn14_9£2L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
         });
 
-        btn15_6.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn15_6.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn15_6.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn15_6.addActionListener(new java.awt.event.ActionListener() {
+        btn15_6£3L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn15_6£3L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn15_6£3L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn15_6£3L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -2876,10 +2876,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn15_10.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn15_10.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn15_10.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn15_10.addActionListener(new java.awt.event.ActionListener() {
+        btn15_10£3L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn15_10£3L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn15_10£3L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn15_10£3L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -2957,10 +2957,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn16_12.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn16_12.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn16_12.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn16_12.addActionListener(new java.awt.event.ActionListener() {
+        btn16_12£2L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn16_12£2L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn16_12£2L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn16_12£2L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -2984,10 +2984,10 @@ public class Tabellone extends javax.swing.JFrame {
             }
         });
 
-        btn16_4.setMaximumSize(new java.awt.Dimension(40, 40));
-        btn16_4.setMinimumSize(new java.awt.Dimension(40, 40));
-        btn16_4.setPreferredSize(new java.awt.Dimension(40, 40));
-        btn16_4.addActionListener(new java.awt.event.ActionListener() {
+        btn16_4£2L.setMaximumSize(new java.awt.Dimension(40, 40));
+        btn16_4£2L.setMinimumSize(new java.awt.Dimension(40, 40));
+        btn16_4£2L.setPreferredSize(new java.awt.Dimension(40, 40));
+        btn16_4£2L.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonsActionPerformed(evt);
             }
@@ -3250,11 +3250,11 @@ public class Tabellone extends javax.swing.JFrame {
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(btn14_6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(btn14_7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(btn14_7£2L, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(btn14_8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(btn14_9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(btn14_9£2L, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(btn14_10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3282,7 +3282,7 @@ public class Tabellone extends javax.swing.JFrame {
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(btn15_5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(btn15_6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(btn15_6£3L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(btn15_7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3290,7 +3290,7 @@ public class Tabellone extends javax.swing.JFrame {
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(btn15_9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(btn15_10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(btn15_10£3L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(btn15_11, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3312,7 +3312,7 @@ public class Tabellone extends javax.swing.JFrame {
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(btn16_3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(btn16_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(btn16_4£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(btn16_5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3320,7 +3320,7 @@ public class Tabellone extends javax.swing.JFrame {
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(btn16_7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(btn16_8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(btn16_8£3P, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(btn16_9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3328,7 +3328,7 @@ public class Tabellone extends javax.swing.JFrame {
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(btn16_11, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(btn16_12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(btn16_12£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(btn16_13, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3371,7 +3371,7 @@ public class Tabellone extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn415, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn416, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(btn416£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(btn30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3389,7 +3389,7 @@ public class Tabellone extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn37, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btn38£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn39, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3471,7 +3471,7 @@ public class Tabellone extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn614, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn615, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btn615£3L, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn616, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
@@ -3503,7 +3503,7 @@ public class Tabellone extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn713, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn714, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btn714£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn715, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3535,13 +3535,13 @@ public class Tabellone extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn812, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn813, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btn813£2L, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn814, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn815, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn816, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(btn816£3P, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(btn90, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3571,7 +3571,7 @@ public class Tabellone extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn913, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn914, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btn914£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn915, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3609,7 +3609,7 @@ public class Tabellone extends javax.swing.JFrame {
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(btn10_14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(btn10_15, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(btn10_15£3L, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(btn10_16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(layout.createSequentialGroup()
@@ -3681,7 +3681,7 @@ public class Tabellone extends javax.swing.JFrame {
                                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                     .addComponent(btn12_15, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(btn12_16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                    .addComponent(btn12_16£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                                     .addComponent(btn13_0, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3699,7 +3699,7 @@ public class Tabellone extends javax.swing.JFrame {
                                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                     .addComponent(btn13_7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(btn13_8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(btn13_8£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                     .addComponent(btn13_9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3748,11 +3748,11 @@ public class Tabellone extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn27, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btn27£2L, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn29, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btn29£2L, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn210, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3782,7 +3782,7 @@ public class Tabellone extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn1_5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn1_6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btn1_6£3L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn1_7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3790,7 +3790,7 @@ public class Tabellone extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn1_9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn1_10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btn1_10£3L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn1_11, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3814,7 +3814,7 @@ public class Tabellone extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn03, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn04, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btn04£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn05, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3822,7 +3822,7 @@ public class Tabellone extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn07, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn08, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btn08£3P, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn09, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(7, 7, 7)
@@ -3830,7 +3830,7 @@ public class Tabellone extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn11, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btn12£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn13, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3842,7 +3842,7 @@ public class Tabellone extends javax.swing.JFrame {
                                 .addGap(113, 113, 113))))))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btn0, btn00£3P, btn01, btn02, btn03, btn04, btn05, btn06, btn07, btn08, btn09, btn1, btn10, btn10_0, btn10_10£3L, btn10_11, btn10_12, btn10_13, btn10_14, btn10_15, btn10_16, btn10_1£3L, btn10_2, btn10_3, btn10_4, btn10_5, btn10_6£3L, btn10_7, btn10_8, btn10_9, btn11, btn11_0, btn11_1, btn11_10, btn11_11£2P, btn11_12, btn11_13, btn11_14, btn11_15, btn11_16, btn11_2, btn11_3, btn11_4, btn11_5£2P, btn11_6, btn11_7, btn11_8, btn11_9, btn12, btn12_0£2L, btn12_1, btn12_10, btn12_11, btn12_12£2P, btn12_13, btn12_14, btn12_15, btn12_16, btn12_2, btn12_3, btn12_4£2P, btn12_5, btn12_6, btn12_7, btn12_8, btn12_9, btn13, btn13_0, btn13_1, btn13_10, btn13_11, btn13_12, btn13_13£2P, btn13_14, btn13_15, btn13_16, btn13_2, btn13_3£2P, btn13_4, btn13_5, btn13_6, btn13_7, btn13_8, btn13_9, btn14, btn14_0, btn14_1, btn14_10, btn14_11, btn14_12, btn14_13, btn14_14£2P, btn14_15, btn14_16, btn14_2£2P, btn14_3, btn14_4, btn14_5, btn14_6, btn14_7, btn14_8, btn14_9, btn15, btn15_0, btn15_10, btn15_11, btn15_12, btn15_13, btn15_14, btn15_15£2P, btn15_16, btn15_1£2P, btn15_2, btn15_3, btn15_4, btn15_5, btn15_6, btn15_7, btn15_8, btn15_9, btn16_0£3P, btn16_1, btn16_10, btn16_11, btn16_12, btn16_13, btn16_14, btn16_15, btn16_16£3P, btn16_2, btn16_3, btn16_4, btn16_5, btn16_6, btn16_7, btn16_8, btn16_9, btn16£3P, btn1_0, btn1_10, btn1_11, btn1_12, btn1_13, btn1_14, btn1_15£2P, btn1_16, btn1_1£2P, btn1_2, btn1_3, btn1_4, btn1_5, btn1_6, btn1_7, btn1_8, btn1_9, btn2, btn20, btn21, btn210, btn211, btn212, btn213, btn214£2P, btn215, btn216, btn22£2P, btn23, btn24, btn25, btn26, btn27, btn28, btn29, btn3, btn30, btn31, btn310, btn311, btn312, btn313£2P, btn314, btn315, btn316, btn32, btn33£2P, btn34, btn35, btn36, btn37, btn38, btn39, btn4, btn40£2L, btn41, btn410, btn411, btn412£2P, btn413, btn414, btn415, btn416, btn42, btn43, btn44£2P, btn45, btn46, btn47, btn48, btn49, btn5, btn50, btn51, btn510, btn511£2P, btn512, btn513, btn514, btn515, btn516, btn52, btn53, btn54, btn55£2P, btn56, btn57, btn58, btn59, btn6, btn60, btn610£3l, btn611, btn612, btn613, btn614, btn615, btn616, btn61£3L, btn62, btn63, btn64, btn65, btn66£3L, btn67, btn68, btn69, btn7, btn70, btn71, btn710, btn711, btn712, btn713, btn714, btn715, btn716, btn72£2L, btn73, btn74, btn75, btn76, btn77£2L, btn78, btn79£2L, btn80£3P, btn81, btn810, btn811, btn812, btn813, btn814, btn815, btn816, btn82, btn83£2L, btn84, btn85, btn86, btn87, btn88, btn89, btn90, btn91, btn910, btn911, btn912, btn913, btn914, btn915, btn916, btn92£2L, btn93, btn94, btn95, btn96, btn97£2L, btn98, btn99$, btn99£2L, jButton307, jButton308, jButton309, jButton310, jButton311, jButton313, jButton314});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btn0, btn00£3P, btn01, btn02, btn03, btn04£2L, btn05, btn06, btn07, btn08£3P, btn09, btn1, btn10, btn10_0, btn10_10£3L, btn10_11, btn10_12, btn10_13, btn10_14, btn10_15£3L, btn10_16, btn10_1£3L, btn10_2, btn10_3, btn10_4, btn10_5, btn10_6£3L, btn10_7, btn10_8, btn10_9, btn11, btn11_0, btn11_1, btn11_10, btn11_11£2P, btn11_12, btn11_13, btn11_14, btn11_15, btn11_16, btn11_2, btn11_3, btn11_4, btn11_5£2P, btn11_6, btn11_7, btn11_8, btn11_9, btn12_0£2L, btn12_1, btn12_10, btn12_11, btn12_12£2P, btn12_13, btn12_14, btn12_15, btn12_16£2L, btn12_2, btn12_3, btn12_4£2P, btn12_5, btn12_6, btn12_7, btn12_8, btn12_9, btn12£2L, btn13, btn13_0, btn13_1, btn13_10, btn13_11, btn13_12, btn13_13£2P, btn13_14, btn13_15, btn13_16, btn13_2, btn13_3£2P, btn13_4, btn13_5, btn13_6, btn13_7, btn13_8£2L, btn13_9, btn14, btn14_0, btn14_1, btn14_10, btn14_11, btn14_12, btn14_13, btn14_14£2P, btn14_15, btn14_16, btn14_2£2P, btn14_3, btn14_4, btn14_5, btn14_6, btn14_7£2L, btn14_8, btn14_9£2L, btn15, btn15_0, btn15_10£3L, btn15_11, btn15_12, btn15_13, btn15_14, btn15_15£2P, btn15_16, btn15_1£2P, btn15_2, btn15_3, btn15_4, btn15_5, btn15_6£3L, btn15_7, btn15_8, btn15_9, btn16_0£3P, btn16_1, btn16_10, btn16_11, btn16_12£2L, btn16_13, btn16_14, btn16_15, btn16_16£3P, btn16_2, btn16_3, btn16_4£2L, btn16_5, btn16_6, btn16_7, btn16_8£3P, btn16_9, btn16£3P, btn1_0, btn1_10£3L, btn1_11, btn1_12, btn1_13, btn1_14, btn1_15£2P, btn1_16, btn1_1£2P, btn1_2, btn1_3, btn1_4, btn1_5, btn1_6£3L, btn1_7, btn1_8, btn1_9, btn2, btn20, btn21, btn210, btn211, btn212, btn213, btn214£2P, btn215, btn216, btn22£2P, btn23, btn24, btn25, btn26, btn27£2L, btn28, btn29£2L, btn3, btn30, btn31, btn310, btn311, btn312, btn313£2P, btn314, btn315, btn316, btn32, btn33£2P, btn34, btn35, btn36, btn37, btn38£2L, btn39, btn4, btn40£2L, btn41, btn410, btn411, btn412£2P, btn413, btn414, btn415, btn416£2L, btn42, btn43, btn44£2P, btn45, btn46, btn47, btn48, btn49, btn5, btn50, btn51, btn510, btn511£2P, btn512, btn513, btn514, btn515, btn516, btn52, btn53, btn54, btn55£2P, btn56, btn57, btn58, btn59, btn6, btn60, btn610£3l, btn611, btn612, btn613, btn614, btn615£3L, btn616, btn61£3L, btn62, btn63, btn64, btn65, btn66£3L, btn67, btn68, btn69, btn7, btn70, btn71, btn710, btn711, btn712, btn713, btn714£2L, btn715, btn716, btn72£2L, btn73, btn74, btn75, btn76, btn77£2L, btn78, btn79£2L, btn80£3P, btn81, btn810, btn811, btn812, btn813£2L, btn814, btn815, btn816£3P, btn82, btn83£2L, btn84, btn85, btn86, btn87, btn88, btn89, btn90, btn91, btn910, btn911, btn912, btn913, btn914£2L, btn915, btn916, btn92£2L, btn93, btn94, btn95, btn96, btn97£2L, btn98, btn99$, btn99£2L, jButton307, jButton308, jButton309, jButton310, jButton311, jButton313, jButton314});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3870,15 +3870,15 @@ public class Tabellone extends javax.swing.JFrame {
                     .addComponent(btn01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn02, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn03, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn04, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn04£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn05, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn06, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn07, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn08, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn08£3P, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn09, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn12£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -3891,11 +3891,11 @@ public class Tabellone extends javax.swing.JFrame {
                     .addComponent(btn1_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn1_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn1_5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn1_6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn1_6£3L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn1_7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn1_8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn1_9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn1_10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn1_10£3L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn1_11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn1_12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn1_13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -3953,9 +3953,9 @@ public class Tabellone extends javax.swing.JFrame {
                             .addComponent(btn24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn27£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn29£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn210, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn211, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn212, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -3973,7 +3973,7 @@ public class Tabellone extends javax.swing.JFrame {
                             .addComponent(btn35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn38£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn310, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn311, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -3999,7 +3999,7 @@ public class Tabellone extends javax.swing.JFrame {
                             .addComponent(btn413, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn414, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn415, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn416, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn416£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn40£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4037,7 +4037,7 @@ public class Tabellone extends javax.swing.JFrame {
                             .addComponent(btn612, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn613, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn614, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn615, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn615£3L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn616, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4055,7 +4055,7 @@ public class Tabellone extends javax.swing.JFrame {
                             .addComponent(btn711, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn712, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn713, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn714, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn714£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn715, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn716, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -4073,10 +4073,10 @@ public class Tabellone extends javax.swing.JFrame {
                             .addComponent(btn810, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn811, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn812, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn813, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn813£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn814, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn815, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn816, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btn816£3P, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btn90, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -4093,7 +4093,7 @@ public class Tabellone extends javax.swing.JFrame {
                             .addComponent(btn911, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn912, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn913, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn914, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn914£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn915, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn916, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -4113,7 +4113,7 @@ public class Tabellone extends javax.swing.JFrame {
                             .addComponent(btn10_12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn10_13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn10_14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn10_15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn10_15£3L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn10_16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4152,7 +4152,7 @@ public class Tabellone extends javax.swing.JFrame {
                             .addComponent(btn12_13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn12_14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn12_15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn12_16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btn12_16£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btn13_0, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -4163,7 +4163,7 @@ public class Tabellone extends javax.swing.JFrame {
                             .addComponent(btn13_5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn13_6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn13_7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn13_8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn13_8£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn13_9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn13_10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn13_11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -4181,9 +4181,9 @@ public class Tabellone extends javax.swing.JFrame {
                             .addComponent(btn14_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn14_5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn14_6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn14_7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn14_7£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn14_8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn14_9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn14_9£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn14_10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn14_11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn14_12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -4199,11 +4199,11 @@ public class Tabellone extends javax.swing.JFrame {
                             .addComponent(btn15_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn15_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn15_5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn15_6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn15_6£3L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn15_7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn15_8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn15_9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn15_10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn15_10£3L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn15_11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn15_12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn15_13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -4216,15 +4216,15 @@ public class Tabellone extends javax.swing.JFrame {
                             .addComponent(btn16_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn16_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn16_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn16_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn16_4£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn16_5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn16_6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn16_7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn16_8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn16_8£3P, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn16_9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn16_10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn16_11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn16_12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn16_12£2L, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn16_13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn16_14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn16_15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -4233,7 +4233,7 @@ public class Tabellone extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btn0, btn00£3P, btn01, btn02, btn03, btn04, btn05, btn06, btn07, btn08, btn09, btn1, btn10, btn10_0, btn10_10£3L, btn10_11, btn10_12, btn10_13, btn10_14, btn10_15, btn10_16, btn10_1£3L, btn10_2, btn10_3, btn10_4, btn10_5, btn10_6£3L, btn10_7, btn10_8, btn10_9, btn11, btn11_0, btn11_1, btn11_10, btn11_11£2P, btn11_12, btn11_13, btn11_14, btn11_15, btn11_16, btn11_2, btn11_3, btn11_4, btn11_5£2P, btn11_6, btn11_7, btn11_8, btn11_9, btn12, btn12_0£2L, btn12_1, btn12_10, btn12_11, btn12_12£2P, btn12_13, btn12_14, btn12_15, btn12_16, btn12_2, btn12_3, btn12_4£2P, btn12_5, btn12_6, btn12_7, btn12_8, btn12_9, btn13, btn13_0, btn13_1, btn13_10, btn13_11, btn13_12, btn13_13£2P, btn13_14, btn13_15, btn13_16, btn13_2, btn13_3£2P, btn13_4, btn13_5, btn13_6, btn13_7, btn13_8, btn13_9, btn14, btn14_0, btn14_1, btn14_10, btn14_11, btn14_12, btn14_13, btn14_14£2P, btn14_15, btn14_16, btn14_2£2P, btn14_3, btn14_4, btn14_5, btn14_6, btn14_7, btn14_8, btn14_9, btn15, btn15_0, btn15_10, btn15_11, btn15_12, btn15_13, btn15_14, btn15_15£2P, btn15_16, btn15_1£2P, btn15_2, btn15_3, btn15_4, btn15_5, btn15_6, btn15_7, btn15_8, btn15_9, btn16_0£3P, btn16_1, btn16_10, btn16_11, btn16_12, btn16_13, btn16_14, btn16_15, btn16_16£3P, btn16_2, btn16_3, btn16_4, btn16_5, btn16_6, btn16_7, btn16_8, btn16_9, btn16£3P, btn1_0, btn1_10, btn1_11, btn1_12, btn1_13, btn1_14, btn1_15£2P, btn1_16, btn1_1£2P, btn1_2, btn1_3, btn1_4, btn1_5, btn1_6, btn1_7, btn1_8, btn1_9, btn2, btn20, btn21, btn210, btn211, btn212, btn213, btn214£2P, btn215, btn216, btn22£2P, btn23, btn24, btn25, btn26, btn27, btn28, btn29, btn3, btn30, btn31, btn310, btn311, btn312, btn313£2P, btn314, btn315, btn316, btn32, btn33£2P, btn34, btn35, btn36, btn37, btn38, btn39, btn4, btn40£2L, btn41, btn410, btn411, btn412£2P, btn413, btn414, btn415, btn416, btn42, btn43, btn44£2P, btn45, btn46, btn47, btn48, btn49, btn5, btn50, btn51, btn510, btn511£2P, btn512, btn513, btn514, btn515, btn516, btn52, btn53, btn54, btn55£2P, btn56, btn57, btn58, btn59, btn6, btn60, btn610£3l, btn611, btn612, btn613, btn614, btn615, btn616, btn61£3L, btn62, btn63, btn64, btn65, btn66£3L, btn67, btn68, btn69, btn7, btn70, btn71, btn710, btn711, btn712, btn713, btn714, btn715, btn716, btn72£2L, btn73, btn74, btn75, btn76, btn77£2L, btn78, btn79£2L, btn80£3P, btn81, btn810, btn811, btn812, btn813, btn814, btn815, btn816, btn82, btn83£2L, btn84, btn85, btn86, btn87, btn88, btn89, btn90, btn91, btn910, btn911, btn912, btn913, btn914, btn915, btn916, btn92£2L, btn93, btn94, btn95, btn96, btn97£2L, btn98, btn99$, btn99£2L, jButton307, jButton308, jButton309, jButton310, jButton311, jButton313, jButton314});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btn0, btn00£3P, btn01, btn02, btn03, btn04£2L, btn05, btn06, btn07, btn08£3P, btn09, btn1, btn10, btn10_0, btn10_10£3L, btn10_11, btn10_12, btn10_13, btn10_14, btn10_15£3L, btn10_16, btn10_1£3L, btn10_2, btn10_3, btn10_4, btn10_5, btn10_6£3L, btn10_7, btn10_8, btn10_9, btn11, btn11_0, btn11_1, btn11_10, btn11_11£2P, btn11_12, btn11_13, btn11_14, btn11_15, btn11_16, btn11_2, btn11_3, btn11_4, btn11_5£2P, btn11_6, btn11_7, btn11_8, btn11_9, btn12_0£2L, btn12_1, btn12_10, btn12_11, btn12_12£2P, btn12_13, btn12_14, btn12_15, btn12_16£2L, btn12_2, btn12_3, btn12_4£2P, btn12_5, btn12_6, btn12_7, btn12_8, btn12_9, btn12£2L, btn13, btn13_0, btn13_1, btn13_10, btn13_11, btn13_12, btn13_13£2P, btn13_14, btn13_15, btn13_16, btn13_2, btn13_3£2P, btn13_4, btn13_5, btn13_6, btn13_7, btn13_8£2L, btn13_9, btn14, btn14_0, btn14_1, btn14_10, btn14_11, btn14_12, btn14_13, btn14_14£2P, btn14_15, btn14_16, btn14_2£2P, btn14_3, btn14_4, btn14_5, btn14_6, btn14_7£2L, btn14_8, btn14_9£2L, btn15, btn15_0, btn15_10£3L, btn15_11, btn15_12, btn15_13, btn15_14, btn15_15£2P, btn15_16, btn15_1£2P, btn15_2, btn15_3, btn15_4, btn15_5, btn15_6£3L, btn15_7, btn15_8, btn15_9, btn16_0£3P, btn16_1, btn16_10, btn16_11, btn16_12£2L, btn16_13, btn16_14, btn16_15, btn16_16£3P, btn16_2, btn16_3, btn16_4£2L, btn16_5, btn16_6, btn16_7, btn16_8£3P, btn16_9, btn16£3P, btn1_0, btn1_10£3L, btn1_11, btn1_12, btn1_13, btn1_14, btn1_15£2P, btn1_16, btn1_1£2P, btn1_2, btn1_3, btn1_4, btn1_5, btn1_6£3L, btn1_7, btn1_8, btn1_9, btn2, btn20, btn21, btn210, btn211, btn212, btn213, btn214£2P, btn215, btn216, btn22£2P, btn23, btn24, btn25, btn26, btn27£2L, btn28, btn29£2L, btn3, btn30, btn31, btn310, btn311, btn312, btn313£2P, btn314, btn315, btn316, btn32, btn33£2P, btn34, btn35, btn36, btn37, btn38£2L, btn39, btn4, btn40£2L, btn41, btn410, btn411, btn412£2P, btn413, btn414, btn415, btn416£2L, btn42, btn43, btn44£2P, btn45, btn46, btn47, btn48, btn49, btn5, btn50, btn51, btn510, btn511£2P, btn512, btn513, btn514, btn515, btn516, btn52, btn53, btn54, btn55£2P, btn56, btn57, btn58, btn59, btn6, btn60, btn610£3l, btn611, btn612, btn613, btn614, btn615£3L, btn616, btn61£3L, btn62, btn63, btn64, btn65, btn66£3L, btn67, btn68, btn69, btn7, btn70, btn71, btn710, btn711, btn712, btn713, btn714£2L, btn715, btn716, btn72£2L, btn73, btn74, btn75, btn76, btn77£2L, btn78, btn79£2L, btn80£3P, btn81, btn810, btn811, btn812, btn813£2L, btn814, btn815, btn816£3P, btn82, btn83£2L, btn84, btn85, btn86, btn87, btn88, btn89, btn90, btn91, btn910, btn911, btn912, btn913, btn914£2L, btn915, btn916, btn92£2L, btn93, btn94, btn95, btn96, btn97£2L, btn98, btn99$, btn99£2L, jButton307, jButton308, jButton309, jButton310, jButton311, jButton313, jButton314});
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -4317,11 +4317,11 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btn01;
     private javax.swing.JButton btn02;
     private javax.swing.JButton btn03;
-    private javax.swing.JButton btn04;
+    private javax.swing.JButton btn04£2L;
     private javax.swing.JButton btn05;
     private javax.swing.JButton btn06;
     private javax.swing.JButton btn07;
-    private javax.swing.JButton btn08;
+    private javax.swing.JButton btn08£3P;
     private javax.swing.JButton btn09;
     private javax.swing.JButton btn1;
     private javax.swing.JButton btn10;
@@ -4331,7 +4331,7 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btn10_12;
     private javax.swing.JButton btn10_13;
     private javax.swing.JButton btn10_14;
-    private javax.swing.JButton btn10_15;
+    private javax.swing.JButton btn10_15£3L;
     private javax.swing.JButton btn10_16;
     private javax.swing.JButton btn10_1£3L;
     private javax.swing.JButton btn10_2;
@@ -4360,7 +4360,6 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btn11_7;
     private javax.swing.JButton btn11_8;
     private javax.swing.JButton btn11_9;
-    private javax.swing.JButton btn12;
     private javax.swing.JButton btn12_0£2L;
     private javax.swing.JButton btn12_1;
     private javax.swing.JButton btn12_10;
@@ -4369,7 +4368,7 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btn12_13;
     private javax.swing.JButton btn12_14;
     private javax.swing.JButton btn12_15;
-    private javax.swing.JButton btn12_16;
+    private javax.swing.JButton btn12_16£2L;
     private javax.swing.JButton btn12_2;
     private javax.swing.JButton btn12_3;
     private javax.swing.JButton btn12_4£2P;
@@ -4378,6 +4377,7 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btn12_7;
     private javax.swing.JButton btn12_8;
     private javax.swing.JButton btn12_9;
+    private javax.swing.JButton btn12£2L;
     private javax.swing.JButton btn13;
     private javax.swing.JButton btn13_0;
     private javax.swing.JButton btn13_1;
@@ -4394,7 +4394,7 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btn13_5;
     private javax.swing.JButton btn13_6;
     private javax.swing.JButton btn13_7;
-    private javax.swing.JButton btn13_8;
+    private javax.swing.JButton btn13_8£2L;
     private javax.swing.JButton btn13_9;
     private javax.swing.JButton btn14;
     private javax.swing.JButton btn14_0;
@@ -4411,12 +4411,12 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btn14_4;
     private javax.swing.JButton btn14_5;
     private javax.swing.JButton btn14_6;
-    private javax.swing.JButton btn14_7;
+    private javax.swing.JButton btn14_7£2L;
     private javax.swing.JButton btn14_8;
-    private javax.swing.JButton btn14_9;
+    private javax.swing.JButton btn14_9£2L;
     private javax.swing.JButton btn15;
     private javax.swing.JButton btn15_0;
-    private javax.swing.JButton btn15_10;
+    private javax.swing.JButton btn15_10£3L;
     private javax.swing.JButton btn15_11;
     private javax.swing.JButton btn15_12;
     private javax.swing.JButton btn15_13;
@@ -4428,7 +4428,7 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btn15_3;
     private javax.swing.JButton btn15_4;
     private javax.swing.JButton btn15_5;
-    private javax.swing.JButton btn15_6;
+    private javax.swing.JButton btn15_6£3L;
     private javax.swing.JButton btn15_7;
     private javax.swing.JButton btn15_8;
     private javax.swing.JButton btn15_9;
@@ -4436,22 +4436,22 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btn16_1;
     private javax.swing.JButton btn16_10;
     private javax.swing.JButton btn16_11;
-    private javax.swing.JButton btn16_12;
+    private javax.swing.JButton btn16_12£2L;
     private javax.swing.JButton btn16_13;
     private javax.swing.JButton btn16_14;
     private javax.swing.JButton btn16_15;
     private javax.swing.JButton btn16_16£3P;
     private javax.swing.JButton btn16_2;
     private javax.swing.JButton btn16_3;
-    private javax.swing.JButton btn16_4;
+    private javax.swing.JButton btn16_4£2L;
     private javax.swing.JButton btn16_5;
     private javax.swing.JButton btn16_6;
     private javax.swing.JButton btn16_7;
-    private javax.swing.JButton btn16_8;
+    private javax.swing.JButton btn16_8£3P;
     private javax.swing.JButton btn16_9;
     private javax.swing.JButton btn16£3P;
     private javax.swing.JButton btn1_0;
-    private javax.swing.JButton btn1_10;
+    private javax.swing.JButton btn1_10£3L;
     private javax.swing.JButton btn1_11;
     private javax.swing.JButton btn1_12;
     private javax.swing.JButton btn1_13;
@@ -4463,7 +4463,7 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btn1_3;
     private javax.swing.JButton btn1_4;
     private javax.swing.JButton btn1_5;
-    private javax.swing.JButton btn1_6;
+    private javax.swing.JButton btn1_6£3L;
     private javax.swing.JButton btn1_7;
     private javax.swing.JButton btn1_8;
     private javax.swing.JButton btn1_9;
@@ -4482,9 +4482,9 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btn24;
     private javax.swing.JButton btn25;
     private javax.swing.JButton btn26;
-    private javax.swing.JButton btn27;
+    private javax.swing.JButton btn27£2L;
     private javax.swing.JButton btn28;
-    private javax.swing.JButton btn29;
+    private javax.swing.JButton btn29£2L;
     private javax.swing.JButton btn3;
     private javax.swing.JButton btn30;
     private javax.swing.JButton btn31;
@@ -4501,7 +4501,7 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btn35;
     private javax.swing.JButton btn36;
     private javax.swing.JButton btn37;
-    private javax.swing.JButton btn38;
+    private javax.swing.JButton btn38£2L;
     private javax.swing.JButton btn39;
     private javax.swing.JButton btn4;
     private javax.swing.JButton btn40£2L;
@@ -4512,7 +4512,7 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btn413;
     private javax.swing.JButton btn414;
     private javax.swing.JButton btn415;
-    private javax.swing.JButton btn416;
+    private javax.swing.JButton btn416£2L;
     private javax.swing.JButton btn42;
     private javax.swing.JButton btn43;
     private javax.swing.JButton btn44£2P;
@@ -4546,7 +4546,7 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btn612;
     private javax.swing.JButton btn613;
     private javax.swing.JButton btn614;
-    private javax.swing.JButton btn615;
+    private javax.swing.JButton btn615£3L;
     private javax.swing.JButton btn616;
     private javax.swing.JButton btn61£3L;
     private javax.swing.JButton btn62;
@@ -4564,7 +4564,7 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btn711;
     private javax.swing.JButton btn712;
     private javax.swing.JButton btn713;
-    private javax.swing.JButton btn714;
+    private javax.swing.JButton btn714£2L;
     private javax.swing.JButton btn715;
     private javax.swing.JButton btn716;
     private javax.swing.JButton btn72£2L;
@@ -4580,10 +4580,10 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btn810;
     private javax.swing.JButton btn811;
     private javax.swing.JButton btn812;
-    private javax.swing.JButton btn813;
+    private javax.swing.JButton btn813£2L;
     private javax.swing.JButton btn814;
     private javax.swing.JButton btn815;
-    private javax.swing.JButton btn816;
+    private javax.swing.JButton btn816£3P;
     private javax.swing.JButton btn82;
     private javax.swing.JButton btn83£2L;
     private javax.swing.JButton btn84;
@@ -4598,7 +4598,7 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JButton btn911;
     private javax.swing.JButton btn912;
     private javax.swing.JButton btn913;
-    private javax.swing.JButton btn914;
+    private javax.swing.JButton btn914£2L;
     private javax.swing.JButton btn915;
     private javax.swing.JButton btn916;
     private javax.swing.JButton btn92£2L;
