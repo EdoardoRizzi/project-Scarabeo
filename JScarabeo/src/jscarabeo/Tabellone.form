@@ -90,7 +90,7 @@
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="btn14_1" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="btn14_2" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="btn14_2£2P" linkSize="1" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="btn14_3" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
@@ -114,7 +114,7 @@
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="btn14_13" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="btn14_14" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="btn14_14£2P" linkSize="1" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="btn14_15" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
@@ -123,7 +123,7 @@
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="btn15_0" linkSize="1" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="btn15_1" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                              <Component id="btn15_1£2P" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="btn15_2" linkSize="1" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
@@ -151,13 +151,13 @@
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="btn15_14" linkSize="1" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="btn15_15" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                              <Component id="btn15_15£2P" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="btn15_16" linkSize="1" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
-                                          <Component id="btn16_0" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btn16_0£3P" linkSize="1" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="btn16_1" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
@@ -189,12 +189,12 @@
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="btn16_15" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="btn16_16" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btn16_16£3P" linkSize="1" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="btn40" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btn40£2L" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn41" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -202,7 +202,7 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn43" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn44" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btn44£2P" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn45" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -218,7 +218,7 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn411" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn412" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btn412£2P" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn413" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -235,7 +235,7 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn32" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn33" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btn33£2P" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn34" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -255,7 +255,7 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn312" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn313" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btn313£2P" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn314" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -274,7 +274,7 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn54" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn55" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btn55£2P" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn56" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -286,7 +286,7 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn510" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn511" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btn511£2P" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn512" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -301,7 +301,7 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="btn60" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn61" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btn61£3L" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn62" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -311,7 +311,7 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn65" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn66" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btn66£3L" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn67" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -319,7 +319,7 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn69" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn610" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btn610£3l" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn611" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -338,7 +338,7 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn71" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn72" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btn72£2L" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn73" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -348,11 +348,11 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn76" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn77" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btn77£2L" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn78" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn79" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btn79£2L" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn710" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -369,13 +369,13 @@
                                       <Component id="btn716" linkSize="1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="btn80" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btn80£3P" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn81" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn82" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn83" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btn83£2L" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn84" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -408,7 +408,7 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn91" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn92" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btn92£2L" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn93" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -418,11 +418,11 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn96" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn97" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btn97£2L" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn98" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn99" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btn99£2L" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn910" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -443,7 +443,7 @@
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="btn10_0" linkSize="1" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="btn10_1" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                              <Component id="btn10_1£3L" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="btn10_2" linkSize="1" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
@@ -453,7 +453,7 @@
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="btn10_5" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="btn10_6" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="btn10_6£3L" linkSize="1" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="btn10_7" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
@@ -461,7 +461,7 @@
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="btn10_9" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="btn10_10" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="btn10_10£3L" linkSize="1" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="btn10_11" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
@@ -486,7 +486,7 @@
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="btn11_4" linkSize="1" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="btn11_5" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                              <Component id="btn11_5£2P" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="btn11_6" linkSize="1" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
@@ -498,7 +498,7 @@
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="btn11_10" linkSize="1" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="btn11_11" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                              <Component id="btn11_11£2P" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="btn11_12" linkSize="1" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
@@ -514,7 +514,7 @@
                                       <Group type="102" alignment="1" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="btn12_0" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="btn12_0£2L" linkSize="1" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="btn12_1" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
@@ -522,7 +522,7 @@
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="btn12_3" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="btn12_4" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="btn12_4£2P" linkSize="1" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="btn12_5" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
@@ -538,7 +538,7 @@
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="btn12_11" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="btn12_12" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="btn12_12£2P" linkSize="1" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="btn12_13" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
@@ -555,7 +555,7 @@
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="btn13_2" linkSize="1" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="btn13_3" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                                  <Component id="btn13_3£2P" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="btn13_4" linkSize="1" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
@@ -575,7 +575,7 @@
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="btn13_12" linkSize="1" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="btn13_13" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                                  <Component id="btn13_13£2P" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="btn13_14" linkSize="1" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
@@ -602,7 +602,7 @@
                                   <Component id="jButton307" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jButton309" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jButton310" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jButton316" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btn99$" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -613,7 +613,7 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn21" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn22" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btn22£2P" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn23" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -637,7 +637,7 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn213" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn214" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btn214£2P" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn215" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -648,7 +648,7 @@
                                       <EmptySpace min="104" max="32767" attributes="0"/>
                                       <Component id="btn1_0" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn1_1" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btn1_1£2P" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn1_2" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -676,14 +676,14 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn1_14" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn1_15" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btn1_15£2P" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn1_16" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      <Component id="btn00" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btn00£3P" linkSize="1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn01" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -715,7 +715,7 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="btn15" linkSize="1" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn16" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btn16£3P" linkSize="1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
@@ -754,7 +754,7 @@
               </Group>
               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="btn00" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn00£3P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="btn01" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="btn02" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="btn03" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -770,12 +770,12 @@
                   <Component id="btn13" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="btn14" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="btn15" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="btn16" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn16£3P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="btn1_0" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="btn1_1" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn1_1£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="btn1_2" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="btn1_3" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="btn1_4" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -789,7 +789,7 @@
                   <Component id="btn1_12" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="btn1_13" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="btn1_14" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="btn1_15" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn1_15£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="btn1_16" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -818,7 +818,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jButton311" linkSize="2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton316" linkSize="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="btn99$" linkSize="2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jButton313" linkSize="2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -842,7 +842,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="btn20" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn21" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn22" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn22£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn23" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn24" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn25" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -854,7 +854,7 @@
                           <Component id="btn211" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn212" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn213" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn214" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn214£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn215" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn216" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -863,7 +863,7 @@
                           <Component id="btn30" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn31" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn32" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn33" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn33£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn34" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn35" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn36" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -873,7 +873,7 @@
                           <Component id="btn310" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn311" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn312" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn313" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn313£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn314" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn315" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn316" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -883,7 +883,7 @@
                           <Component id="btn41" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn42" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn43" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn44" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn44£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn45" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn46" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn47" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -891,12 +891,12 @@
                           <Component id="btn49" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn410" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn411" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn412" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn412£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn413" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn414" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn415" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn416" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn40" linkSize="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn40£2L" linkSize="2" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -905,13 +905,13 @@
                           <Component id="btn52" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn53" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn54" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn55" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn55£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn56" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn57" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn58" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn59" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn510" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn511" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn511£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn512" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn513" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn514" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -921,16 +921,16 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="btn60" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn61" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn61£3L" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn62" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn63" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn64" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn65" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn66" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn66£3L" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn67" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn68" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn69" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn610" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn610£3l" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn611" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn612" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn613" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -942,14 +942,14 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="btn70" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn71" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn72" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn72£2L" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn73" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn74" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn75" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn76" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn77" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn77£2L" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn78" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn79" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn79£2L" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn710" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn711" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn712" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -960,10 +960,10 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btn80" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn80£3P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn81" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn82" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn83" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn83£2L" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn84" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn85" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn86" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -982,14 +982,14 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="btn90" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn91" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn92" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn92£2L" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn93" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn94" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn95" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn96" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn97" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn97£2L" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn98" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn99" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn99£2L" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn910" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn911" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn912" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1001,16 +1001,16 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="btn10_0" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn10_1" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn10_1£3L" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn10_2" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn10_3" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn10_4" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn10_5" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn10_6" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn10_6£3L" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn10_7" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn10_8" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn10_9" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn10_10" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn10_10£3L" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn10_11" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn10_12" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn10_13" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1025,13 +1025,13 @@
                           <Component id="btn11_2" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn11_3" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn11_4" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn11_5" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn11_5£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn11_6" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn11_7" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn11_8" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn11_9" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn11_10" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn11_11" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn11_11£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn11_12" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn11_13" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn11_14" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1040,11 +1040,11 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btn12_0" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn12_0£2L" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn12_1" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn12_2" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn12_3" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn12_4" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn12_4£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn12_5" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn12_6" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn12_7" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1052,7 +1052,7 @@
                           <Component id="btn12_9" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn12_10" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn12_11" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn12_12" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn12_12£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn12_13" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn12_14" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn12_15" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1063,7 +1063,7 @@
                           <Component id="btn13_0" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn13_1" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn13_2" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn13_3" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn13_3£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn13_4" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn13_5" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn13_6" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1073,7 +1073,7 @@
                           <Component id="btn13_10" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn13_11" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn13_12" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn13_13" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn13_13£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn13_14" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn13_15" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn13_16" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1082,7 +1082,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="btn14_0" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn14_1" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn14_2" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn14_2£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn14_3" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn14_4" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn14_5" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1094,14 +1094,14 @@
                           <Component id="btn14_11" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn14_12" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn14_13" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn14_14" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn14_14£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn14_15" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn14_16" linkSize="2" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="btn15_0" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn15_1" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn15_1£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn15_2" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn15_3" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn15_4" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1115,12 +1115,12 @@
                           <Component id="btn15_12" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn15_13" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn15_14" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn15_15" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn15_15£2P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn15_16" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btn16_0" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn16_0£3P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn16_1" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn16_2" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn16_3" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1136,7 +1136,7 @@
                           <Component id="btn16_13" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn16_14" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btn16_15" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn16_16" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn16_16£3P" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
@@ -1203,7 +1203,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn16">
+    <Component class="javax.swing.JButton" name="btn16&#xa3;3P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -1267,7 +1267,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn00">
+    <Component class="javax.swing.JButton" name="btn00&#xa3;3P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -1507,7 +1507,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn214">
+    <Component class="javax.swing.JButton" name="btn214&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -1619,7 +1619,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn22">
+    <Component class="javax.swing.JButton" name="btn22&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -1747,7 +1747,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn313">
+    <Component class="javax.swing.JButton" name="btn313&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -1907,7 +1907,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn33">
+    <Component class="javax.swing.JButton" name="btn33&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -2083,7 +2083,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn412">
+    <Component class="javax.swing.JButton" name="btn412&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -2099,7 +2099,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn40">
+    <Component class="javax.swing.JButton" name="btn40&#xa3;2L">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -2131,7 +2131,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn44">
+    <Component class="javax.swing.JButton" name="btn44&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -2419,7 +2419,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn55">
+    <Component class="javax.swing.JButton" name="btn55&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -2499,7 +2499,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn511">
+    <Component class="javax.swing.JButton" name="btn511&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -2547,7 +2547,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn66">
+    <Component class="javax.swing.JButton" name="btn66&#xa3;3L">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -2659,7 +2659,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn61">
+    <Component class="javax.swing.JButton" name="btn61&#xa3;3L">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -2755,7 +2755,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn610">
+    <Component class="javax.swing.JButton" name="btn610&#xa3;3l">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -2979,7 +2979,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn72">
+    <Component class="javax.swing.JButton" name="btn72&#xa3;2L">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -3011,7 +3011,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn77">
+    <Component class="javax.swing.JButton" name="btn77&#xa3;2L">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -3075,7 +3075,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn79">
+    <Component class="javax.swing.JButton" name="btn79&#xa3;2L">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -3187,7 +3187,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn80">
+    <Component class="javax.swing.JButton" name="btn80&#xa3;3P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -3267,7 +3267,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn83">
+    <Component class="javax.swing.JButton" name="btn83&#xa3;2L">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -3523,7 +3523,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn92">
+    <Component class="javax.swing.JButton" name="btn92&#xa3;2L">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -3555,7 +3555,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn97">
+    <Component class="javax.swing.JButton" name="btn97&#xa3;2L">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -3619,7 +3619,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn99">
+    <Component class="javax.swing.JButton" name="btn99&#xa3;2L">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -3635,7 +3635,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn10_6">
+    <Component class="javax.swing.JButton" name="btn10_6&#xa3;3L">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -3747,7 +3747,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn10_1">
+    <Component class="javax.swing.JButton" name="btn10_1&#xa3;3L">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -3843,7 +3843,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn10_10">
+    <Component class="javax.swing.JButton" name="btn10_10&#xa3;3L">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -4051,7 +4051,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn11_5">
+    <Component class="javax.swing.JButton" name="btn11_5&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -4131,7 +4131,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn11_11">
+    <Component class="javax.swing.JButton" name="btn11_11&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -4259,7 +4259,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn12_12">
+    <Component class="javax.swing.JButton" name="btn12_12&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -4275,7 +4275,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn12_0">
+    <Component class="javax.swing.JButton" name="btn12_0&#xa3;2L">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -4307,7 +4307,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn12_4">
+    <Component class="javax.swing.JButton" name="btn12_4&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -4467,7 +4467,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn13_13">
+    <Component class="javax.swing.JButton" name="btn13_13&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -4627,7 +4627,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn13_3">
+    <Component class="javax.swing.JButton" name="btn13_3&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -4827,7 +4827,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn1_15">
+    <Component class="javax.swing.JButton" name="btn1_15&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -4875,7 +4875,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn1_1">
+    <Component class="javax.swing.JButton" name="btn1_1&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -5083,7 +5083,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn14_14">
+    <Component class="javax.swing.JButton" name="btn14_14&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -5195,7 +5195,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn14_2">
+    <Component class="javax.swing.JButton" name="btn14_2&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -5371,7 +5371,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn15_15">
+    <Component class="javax.swing.JButton" name="btn15_15&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -5419,7 +5419,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn15_1">
+    <Component class="javax.swing.JButton" name="btn15_1&#xa3;2P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -5611,7 +5611,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn16_16">
+    <Component class="javax.swing.JButton" name="btn16_16&#xa3;3P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -5675,7 +5675,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn16_0">
+    <Component class="javax.swing.JButton" name="btn16_0&#xa3;3P">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -5956,7 +5956,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton316">
+    <Component class="javax.swing.JButton" name="btn99$">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/jscarabeo/images/tassello.png"/>
