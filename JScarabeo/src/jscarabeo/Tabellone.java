@@ -29,7 +29,7 @@ public class Tabellone extends javax.swing.JFrame {
     GestoreGioco gg;
     String bufferName;
     ImageIcon bufferImg;
-    JButton temp1;
+    JButton temp1 = null;
 
     public Tabellone(DatiCondivisi d) throws IOException, InterruptedException {
         initComponents();
@@ -51,48 +51,42 @@ public class Tabellone extends javax.swing.JFrame {
         switch (i) {
             case 0 -> {
                 this.btn0.setIcon(lettera.getImg());
-                this.btn0.setName(Character.toString(lettera.getLettera()) + Integer.toString(lettera.getValore()));
+                this.btn0.setName(generaNome(lettera, "btn0$"));
             }
             case 1 -> {
                 this.btn1.setIcon(lettera.getImg());
-                this.btn1.setName(generaNome(lettera, this.btn1.getName()));
+                this.btn1.setName(generaNome(lettera, "btn1$"));
             }
             case 2 -> {
                 this.btn2.setIcon(lettera.getImg());
-                this.btn2.setName(generaNome(lettera, this.btn2.getName()));
+                this.btn2.setName(generaNome(lettera, "btn2$"));
             }
             case 3 -> {
                 this.btn3.setIcon(lettera.getImg());
-                this.btn3.setName(generaNome(lettera, this.btn3.getName()));
+                this.btn3.setName(generaNome(lettera, "btn3$"));
             }
             case 4 -> {
                 this.btn4.setIcon(lettera.getImg());
-                this.btn4.setName(generaNome(lettera, this.btn4.getName()));
+                this.btn4.setName(generaNome(lettera, "btn4$"));
             }
             case 5 -> {
                 this.btn5.setIcon(lettera.getImg());
-                this.btn5.setName(generaNome(lettera, this.btn5.getName()));
+                this.btn5.setName(generaNome(lettera, "btn5$"));
             }
             case 6 -> {
                 this.btn6.setIcon(lettera.getImg());
-                this.btn6.setName(generaNome(lettera, this.btn6.getName()));
+                this.btn6.setName(generaNome(lettera, "btn6$"));
             }
             case 7 -> {
                 this.btn7.setIcon(lettera.getImg());
-                this.btn7.setName(generaNome(lettera, this.btn7.getName()));
+                this.btn7.setName(generaNome(lettera, "btn7$"));
             }
         }
     }
-    
-    private String generaNome(Lettera l, String NomeAttuale){
-        String nome = NomeAttuale;
-        if (nome.contains("$")) {
-            int pos = nome.indexOf("$");
-            nome = nome.substring(0, pos);
-        } else {
-            nome += "$" + Character.toString(l.getLettera());
-        }
-        
+
+    private String generaNome(Lettera l, String NomeAttuale) {
+        String nome = NomeAttuale.substring(0, NomeAttuale.indexOf("$"));
+        nome += Character.toString(l.getLettera()) + l.getValore();
         return nome;
     }
 
@@ -4264,46 +4258,80 @@ public class Tabellone extends javax.swing.JFrame {
 
         JButton b = (JButton) evt.getSource();
         //salvo in un buffer immagine e nome
-        if (bufferName == "" && bufferImg == null) {
-            if (b.getIcon() != null || b.getIcon() != new ImageIcon("tassello.png")) {
-                //salvo button precedente
-                temp1 = b;
-                bufferName = b.getName();
-                bufferImg = (ImageIcon) b.getIcon();
-            }
+        if (temp1 == null) {
+            temp1 = b;
         } else {
-            temp1.setName("");
-            temp1.setIcon(new ImageIcon("tassello.png"));
-            //sposto e svuoto buffer
-            b.setName(bufferName);
-            b.setIcon(bufferImg);
-            
-            char carattere = 'y';
-            int posX = 18;
-            int posY = 18;
-            String bonus = "";
-            if(bufferName.contains("$")){
-                int pos = bufferName.indexOf("$") + 1;
-                carattere = bufferName.charAt(pos);
+            String buttonPremutoPrima = temp1.getName().substring(0, temp1.getName().indexOf("$"));
+            switch (buttonPremutoPrima) {
+                case "btn0$" -> {
+                    this.btn0.setIcon(null);
+                    this.btn0.setName("btn0$");
+                }
+                case "btn1$" -> {
+                    this.btn1.setIcon(null);
+                    this.btn1.setName("btn1$");
+                }
+                case "btn2$" -> {
+                    this.btn2.setIcon(null);
+                    this.btn2.setName("btn2$");
+                }
+                case "btn3$" -> {
+                    this.btn3.setIcon(null);
+                    this.btn3.setName("btn3$");
+                }
+                case "btn4$" -> {
+                    this.btn4.setIcon(null);
+                    this.btn4.setName("btn4$");
+                }
+                case "btn5$" -> {
+                    this.btn5.setIcon(null);
+                    this.btn5.setName("btn5$");
+                }
+                case "btn6$" -> {
+                    this.btn6.setIcon(null);
+                    this.btn6.setName("btn6$");
+                }
+                case "btn7$" -> {
+                    this.btn7.setIcon(null);
+                    this.btn7.setName("btn7$");
+                }
             }
-            if(bufferName.contains("x")){
-                int pos = bufferName.indexOf("x") + 1;
-                carattere = bufferName.charAt(pos);
-            }
-            if(bufferName.contains("y")){
-                int pos = bufferName.indexOf("y") + 1;
-                carattere = bufferName.charAt(pos);
-            }
-            if(bufferName.contains("£")){
-                int pos = bufferName.indexOf("£") + 1;
-                carattere = bufferName.charAt(pos);
-            }
-            
-            gg.ComponiParola(carattere, posX, posY, bonus);
-            
-            bufferName = "";
-            bufferImg = null;
         }
+
+        //sposto
+        b.setName(bufferName);
+        b.setIcon(bufferImg);
+
+        //svuoto buffer
+        temp1.setName("");
+        temp1.setIcon(null);
+
+        char carattere = 'y';
+        int posX = 18;
+        int posY = 18;
+        String bonus = "";
+        if (bufferName.contains("$")) {
+            int pos = bufferName.indexOf("$") + 1;
+            carattere = bufferName.charAt(pos);
+        }
+        if (bufferName.contains("x")) {
+            int pos = bufferName.indexOf("x") + 1;
+            carattere = bufferName.charAt(pos);
+        }
+        if (bufferName.contains("y")) {
+            int pos = bufferName.indexOf("y") + 1;
+            carattere = bufferName.charAt(pos);
+        }
+        if (bufferName.contains("£")) {
+            int pos = bufferName.indexOf("£") + 1;
+            carattere = bufferName.charAt(pos);
+        }
+
+        gg.ComponiParola(carattere, posX, posY, bonus);
+
+        bufferName = "";
+        bufferImg = null;
+
     }//GEN-LAST:event_jButtonsActionPerformed
 
     public static void main(String args[]) {
@@ -4320,7 +4348,8 @@ public class Tabellone extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Login.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         /* Create and display the form */
@@ -4328,11 +4357,14 @@ public class Tabellone extends javax.swing.JFrame {
             try {
                 new Tabellone(new DatiCondivisi()).setVisible(true);
             } catch (UnknownHostException | SocketException ex) {
-                Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Login.class
+                        .getName()).log(Level.SEVERE, null, ex);
             } catch (IOException ex) {
-                Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Login.class
+                        .getName()).log(Level.SEVERE, null, ex);
             } catch (InterruptedException ex) {
-                Logger.getLogger(Tabellone.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Tabellone.class
+                        .getName()).log(Level.SEVERE, null, ex);
             }
         });
 
