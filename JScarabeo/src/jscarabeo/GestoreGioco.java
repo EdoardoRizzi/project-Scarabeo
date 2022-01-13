@@ -55,7 +55,7 @@ public class GestoreGioco extends Thread {
     public void run() {
         try {
             generaLista(FileCSV);
-            //caricaListaParole();
+            //caricaListaParole();    CRASH TROPPE PAROLE
         } catch (IOException ex) {
             Logger.getLogger(GestoreGioco.class.getName()).log(Level.SEVERE, null, ex);
         }

@@ -5,14 +5,12 @@
  */
 package jscarabeo;
 
-import java.awt.Button;
-import java.awt.Component;
+import java.awt.LayoutManager;
 import java.io.IOException;
 import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
@@ -27,15 +25,10 @@ public class Tabellone extends javax.swing.JFrame {
      */
     DatiCondivisi d;
     GestoreGioco gg;
-    String bufferName;
-    ImageIcon bufferImg;
     JButton temp1 = null;
 
     public Tabellone(DatiCondivisi d) throws IOException, InterruptedException {
         initComponents();
-
-        bufferName = "";
-        bufferImg = null;
 
         this.d = d;
         d.setTabellone(this);
@@ -86,7 +79,7 @@ public class Tabellone extends javax.swing.JFrame {
 
     private String generaNome(Lettera l, String NomeAttuale) {
         String nome = NomeAttuale.substring(0, NomeAttuale.indexOf("$"));
-        nome += Character.toString(l.getLettera()) + l.getValore();
+        nome += Character.toString(l.getLettera());
         return nome;
     }
 
@@ -4258,79 +4251,68 @@ public class Tabellone extends javax.swing.JFrame {
 
         JButton b = (JButton) evt.getSource();
         //salvo in un buffer immagine e nome
-        if (temp1 == null) {
+
+        //entro se: 1- buffer vuoto e button premuto con lettera    2- buffer pieno e button premuto vuoto
+        if (temp1 == null && b.getIcon() != null) {
             temp1 = b;
-        } else {
+        } else if (temp1 != null && b.getIcon() == null) {
             String buttonPremutoPrima = temp1.getName().substring(0, temp1.getName().indexOf("$"));
             switch (buttonPremutoPrima) {
-                case "btn0$" -> {
+                case "btn0" -> {
                     this.btn0.setIcon(null);
-                    this.btn0.setName("btn0$");
+                    this.btn0.setName("btn0");
                 }
-                case "btn1$" -> {
+                case "btn1" -> {
                     this.btn1.setIcon(null);
-                    this.btn1.setName("btn1$");
+                    this.btn1.setName("btn1");
                 }
-                case "btn2$" -> {
+                case "btn2" -> {
                     this.btn2.setIcon(null);
-                    this.btn2.setName("btn2$");
+                    this.btn2.setName("btn2");
                 }
-                case "btn3$" -> {
+                case "btn3" -> {
                     this.btn3.setIcon(null);
-                    this.btn3.setName("btn3$");
+                    this.btn3.setName("btn3");
                 }
-                case "btn4$" -> {
+                case "btn4" -> {
                     this.btn4.setIcon(null);
-                    this.btn4.setName("btn4$");
+                    this.btn4.setName("btn4");
                 }
-                case "btn5$" -> {
+                case "btn5" -> {
                     this.btn5.setIcon(null);
-                    this.btn5.setName("btn5$");
+                    this.btn5.setName("btn5");
                 }
-                case "btn6$" -> {
+                case "btn6" -> {
                     this.btn6.setIcon(null);
-                    this.btn6.setName("btn6$");
+                    this.btn6.setName("btn6");
                 }
-                case "btn7$" -> {
+                case "btn7" -> {
                     this.btn7.setIcon(null);
-                    this.btn7.setName("btn7$");
+                    this.btn7.setName("btn7");
                 }
             }
         }
-
         //sposto
-        b.setName(bufferName);
-        b.setIcon(bufferImg);
+        b.setName(b.getName() + temp1.getName().substring(temp1.getName().indexOf("$")));
+        b.setIcon(temp1.getIcon());
 
-        //svuoto buffer
-        temp1.setName("");
-        temp1.setIcon(null);
-
-        char carattere = 'y';
-        int posX = 18;
-        int posY = 18;
+        int posLettera = b.getName().indexOf("$") + 1;
+        char carattere = b.getName().charAt(posLettera);
+        int temp;
         String bonus = "";
-        if (bufferName.contains("$")) {
-            int pos = bufferName.indexOf("$") + 1;
-            carattere = bufferName.charAt(pos);
+        if (b.getName().contains("£")) {
+            temp = b.getName().indexOf("£");
+            bonus = b.getName().substring(temp + 1);
+        } else {
+            temp = b.getName().indexOf("$");
         }
-        if (bufferName.contains("x")) {
-            int pos = bufferName.indexOf("x") + 1;
-            carattere = bufferName.charAt(pos);
-        }
-        if (bufferName.contains("y")) {
-            int pos = bufferName.indexOf("y") + 1;
-            carattere = bufferName.charAt(pos);
-        }
-        if (bufferName.contains("£")) {
-            int pos = bufferName.indexOf("£") + 1;
-            carattere = bufferName.charAt(pos);
-        }
+        int posX = Integer.parseInt(b.getName().substring(b.getName().indexOf("x") + 1, temp));
+        int posY = Integer.parseInt(b.getName().substring(b.getName().indexOf("y") + 1, b.getName().indexOf("x")));
 
         gg.ComponiParola(carattere, posX, posY, bonus);
 
-        bufferName = "";
-        bufferImg = null;
+        //svuoto buffer
+        temp1 = null;
 
     }//GEN-LAST:event_jButtonsActionPerformed
 
