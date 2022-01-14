@@ -13,9 +13,15 @@ import javax.swing.JButton;
  */
 public class MyButtons extends JButton {
 
-    int x, y;
-    Lettera l;
-    String bonus;
+    private int x, y;
+    private Lettera l;
+    private String bonus;
+
+    //btn per la mano
+    public MyButtons() {
+        this.x = -1;
+        this.y = -1;
+    }
 
     //buttons vuoti con bonus
     public MyButtons(int x, int y, String bonus) {
@@ -53,4 +59,11 @@ public class MyButtons extends JButton {
         return bonus;
     }
 
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
 }
