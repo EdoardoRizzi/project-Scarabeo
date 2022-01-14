@@ -5,7 +5,10 @@
  */
 package jscarabeo;
 
+import java.awt.GridLayout;
 import java.awt.LayoutManager;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.net.SocketException;
 import java.net.UnknownHostException;
@@ -220,7 +223,7 @@ public class Tabellone extends javax.swing.JFrame {
                                 .addComponent(score1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(329, 329, 329)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 342, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel2)
@@ -238,7 +241,7 @@ public class Tabellone extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnInvia)
                             .addComponent(btnRipesca))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 951, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -321,16 +324,42 @@ public class Tabellone extends javax.swing.JFrame {
         gg.resa();
     }//GEN-LAST:event_btnResaActionPerformed
 
+    private void metodoGeneraleButtons(ActionEvent evt) {
+        MyButtons b = (MyButtons) evt.getSource();
+        //salvo in un buffer immagine e nome
+
+        //entro se: 1- buffer vuoto e button premuto con lettera    2- buffer pieno e button premuto vuoto
+        if (temp1 == null && b.getIcon() != null) {
+            temp1 = b;
+        } else if (temp1 != null && b.getIcon() == null) {
+
+            //sposto
+            b.setLettera(temp1.getLettera());
+            b.setIcon(temp1.getIcon());
+
+            gg.ComponiParola(b.getLettera().getLettera(), b.getX(), b.getY(), b.getBonus());
+
+            //svuoto buffer
+            temp1 = null;
+        }
+    }
+
     private void generaBottoni() {
         int width = 50;
         int x = 95;
         int y = 65;
         MyButtons btn;
-        
+
         for (int i = 0; i < 17; i++) {
             for (int j = 0; j < 17; j++) {
                 btn = new MyButtons(j, i);
                 btn.setBounds(x, y, width, width);
+                btn.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        metodoGeneraleButtons(e);
+                    }
+                });
                 this.add(btn);
                 x += 45;
             }
@@ -344,9 +373,17 @@ public class Tabellone extends javax.swing.JFrame {
         for (int z = 0; z < 8; z++) {
             btn = new MyButtons(-1, -1);
             btn.setBounds(6, y, width, width);
+            btn.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    metodoGeneraleButtons(e);
+                }
+            });
+
             this.add(btn);
             y += 45;
         }
+
     }
 
     public void setOpponentNickname() {

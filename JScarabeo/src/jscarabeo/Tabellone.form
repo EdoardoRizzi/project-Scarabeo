@@ -47,7 +47,7 @@
                       </Group>
                       <EmptySpace min="-2" pref="329" max="-2" attributes="0"/>
                       <Component id="jLabel5" min="-2" pref="203" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="342" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
@@ -71,7 +71,7 @@
                           <Component id="btnInvia" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btnRipesca" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="951" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
