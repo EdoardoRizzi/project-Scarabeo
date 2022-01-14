@@ -31,7 +31,7 @@ public class GestoreGioco extends Thread {
     private int[] PosizioniSullaY;
     private String[] Bonus;
     private int numElParola, numElX, numElY, numElBonus;
-    
+
     private boolean confermato;
     //timer
 
@@ -48,7 +48,7 @@ public class GestoreGioco extends Thread {
         PosizioniSullaY = new int[17];
         Bonus = new String[17];
         confermato = false;
-        
+
         PulisciVettori();
     }
 
@@ -61,6 +61,8 @@ public class GestoreGioco extends Thread {
         }
         while (d.isInGame()) {
             if (d.isTurno() && ManoPossibile()) { //la partita finisce quando non si può più pescare???
+                while (d.getOpponentNickname() == "") {}
+                d.getTabellone().setOpponentNickname();
                 Pescaggio();
             }
             while (!confermato) {
@@ -176,7 +178,7 @@ public class GestoreGioco extends Thread {
         numElX++;
         numElY++;
     }
-    
+
     public boolean CercaLettera() {
         int posMancante = 0;
         int[] Copia;
@@ -436,7 +438,7 @@ public class GestoreGioco extends Thread {
         if (triplica) {
             conteggioParziale *= 3;
         }
-        
+
         d.updateMyScore(conteggioParziale);
     }
 
@@ -447,8 +449,8 @@ public class GestoreGioco extends Thread {
         String m = "D;";
         d.addPacchettoDaInviare(m);
     }
-    
-     public void setConfermato(boolean confermato) {
+
+    public void setConfermato(boolean confermato) {
         this.confermato = confermato;
     }
 

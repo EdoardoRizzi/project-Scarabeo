@@ -29,7 +29,7 @@ public class Tabellone extends javax.swing.JFrame {
 
     public Tabellone(DatiCondivisi d) throws IOException, InterruptedException {
         initComponents();
-        generaBottoni();
+
         this.d = d;
         d.setTabellone(this);
 
@@ -37,10 +37,12 @@ public class Tabellone extends javax.swing.JFrame {
 
         gg = new GestoreGioco(d);
         gg.start();
+
+        generaBottoni();
     }
 
     public void setMano(int i, Lettera lettera) {
-        nick2.setText(d.getOpponentNickname());
+
 //        switch (i) {
 //            case 0 -> {
 //                this.btn0.setIcon(lettera.getImg());
@@ -320,13 +322,14 @@ public class Tabellone extends javax.swing.JFrame {
     }//GEN-LAST:event_btnResaActionPerformed
 
     private void generaBottoni() {
-        int width = 55;
+        int width = 50;
         int x = 95;
         int y = 65;
-
+        MyButtons btn;
+        
         for (int i = 0; i < 17; i++) {
             for (int j = 0; j < 17; j++) {
-                MyButtons btn = new MyButtons(j, i);
+                btn = new MyButtons(j, i);
                 btn.setBounds(x, y, width, width);
                 this.add(btn);
                 x += 45;
@@ -334,16 +337,20 @@ public class Tabellone extends javax.swing.JFrame {
             y += 45;
             x = 95;
         }
-        
+
         x = 6;
         y = 157;
-        
+
         for (int z = 0; z < 8; z++) {
-            MyButtons btn = new MyButtons(-1, -1);
-            btn.setBounds(x, y, width, width);
+            btn = new MyButtons(-1, -1);
+            btn.setBounds(6, y, width, width);
             this.add(btn);
             y += 45;
         }
+    }
+
+    public void setOpponentNickname() {
+        nick2.setText(d.getOpponentNickname());
     }
 
     public static void main(String args[]) {
@@ -407,4 +414,5 @@ public class Tabellone extends javax.swing.JFrame {
     private javax.swing.JLabel score1;
     private javax.swing.JLabel score2;
     // End of variables declaration//GEN-END:variables
+
 }
